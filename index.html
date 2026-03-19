@@ -1,0 +1,3529 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Termál — Szállás Hajdúszoboszlón</title>
+    <meta name="description" content="Családias hangulatú szállás Hajdúszoboszló szívében, a Hungarospa Gyógyfürdőtől 3 percre. Foglaljon közvetlenül 10% kedvezménnyel!">
+    <meta name="keywords" content="hajdúszoboszló szállás, villa termál, gyógyfürdő, apartman, vendégház">
+    <meta name="author" content="Villa Termál">
+    <meta property="og:title" content="Villa Termál — Szállás Hajdúszoboszlón">
+    <meta property="og:description" content="Családias hangulatú szállás Hajdúszoboszló szívében. Foglaljon közvetlenül 10% kedvezménnyel!">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="hu_HU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json" id="jsonld-data">
+    {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Villa Termál",
+        "description": "Családias hangulatú szállás Hajdúszoboszló szívében.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Fürdő sor 12.",
+            "addressLocality": "Hajdúszoboszló",
+            "postalCode": "4200",
+            "addressCountry": "HU"
+        },
+        "telephone": "+36301234567",
+        "priceRange": "18000-38000 HUF",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "500"
+        }
+    }
+    </script>
+
+    <style>
+        /* ========================================
+           CSS VARIABLES
+           ======================================== */
+        :root {
+            --gold: #C4975C;
+            --gold-light: #E8D5B5;
+            --gold-glow: rgba(196, 151, 92, 0.15);
+            --dark: #1A1A1A;
+            --warm-dark: #2C2520;
+            --cream: #FAF6F1;
+            --cream-dark: #F0E8DC;
+            --text: #3D3530;
+            --text-light: #7A7068;
+            --white: #FFFFFF;
+            --error: #C0392B;
+            --success: #27AE60;
+
+            --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+            --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+            --shadow-sm: 0 2px 8px rgba(44, 37, 32, 0.06);
+            --shadow-md: 0 4px 20px rgba(44, 37, 32, 0.08), 0 2px 8px rgba(196, 151, 92, 0.04);
+            --shadow-lg: 0 8px 40px rgba(44, 37, 32, 0.12), 0 4px 16px rgba(196, 151, 92, 0.06);
+            --shadow-hover: 0 12px 48px rgba(44, 37, 32, 0.16), 0 6px 20px rgba(196, 151, 92, 0.08);
+
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+
+            --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+            --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        /* ========================================
+           RESET & BASE
+           ======================================== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--text);
+            background-color: var(--cream);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s var(--ease-out);
+        }
+
+        a:hover { color: var(--warm-dark); }
+        a:focus-visible {
+            outline: 2px solid var(--gold);
+            outline-offset: 3px;
+            border-radius: 2px;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--warm-dark);
+            letter-spacing: -0.02em;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ========================================
+           NOSCRIPT FALLBACK
+           ======================================== */
+        noscript .noscript-msg {
+            text-align: center;
+            padding: 60px 20px;
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        /* ========================================
+           SVG NOISE TEXTURE
+           ======================================== */
+        .grain-overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+        }
+
+        /* ========================================
+           NAVIGATION
+           ======================================== */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            padding: 20px 0;
+            transition: background-color 0.4s var(--ease-out),
+                        padding 0.4s var(--ease-out),
+                        box-shadow 0.4s var(--ease-out);
+        }
+
+        .nav.scrolled {
+            background-color: rgba(250, 246, 241, 0.97);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 12px 0;
+            box-shadow: 0 2px 20px rgba(44, 37, 32, 0.08);
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: -0.02em;
+            transition: color 0.4s var(--ease-out);
+        }
+
+        .nav.scrolled .nav-logo { color: var(--warm-dark); }
+
+        .nav-logo span {
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.85);
+            letter-spacing: 0.02em;
+            position: relative;
+            padding: 4px 0;
+            transition: color 0.3s var(--ease-out);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: width 0.3s var(--ease-out);
+        }
+
+        .nav-links a:hover { color: var(--gold); }
+        .nav-links a:hover::after { width: 100%; }
+
+        .nav.scrolled .nav-links a { color: var(--text); }
+        .nav.scrolled .nav-links a:hover { color: var(--gold); }
+
+        .nav-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 24px;
+            background: var(--gold);
+            color: var(--white) !important;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 100px;
+            letter-spacing: 0.02em;
+            transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out), background-color 0.3s var(--ease-out);
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(196, 151, 92, 0.35);
+            color: var(--white) !important;
+            background: #b8894f;
+        }
+
+        .nav-cta:active { transform: translateY(0); }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            z-index: 1001;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--white);
+            border-radius: 2px;
+            transition: transform 0.3s var(--ease-out), opacity 0.3s var(--ease-out), background-color 0.3s var(--ease-out);
+        }
+
+        .nav.scrolled .hamburger span { background: var(--warm-dark); }
+
+        .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+        /* Mobile menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(26, 26, 26, 0.97);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            z-index: 999;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 28px;
+            opacity: 0;
+            transition: opacity 0.4s var(--ease-out);
+        }
+
+        .mobile-menu.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .mobile-menu a {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            color: var(--cream);
+            font-weight: 500;
+            transition: color 0.3s var(--ease-out);
+        }
+
+        .mobile-menu a:hover { color: var(--gold); }
+
+        /* ========================================
+           HERO
+           ======================================== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(160deg, #1A1A1A 0%, #2C2520 40%, #3D3530 70%, #2C2520 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background:
+                radial-gradient(ellipse at 20% 50%, rgba(196, 151, 92, 0.08) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(196, 151, 92, 0.05) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 80%, rgba(196, 151, 92, 0.06) 0%, transparent 40%);
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0; right: 0;
+            height: 120px;
+            background: linear-gradient(to top, var(--cream), transparent);
+            pointer-events: none;
+        }
+
+        /* Decorative geometric shapes */
+        .hero-decor {
+            position: absolute;
+            border: 1px solid rgba(196, 151, 92, 0.12);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-decor-1 {
+            width: 400px; height: 400px;
+            top: -100px; right: -100px;
+        }
+
+        .hero-decor-2 {
+            width: 300px; height: 300px;
+            bottom: -50px; left: -80px;
+        }
+
+        .hero-decor-3 {
+            width: 200px; height: 200px;
+            top: 30%; left: 10%;
+            border-color: rgba(196, 151, 92, 0.06);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 8px 24px;
+            background: rgba(196, 151, 92, 0.12);
+            border: 1px solid rgba(196, 151, 92, 0.25);
+            border-radius: 100px;
+            color: var(--gold);
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            margin-bottom: 28px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.4rem, 5.5vw, 4rem);
+            color: var(--cream);
+            margin-bottom: 20px;
+            letter-spacing: -0.03em;
+            font-weight: 700;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.15rem);
+            color: rgba(250, 246, 241, 0.7);
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 100px;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 0.02em;
+            transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out), background-color 0.3s var(--ease-out);
+        }
+
+        .btn:focus-visible {
+            outline: 2px solid var(--gold);
+            outline-offset: 3px;
+        }
+
+        .btn:active { transform: translateY(0) !important; }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: #b8894f;
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(196, 151, 92, 0.35);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--cream);
+            border: 2px solid rgba(250, 246, 241, 0.3);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+            transform: translateY(-2px);
+        }
+
+        .btn-dark-outline {
+            background: transparent;
+            color: var(--warm-dark);
+            border: 2px solid var(--warm-dark);
+        }
+
+        .btn-dark-outline:hover {
+            background: var(--warm-dark);
+            color: var(--cream);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(44, 37, 32, 0.2);
+        }
+
+        /* ========================================
+           STATS BAR
+           ======================================== */
+        .stats {
+            background: var(--warm-dark);
+            padding: 48px 0;
+            position: relative;
+        }
+
+        .stats::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(ellipse at 50% 50%, rgba(196, 151, 92, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            text-align: center;
+            position: relative;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .stat-icon {
+            font-size: 1.4rem;
+            margin-bottom: 4px;
+        }
+
+        .stat-value {
+            font-family: var(--font-heading);
+            font-size: clamp(1.8rem, 3vw, 2.4rem);
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: -0.02em;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: rgba(250, 246, 241, 0.6);
+            font-weight: 500;
+            letter-spacing: 0.03em;
+        }
+
+        /* ========================================
+           SECTION COMMON
+           ======================================== */
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--gold);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            margin-bottom: 16px;
+            letter-spacing: -0.03em;
+        }
+
+        .section-subtitle {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ========================================
+           ROOMS
+           ======================================== */
+        .rooms { background: var(--cream); }
+
+        .rooms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
+            gap: 32px;
+        }
+
+        .room-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+        }
+
+        .room-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .room-image {
+            position: relative;
+            height: 240px;
+            overflow: hidden;
+        }
+
+        .room-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s var(--ease-out);
+        }
+
+        .room-card:hover .room-image img {
+            transform: scale(1.05);
+        }
+
+        .room-image::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0; right: 0;
+            height: 60%;
+            background: linear-gradient(to top, rgba(26, 26, 26, 0.5), transparent);
+            pointer-events: none;
+        }
+
+        .room-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            padding: 6px 16px;
+            background: var(--gold);
+            color: var(--white);
+            font-size: 0.75rem;
+            font-weight: 600;
+            border-radius: 100px;
+            letter-spacing: 0.04em;
+            z-index: 2;
+        }
+
+        .room-body {
+            padding: 28px;
+        }
+
+        .room-name {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+        }
+
+        .room-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 12px;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .room-meta span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .room-desc {
+            font-size: 0.92rem;
+            color: var(--text-light);
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        .room-amenities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+
+        .room-amenity {
+            padding: 4px 12px;
+            background: var(--cream);
+            border-radius: 100px;
+            font-size: 0.78rem;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .room-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 20px;
+            border-top: 1px solid var(--cream-dark);
+        }
+
+        .room-price {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .room-price-value {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--warm-dark);
+        }
+
+        .room-price-unit {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        .room-price-compare {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            text-decoration: line-through;
+            margin-top: 2px;
+        }
+
+        .room-book-btn {
+            padding: 10px 24px;
+            font-size: 0.85rem;
+        }
+
+        .room-gallery-badge {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            padding: 6px 14px;
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(6px);
+            color: var(--white);
+            font-size: 0.75rem;
+            font-weight: 500;
+            border-radius: 100px;
+            z-index: 2;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: background 0.3s var(--ease-out);
+        }
+
+        .room-gallery-badge:hover {
+            background: rgba(0, 0, 0, 0.85);
+        }
+
+        .room-gallery-badge svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        /* Lightbox */
+        .lightbox-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 10000;
+            background: rgba(0, 0, 0, 0.92);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.35s var(--ease-out), visibility 0.35s var(--ease-out);
+        }
+
+        .lightbox-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .lightbox-content {
+            position: relative;
+            width: 90vw;
+            max-width: 1000px;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .lightbox-image-wrap {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            min-height: 0;
+        }
+
+        .lightbox-image-wrap img {
+            max-width: 100%;
+            max-height: 75vh;
+            object-fit: contain;
+            border-radius: var(--radius-md);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            transition: opacity 0.3s var(--ease-out);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -48px;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.4rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s var(--ease-out);
+        }
+
+        .lightbox-close:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 48px;
+            height: 48px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.3rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s var(--ease-out), transform 0.3s var(--ease-out);
+            z-index: 2;
+        }
+
+        .lightbox-nav:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .lightbox-prev { left: -60px; }
+        .lightbox-next { right: -60px; }
+
+        .lightbox-counter {
+            margin-top: 16px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .lightbox-room-name {
+            color: white;
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            margin-top: 8px;
+        }
+
+        .lightbox-thumbs {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+            justify-content: center;
+        }
+
+        .lightbox-thumb {
+            width: 56px;
+            height: 40px;
+            border-radius: 6px;
+            overflow: hidden;
+            cursor: pointer;
+            opacity: 0.4;
+            border: 2px solid transparent;
+            transition: opacity 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
+        }
+
+        .lightbox-thumb.active {
+            opacity: 1;
+            border-color: var(--gold);
+        }
+
+        .lightbox-thumb:hover {
+            opacity: 0.8;
+        }
+
+        .lightbox-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .lightbox-prev { left: 8px; }
+            .lightbox-next { right: 8px; }
+            .lightbox-nav {
+                width: 40px;
+                height: 40px;
+                font-size: 1.1rem;
+            }
+            .lightbox-close {
+                top: -40px;
+                right: 4px;
+            }
+            .lightbox-thumb {
+                width: 44px;
+                height: 32px;
+            }
+        }
+
+        /* ========================================
+           LANGUAGE TOGGLE
+           ======================================== */
+        .lang-toggle {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: none;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 100px;
+            padding: 4px 12px;
+            cursor: pointer;
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            transition: border-color 0.3s var(--ease-out);
+        }
+
+        .lang-toggle .lang-opt {
+            padding: 2px 6px;
+            border-radius: 100px;
+            transition: all 0.3s var(--ease-out);
+            color: rgba(255,255,255,0.5);
+        }
+
+        .lang-toggle .lang-opt.active {
+            background: var(--gold);
+            color: white;
+        }
+
+        .nav.scrolled .lang-toggle {
+            border-color: var(--cream-dark);
+        }
+
+        .nav.scrolled .lang-toggle .lang-opt {
+            color: var(--text-light);
+        }
+
+        .nav.scrolled .lang-toggle .lang-opt.active {
+            color: white;
+        }
+
+        /* Mobile lang toggle in mobile menu */
+        .mobile-lang-toggle {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 24px;
+        }
+
+        .mobile-lang-toggle button {
+            padding: 8px 24px;
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 100px;
+            background: none;
+            color: rgba(255,255,255,0.5);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s var(--ease-out);
+        }
+
+        .mobile-lang-toggle button.active {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: white;
+        }
+
+        /* ========================================
+           SERVICES
+           ======================================== */
+        .services {
+            background: var(--white);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+            gap: 24px;
+        }
+
+        .service-card {
+            padding: 32px;
+            border-radius: var(--radius-md);
+            background: var(--cream);
+            border: 1px solid transparent;
+            transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--gold-light);
+        }
+
+        .service-icon {
+            font-size: 2rem;
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+
+        .service-title {
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .service-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* ========================================
+           BOOKING / CALENDAR
+           ======================================== */
+        .booking {
+            background: var(--cream);
+            position: relative;
+        }
+
+        .booking-wrapper {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Room selector */
+        .room-selector {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+
+        .room-selector label {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--warm-dark);
+        }
+
+        .room-selector select {
+            padding: 10px 16px;
+            border: 2px solid var(--cream-dark);
+            border-radius: var(--radius-sm);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            color: var(--text);
+            background: var(--cream);
+            cursor: pointer;
+            transition: border-color 0.3s var(--ease-out);
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237A7068' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            padding-right: 36px;
+        }
+
+        .room-selector select:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+
+        /* Calendar navigation */
+        .calendar-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .calendar-nav-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--cream-dark);
+            border-radius: 50%;
+            background: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            color: var(--text);
+            transition: border-color 0.3s var(--ease-out), background-color 0.3s var(--ease-out), transform 0.3s var(--ease-out);
+        }
+
+        .calendar-nav-btn:hover {
+            border-color: var(--gold);
+            background: var(--gold-glow);
+            transform: scale(1.05);
+        }
+
+        .calendar-nav-btn:active { transform: scale(0.95); }
+
+        .calendar-nav-btn:focus-visible {
+            outline: 2px solid var(--gold);
+            outline-offset: 2px;
+        }
+
+        .calendar-nav-title {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--warm-dark);
+            min-width: 200px;
+            text-align: center;
+        }
+
+        /* Calendar grid container */
+        .calendars-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin-bottom: 24px;
+        }
+
+        .calendar-month {
+            min-width: 0;
+        }
+
+        .calendar-month-title {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            color: var(--warm-dark);
+            margin-bottom: 12px;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 2px;
+        }
+
+        .calendar-dayname {
+            text-align: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-light);
+            padding: 8px 0;
+            letter-spacing: 0.05em;
+        }
+
+        .calendar-day {
+            position: relative;
+            text-align: center;
+            padding: 10px 4px;
+            font-size: 0.85rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s var(--ease-out), transform 0.2s var(--ease-out);
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .calendar-day:hover:not(.day-past):not(.day-booked):not(.day-empty) {
+            background: var(--cream-dark);
+            transform: scale(1.08);
+        }
+
+        .calendar-day.day-empty {
+            cursor: default;
+        }
+
+        .calendar-day.day-past {
+            color: #C5BFB8;
+            cursor: not-allowed;
+        }
+
+        .calendar-day.day-today {
+            box-shadow: inset 0 0 0 2px var(--gold);
+            font-weight: 700;
+        }
+
+        .calendar-day.day-booked {
+            background: #E8E4E0;
+            color: #A09890;
+            cursor: not-allowed;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .calendar-day.day-booked::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: repeating-linear-gradient(
+                -45deg,
+                transparent,
+                transparent 3px,
+                rgba(192, 57, 43, 0.18) 3px,
+                rgba(192, 57, 43, 0.18) 5px
+            );
+            border-radius: 8px;
+            pointer-events: none;
+        }
+
+        .calendar-day.day-checkin,
+        .calendar-day.day-checkout {
+            background: var(--success);
+            color: var(--white);
+            font-weight: 700;
+            box-shadow: 0 2px 10px rgba(39, 174, 96, 0.3);
+        }
+
+        .calendar-day.day-range {
+            background: rgba(39, 174, 96, 0.12);
+            color: var(--text);
+        }
+
+        /* Calendar message */
+        .calendar-message {
+            text-align: center;
+            padding: 12px;
+            margin-bottom: 16px;
+            border-radius: var(--radius-sm);
+            font-size: 0.88rem;
+            font-weight: 500;
+            display: none;
+        }
+
+        .calendar-message.msg-error {
+            display: block;
+            background: rgba(192, 57, 43, 0.08);
+            color: var(--error);
+            border: 1px solid rgba(192, 57, 43, 0.15);
+        }
+
+        .calendar-message.msg-info {
+            display: block;
+            background: rgba(196, 151, 92, 0.08);
+            color: var(--warm-dark);
+            border: 1px solid rgba(196, 151, 92, 0.15);
+        }
+
+        /* Price calculation */
+        .price-calc {
+            background: var(--cream);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            margin-top: 8px;
+            display: none;
+        }
+
+        .price-calc.visible { display: block; }
+
+        .price-calc-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .price-calc-row:last-child { margin-bottom: 0; }
+
+        .price-calc-label {
+            font-size: 0.92rem;
+            color: var(--text-light);
+        }
+
+        .price-calc-value {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--warm-dark);
+        }
+
+        .price-calc-total {
+            padding-top: 12px;
+            border-top: 2px solid var(--cream-dark);
+            margin-top: 12px;
+        }
+
+        .price-calc-total .price-calc-value {
+            font-size: 1.4rem;
+            color: var(--gold);
+        }
+
+        .price-calc-compare {
+            font-size: 0.82rem;
+            color: var(--text-light);
+            text-align: right;
+            margin-top: 4px;
+        }
+
+        .price-calc-compare .compare-old {
+            text-decoration: line-through;
+            color: var(--error);
+        }
+
+        .price-calc-saving {
+            display: inline-block;
+            background: rgba(39, 174, 96, 0.1);
+            color: var(--success);
+            padding: 2px 10px;
+            border-radius: 100px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        /* Calendar legend */
+        .calendar-legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid var(--cream-dark);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.78rem;
+            color: var(--text-light);
+        }
+
+        .legend-swatch {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .legend-swatch.swatch-free {
+            background: var(--white);
+            border: 1px solid var(--cream-dark);
+        }
+
+        .legend-swatch.swatch-booked {
+            background: #E8E4E0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .legend-swatch.swatch-booked::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(192, 57, 43, 0.2) 2px, rgba(192, 57, 43, 0.2) 3px);
+            border-radius: 4px;
+        }
+
+        .legend-swatch.swatch-selected {
+            background: var(--success);
+        }
+
+        .legend-swatch.swatch-today {
+            background: var(--white);
+            box-shadow: inset 0 0 0 2px var(--gold);
+        }
+
+        @media (max-width: 768px) {
+            .booking-wrapper {
+                padding: 24px 16px;
+            }
+
+            .calendars-container {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .calendar-nav-title {
+                font-size: 1rem;
+                min-width: 160px;
+            }
+
+            .calendar-day {
+                padding: 8px 2px;
+                font-size: 0.8rem;
+            }
+
+            .price-calc {
+                padding: 16px;
+            }
+
+            .price-calc-total .price-calc-value {
+                font-size: 1.2rem;
+            }
+
+            .booking-form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-direct {
+                margin-top: 24px;
+            }
+        }
+
+        /* ========================================
+           BOOKING FORM
+           ======================================== */
+        .booking-form-section {
+            margin-top: 40px;
+            padding-top: 32px;
+            border-top: 2px solid var(--cream-dark);
+        }
+
+        .booking-form-title {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--warm-dark);
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .booking-form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--warm-dark);
+            letter-spacing: 0.02em;
+        }
+
+        .form-group label .required {
+            color: var(--error);
+            margin-left: 2px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 12px 16px;
+            border: 2px solid var(--cream-dark);
+            border-radius: var(--radius-sm);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            color: var(--text);
+            background: var(--cream);
+            transition: border-color 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+            width: 100%;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px var(--gold-glow);
+        }
+
+        .form-group input.input-error,
+        .form-group select.input-error {
+            border-color: var(--error);
+            box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.08);
+        }
+
+        .form-group .field-error {
+            font-size: 0.78rem;
+            color: var(--error);
+            display: none;
+        }
+
+        .form-group .field-error.visible {
+            display: block;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .form-group select {
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237A7068' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            padding-right: 36px;
+            cursor: pointer;
+        }
+
+        .form-actions {
+            text-align: center;
+            margin-top: 8px;
+        }
+
+        .form-submit-btn {
+            padding: 16px 48px;
+            font-size: 1rem;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* Why direct box */
+        .why-direct {
+            background: linear-gradient(135deg, rgba(196, 151, 92, 0.06) 0%, rgba(196, 151, 92, 0.02) 100%);
+            border: 1px solid var(--gold-light);
+            border-radius: var(--radius-md);
+            padding: 28px;
+            margin-top: 32px;
+        }
+
+        .why-direct-title {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--warm-dark);
+            margin-bottom: 16px;
+        }
+
+        .why-direct-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .why-direct-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+
+        .why-direct-check {
+            color: var(--success);
+            font-weight: 700;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        /* Thank you message */
+        .booking-thank-you {
+            display: none;
+            text-align: center;
+            padding: 48px 24px;
+        }
+
+        .booking-thank-you.visible {
+            display: block;
+        }
+
+        .booking-thank-you-icon {
+            font-size: 3.5rem;
+            margin-bottom: 16px;
+        }
+
+        .booking-thank-you h3 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            color: var(--warm-dark);
+        }
+
+        .booking-thank-you p {
+            color: var(--text-light);
+            max-width: 500px;
+            margin: 0 auto 24px;
+            line-height: 1.7;
+        }
+
+        /* ========================================
+           REVIEWS
+           ======================================== */
+        .reviews {
+            background: var(--warm-dark);
+            position: relative;
+        }
+
+        .reviews::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background:
+                radial-gradient(ellipse at 30% 50%, rgba(196, 151, 92, 0.06) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 30%, rgba(196, 151, 92, 0.04) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .reviews .section-label { color: var(--gold-light); }
+        .reviews .section-title { color: var(--cream); }
+        .reviews .section-subtitle { color: rgba(250, 246, 241, 0.6); }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+            gap: 28px;
+            position: relative;
+        }
+
+        .review-card {
+            background: rgba(250, 246, 241, 0.05);
+            border: 1px solid rgba(196, 151, 92, 0.15);
+            border-radius: var(--radius-md);
+            padding: 32px;
+            transition: transform 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
+        }
+
+        .review-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(196, 151, 92, 0.35);
+        }
+
+        .review-stars {
+            color: var(--gold);
+            font-size: 1rem;
+            margin-bottom: 16px;
+            letter-spacing: 2px;
+        }
+
+        .review-text {
+            font-size: 0.95rem;
+            color: rgba(250, 246, 241, 0.85);
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .review-author {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .review-author-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .review-author-name {
+            font-weight: 600;
+            color: var(--cream);
+            font-size: 0.9rem;
+        }
+
+        .review-author-date {
+            font-size: 0.8rem;
+            color: rgba(250, 246, 241, 0.45);
+        }
+
+        .review-source {
+            padding: 4px 12px;
+            background: rgba(196, 151, 92, 0.12);
+            border-radius: 100px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--gold);
+            letter-spacing: 0.03em;
+        }
+
+        /* ========================================
+           LOCATION
+           ======================================== */
+        .location { background: var(--cream); }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .location-map {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            aspect-ratio: 16 / 10;
+            background: var(--cream-dark);
+        }
+
+        .location-map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .distances-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .distance-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 20px;
+            background: var(--white);
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+        }
+
+        .distance-item:hover {
+            transform: translateX(4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .distance-icon {
+            font-size: 1.4rem;
+            width: 40px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .distance-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .distance-place {
+            font-weight: 600;
+            font-size: 0.92rem;
+            color: var(--warm-dark);
+        }
+
+        .distance-value {
+            font-size: 0.82rem;
+            color: var(--text-light);
+        }
+
+        /* ========================================
+           CTA SECTION
+           ======================================== */
+        .cta-section {
+            background: linear-gradient(160deg, var(--warm-dark) 0%, #3D3530 100%);
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(ellipse at 50% 50%, rgba(196, 151, 92, 0.1) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .cta-content {
+            position: relative;
+        }
+
+        .cta-section h2 {
+            color: var(--cream);
+            font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+            margin-bottom: 12px;
+        }
+
+        .cta-subtitle {
+            color: rgba(250, 246, 241, 0.6);
+            margin-bottom: 32px;
+            font-size: 1.05rem;
+        }
+
+        .cta-contacts {
+            display: flex;
+            gap: 32px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+
+        .cta-contact {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--cream);
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s var(--ease-out);
+        }
+
+        .cta-contact:hover { color: var(--gold); }
+
+        .cta-contact-icon {
+            font-size: 1.3rem;
+        }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .footer {
+            background: var(--dark);
+            padding: 64px 0 32px;
+            color: rgba(250, 246, 241, 0.5);
+            font-size: 0.9rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand h3 {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            color: var(--cream);
+            margin-bottom: 12px;
+        }
+
+        .footer-brand p {
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+        }
+
+        .footer-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(250, 246, 241, 0.06);
+            color: rgba(250, 246, 241, 0.6);
+            font-size: 1.1rem;
+            transition: background 0.3s var(--ease-out), color 0.3s var(--ease-out), transform 0.3s var(--ease-out);
+        }
+
+        .footer-social a:hover {
+            background: var(--gold);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .footer-col h4 {
+            color: var(--cream);
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-col a {
+            color: rgba(250, 246, 241, 0.5);
+            font-size: 0.88rem;
+            transition: color 0.3s var(--ease-out);
+        }
+
+        .footer-col a:hover { color: var(--gold); }
+
+        .footer-bottom {
+            padding-top: 32px;
+            border-top: 1px solid rgba(250, 246, 241, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer-ntak {
+            font-size: 0.8rem;
+            color: rgba(250, 246, 241, 0.35);
+        }
+
+        .footer-credit {
+            font-size: 0.8rem;
+        }
+
+        .footer-credit a {
+            color: var(--gold);
+        }
+
+        /* ========================================
+           SCROLL ANIMATIONS
+           ======================================== */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-up-delay-1 { transition-delay: 0.1s; }
+        .fade-up-delay-2 { transition-delay: 0.2s; }
+        .fade-up-delay-3 { transition-delay: 0.3s; }
+        .fade-up-delay-4 { transition-delay: 0.4s; }
+
+        /* ========================================
+           RESPONSIVE
+           ======================================== */
+        @media (max-width: 1024px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .location-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section { padding: 72px 0; }
+
+            .nav-links { display: none; }
+            .nav-cta.desktop-only { display: none; }
+            .lang-toggle.desktop-only { display: none; }
+            .hamburger { display: flex; }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+
+            .rooms-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-contacts {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .location-map {
+                aspect-ratio: 4/3;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .room-body {
+                padding: 20px;
+            }
+
+            .service-card {
+                padding: 24px;
+            }
+
+            .review-card {
+                padding: 24px;
+            }
+
+            .stat-value {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SVG noise texture for grain -->
+    <svg class="grain-overlay" xmlns="http://www.w3.org/2000/svg">
+        <filter id="grain">
+            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+            <feColorMatrix type="saturate" values="0"/>
+        </filter>
+        <rect width="100%" height="100%" filter="url(#grain)"/>
+    </svg>
+
+    <!-- NAVIGATION -->
+    <nav class="nav" id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="nav-logo" id="nav-logo"><span>Villa</span> Termál</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#szobak" data-i18n="navRooms">Szobák</a></li>
+                <li><a href="#szolgaltatasok" data-i18n="navServices">Szolgáltatások</a></li>
+                <li><a href="#foglalas" data-i18n="navBooking">Foglalás</a></li>
+                <li><a href="#velemenyek" data-i18n="navReviews">Vélemények</a></li>
+                <li><a href="#helyszin" data-i18n="navLocation">Helyszín</a></li>
+                <li><a href="#kapcsolat" data-i18n="navContact">Kapcsolat</a></li>
+            </ul>
+            <button class="lang-toggle desktop-only" id="lang-toggle" aria-label="Nyelv váltás">
+                <span class="lang-opt active" data-lang="hu">HU</span>
+                <span class="lang-opt" data-lang="en">EN</span>
+            </button>
+            <a href="#foglalas" class="nav-cta desktop-only" id="nav-cta-btn">Foglaljon most</a>
+            <button class="hamburger" id="hamburger" aria-label="Menü megnyitása">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#szobak" data-i18n="navRooms">Szobák</a>
+        <a href="#szolgaltatasok" data-i18n="navServices">Szolgáltatások</a>
+        <a href="#foglalas" data-i18n="navBooking">Foglalás</a>
+        <a href="#velemenyek" data-i18n="navReviews">Vélemények</a>
+        <a href="#helyszin" data-i18n="navLocation">Helyszín</a>
+        <a href="#kapcsolat" data-i18n="navContact">Kapcsolat</a>
+        <div class="mobile-lang-toggle" id="mobile-lang-toggle">
+            <button class="active" data-lang="hu">Magyar</button>
+            <button data-lang="en">English</button>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-decor hero-decor-1"></div>
+        <div class="hero-decor hero-decor-2"></div>
+        <div class="hero-decor hero-decor-3"></div>
+        <div class="hero-content">
+            <div class="hero-badge fade-up" id="hero-badge"></div>
+            <h1 class="fade-up fade-up-delay-1" id="hero-title"></h1>
+            <p class="hero-subtitle fade-up fade-up-delay-2" id="hero-subtitle"></p>
+            <div class="hero-buttons fade-up fade-up-delay-3">
+                <a href="#foglalas" class="btn btn-primary" data-i18n="heroBtn1">Szabad szobák megtekintése →</a>
+                <a href="#szobak" class="btn btn-outline" data-i18n="heroBtn2">Szobáink</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid" id="stats-grid">
+                <!-- Filled by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ROOMS -->
+    <section class="section rooms" id="szobak">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-label" data-i18n="roomsLabel">Szálláshely</span>
+                <h2 class="section-title" data-i18n="roomsTitle">Szobáink & Apartmanjaink</h2>
+                <p class="section-subtitle" data-i18n="roomsSub">Minden szobánk klimatizált, ingyenes WiFi-vel és prémium felszereléssel rendelkezik.</p>
+            </div>
+            <div class="rooms-grid" id="rooms-grid">
+                <!-- Filled by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="szolgaltatasok">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-label" data-i18n="servicesLabel">Kényelem</span>
+                <h2 class="section-title" data-i18n="servicesTitle">Szolgáltatásaink</h2>
+                <p class="section-subtitle" data-i18n="servicesSub">Mindent megteszünk, hogy Ön a pihenésre koncentrálhasson.</p>
+            </div>
+            <div class="services-grid" id="services-grid">
+                <!-- Filled by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="section booking" id="foglalas">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-label" data-i18n="bookingLabel">Foglalás</span>
+                <h2 class="section-title" data-i18n="bookingTitle">Foglalja le szállását</h2>
+                <p class="section-subtitle" data-i18n="bookingSub">Válassza ki a kívánt időpontot és foglaljon közvetlenül — garantáltan a legjobb áron!</p>
+            </div>
+            <div class="booking-wrapper fade-up">
+                <!-- Room selector -->
+                <div class="room-selector" id="room-selector"></div>
+
+                <!-- Calendar nav -->
+                <div class="calendar-nav">
+                    <button class="calendar-nav-btn" id="cal-prev" aria-label="Előző hónap">←</button>
+                    <span class="calendar-nav-title" id="cal-nav-title"></span>
+                    <button class="calendar-nav-btn" id="cal-next" aria-label="Következő hónap">→</button>
+                </div>
+
+                <!-- Calendar months -->
+                <div class="calendars-container" id="calendars-container"></div>
+
+                <!-- Message -->
+                <div class="calendar-message" id="cal-message"></div>
+
+                <!-- Price calculation -->
+                <div class="price-calc" id="price-calc"></div>
+
+                <!-- Legend -->
+                <div class="calendar-legend">
+                    <div class="legend-item"><span class="legend-swatch swatch-free"></span> <span data-i18n="legendFree">Szabad</span></div>
+                    <div class="legend-item"><span class="legend-swatch swatch-booked"></span> <span data-i18n="legendBooked">Foglalt</span></div>
+                    <div class="legend-item"><span class="legend-swatch swatch-selected"></span> <span data-i18n="legendSelected">Kiválasztott</span></div>
+                    <div class="legend-item"><span class="legend-swatch swatch-today"></span> <span data-i18n="legendToday">Ma</span></div>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="booking-form-section" id="booking-form-section">
+                    <h3 class="booking-form-title" data-i18n="formTitle">Foglalási adatok</h3>
+                    <form id="booking-form" novalidate>
+                        <div class="booking-form-grid">
+                            <div class="form-group">
+                                <label for="f-checkin"><span data-i18n="labelCheckin">Érkezés</span> <span class="required">*</span></label>
+                                <input type="date" id="f-checkin" name="checkin" readonly>
+                                <span class="field-error" id="err-checkin" data-i18n="errCheckin">Kérjük, válasszon érkezési dátumot a naptárban!</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="f-checkout"><span data-i18n="labelCheckout">Távozás</span> <span class="required">*</span></label>
+                                <input type="date" id="f-checkout" name="checkout" readonly>
+                                <span class="field-error" id="err-checkout" data-i18n="errCheckout">Kérjük, válasszon távozási dátumot a naptárban!</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="f-guests"><span data-i18n="labelGuests">Vendégek száma</span> <span class="required">*</span></label>
+                                <select id="f-guests" name="guests"></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="f-room"><span data-i18n="labelRoom">Szobatípus</span> <span class="required">*</span></label>
+                                <select id="f-room" name="room" readonly></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="f-name"><span data-i18n="labelName">Név</span> <span class="required">*</span></label>
+                                <input type="text" id="f-name" name="name" placeholder="Teljes név" data-i18n-placeholder="placeholderName" autocomplete="name">
+                                <span class="field-error" id="err-name" data-i18n="errName">Kérjük, adja meg a nevét!</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="f-email"><span data-i18n="labelEmail">Email</span> <span class="required">*</span></label>
+                                <input type="email" id="f-email" name="email" placeholder="pelda@email.hu" data-i18n-placeholder="placeholderEmail" autocomplete="email">
+                                <span class="field-error" id="err-email" data-i18n="errEmail">Kérjük, adjon meg egy érvényes email címet!</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="f-phone"><span data-i18n="labelPhone">Telefonszám</span> <span class="required">*</span></label>
+                                <input type="tel" id="f-phone" name="phone" placeholder="+36 30 123 4567" data-i18n-placeholder="placeholderPhone" autocomplete="tel">
+                                <span class="field-error" id="err-phone" data-i18n="errPhone">Kérjük, adjon meg egy érvényes telefonszámot!</span>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="f-message" data-i18n="labelMessage">Megjegyzés (opcionális)</label>
+                                <textarea id="f-message" name="message" placeholder="Különleges kérések, kérdések..." data-i18n-placeholder="placeholderMessage"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary form-submit-btn" id="form-submit-btn" data-i18n="submitBtn">Foglalás küldése →</button>
+                        </div>
+                    </form>
+
+                    <!-- Why Direct -->
+                    <div class="why-direct" id="why-direct">
+                        <div class="why-direct-title" data-i18n="whyDirectTitle">🏷️ Miért foglaljon közvetlenül?</div>
+                        <ul class="why-direct-list" id="why-direct-list"></ul>
+                    </div>
+                </div>
+
+                <!-- Thank You -->
+                <div class="booking-thank-you" id="booking-thank-you">
+                    <div class="booking-thank-you-icon">✅</div>
+                    <h3 data-i18n="thankYouTitle">Köszönjük foglalási kérelmét!</h3>
+                    <p data-i18n="thankYouText">Foglalási kérelmét megkaptuk és feldolgozzuk. 24 órán belül visszaigazoljuk emailben vagy telefonon.</p>
+                    <button class="btn btn-dark-outline" id="new-booking-btn" data-i18n="newBookingBtn">Új foglalás</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section reviews" id="velemenyek">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-label" data-i18n="reviewsLabel">Vélemények</span>
+                <h2 class="section-title" data-i18n="reviewsTitle">Vendégeink mondták</h2>
+                <p class="section-subtitle" data-i18n="reviewsSub">Büszkék vagyunk a vendégeink visszajelzéseire.</p>
+            </div>
+            <div class="reviews-grid" id="reviews-grid">
+                <!-- Filled by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="section location" id="helyszin">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="section-label" data-i18n="locationLabel">Helyszín</span>
+                <h2 class="section-title" data-i18n="locationTitle">Hol talál meg minket?</h2>
+                <p class="section-subtitle" id="location-address"></p>
+            </div>
+            <div class="location-grid fade-up">
+                <div class="location-map" id="location-map">
+                    <!-- Google Maps iframe filled by JS -->
+                </div>
+                <div class="distances-list" id="distances-list">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" id="kapcsolat">
+        <div class="container cta-content fade-up">
+            <h2 data-i18n="ctaTitle">Kérdése van? Hívjon bátran!</h2>
+            <p class="cta-subtitle" data-i18n="ctaSub">Szívesen segítünk a tökéletes pihenés megtervezésében.</p>
+            <div class="cta-contacts" id="cta-contacts">
+                <!-- Filled by JS -->
+            </div>
+            <a href="#foglalas" class="btn btn-primary cta-book-btn" data-i18n="ctaBookBtn">Foglaljon most →</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid" id="footer-grid">
+                <!-- Filled by JS -->
+            </div>
+            <div class="footer-bottom" id="footer-bottom">
+                <!-- Filled by JS -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox-overlay" id="lightbox-overlay">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Bezárás">&times;</button>
+            <div class="lightbox-image-wrap">
+                <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Előző">&#8249;</button>
+                <img id="lightbox-img" src="" alt="">
+                <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Következő">&#8250;</button>
+            </div>
+            <div class="lightbox-room-name" id="lightbox-room-name"></div>
+            <div class="lightbox-counter" id="lightbox-counter"></div>
+            <div class="lightbox-thumbs" id="lightbox-thumbs"></div>
+        </div>
+    </div>
+
+    <!-- NOSCRIPT FALLBACK -->
+    <noscript>
+        <div class="noscript-msg">
+            <h2>Villa Termál — Szállás Hajdúszoboszlón</h2>
+            <p>Az oldal teljes funkcionalitásához kérjük, engedélyezze a JavaScript-et.</p>
+            <p>Foglalás: <a href="tel:+36301234567">+36 30 123 4567</a> | <a href="mailto:info@villatermal.hu">info@villatermal.hu</a></p>
+        </div>
+    </noscript>
+
+    <script>
+    (function() {
+        'use strict';
+
+        /* ========================================
+           CONFIG LOADING
+           ======================================== */
+        let CONFIG = null;
+
+        var currentLang = localStorage.getItem('villa-termal-lang') || 'hu';
+
+        var UI = {
+            hu: {
+                navRooms: 'Szobák', navServices: 'Szolgáltatások', navBooking: 'Foglalás',
+                navReviews: 'Vélemények', navLocation: 'Helyszín', navContact: 'Kapcsolat',
+                heroBtn1: 'Szabad szobák megtekintése →', heroBtn2: 'Szobáink',
+                roomsLabel: 'Szálláshely', roomsTitle: 'Szobáink & Apartmanjaink',
+                roomsSub: 'Minden szobánk klimatizált, ingyenes WiFi-vel és prémium felszereltséggel rendelkezik.',
+                servicesLabel: 'Kényelem', servicesTitle: 'Szolgáltatásaink',
+                servicesSub: 'Mindent megteszünk, hogy vendégeink a lehető legkellemesebben érezzék magukat.',
+                bookingLabel: 'Foglalás', bookingTitle: 'Foglalja le szállását',
+                bookingSub: 'Válassza ki a kívánt időpontot és szobatípust. A közvetlen foglalásnál 10%-kal kedvezőbb árat kínálunk!',
+                reviewsLabel: 'Vélemények', reviewsTitle: 'Vendégeink mondták',
+                reviewsSub: 'Büszkék vagyunk a vendégeink visszajelzéseire.',
+                locationLabel: 'Helyszín', locationTitle: 'Hol talál meg minket?',
+                legendFree: 'Szabad', legendBooked: 'Foglalt', legendSelected: 'Kiválasztott', legendToday: 'Ma',
+                months: ['Január', 'Február', 'Március', 'Április', 'Május', 'Június',
+                         'Július', 'Augusztus', 'Szeptember', 'Október', 'November', 'December'],
+                days: ['H', 'K', 'Sze', 'Cs', 'P', 'Szo', 'V'],
+                roomTypeLabel: 'Szobatípus:', perNightShort: '/éj',
+                guests: 'fő', perNight: '/ éjszaka', bookBtn: 'Foglalás', photos: 'fotó',
+                galleryTooltip: 'Kattintson a galéria megnyitásához',
+                selectCheckout: 'Válassza ki a távozás dátumát!',
+                rangeBooked: 'A kiválasztott időszak foglalt napokat tartalmaz. Kérjük, válasszon másik időszakot!',
+                minStayError: 'A minimális tartózkodás {n} éjszaka. Kérjük, válasszon hosszabb időszakot!',
+                nightsUnit: 'éjszaka', perNightCalc: '/ éj', totalLabel: 'Összesen',
+                bookingCompare: 'Booking.com-on:', savingLabel: 'Megtakarítás:',
+                formTitle: 'Foglalási adatok',
+                labelCheckin: 'Érkezés', labelCheckout: 'Távozás',
+                labelGuests: 'Vendégek száma', labelRoom: 'Szobatípus',
+                labelName: 'Név', labelEmail: 'Email', labelPhone: 'Telefonszám',
+                labelMessage: 'Megjegyzés (opcionális)',
+                placeholderName: 'Teljes név', placeholderEmail: 'pelda@email.hu',
+                placeholderPhone: '+36 30 123 4567',
+                placeholderMessage: 'Különleges kérések, kérdések...',
+                errCheckin: 'Kérjük, válasszon érkezési dátumot a naptárban!',
+                errCheckout: 'Kérjük, válasszon távozási dátumot a naptárban!',
+                errName: 'Kérjük, adja meg a nevét!',
+                errEmail: 'Kérjük, adjon meg egy érvényes email címet!',
+                errPhone: 'Kérjük, adjon meg egy érvényes telefonszámot!',
+                submitBtn: 'Foglalás küldése →', submitting: 'Küldés...',
+                whyDirectTitle: '🏷️ Miért foglaljon közvetlenül?',
+                thankYouTitle: 'Köszönjük foglalási kérelmét!',
+                thankYouText: 'Foglalási kérelmét megkaptuk és feldolgozzuk. 24 órán belül visszaigazoljuk emailben vagy telefonon.',
+                newBookingBtn: 'Új foglalás',
+                ctaTitle: 'Kérdése van? Hívjon bátran!',
+                ctaSub: 'Szívesen segítünk a foglalásban és válaszolunk minden kérdésére.',
+                ctaBookBtn: 'Foglaljon most →',
+                footerRooms: 'Szobáink', footerInfo: 'Információ', footerContact: 'Kapcsolat',
+                footerNtak: 'NTAK regisztrációs szám:', footerCredit: 'Készítette:',
+                seoSuffix: 'Szállás Hajdúszoboszlón',
+                mapFallback: 'Térkép hamarosan',
+                mapTitle: 'Térkép'
+            },
+            en: {
+                navRooms: 'Rooms', navServices: 'Services', navBooking: 'Booking',
+                navReviews: 'Reviews', navLocation: 'Location', navContact: 'Contact',
+                heroBtn1: 'View available rooms →', heroBtn2: 'Our rooms',
+                roomsLabel: 'Accommodation', roomsTitle: 'Our Rooms & Apartments',
+                roomsSub: 'All rooms are air-conditioned with free WiFi and premium amenities.',
+                servicesLabel: 'Comfort', servicesTitle: 'Our Services',
+                servicesSub: 'We do everything to make our guests feel as comfortable as possible.',
+                bookingLabel: 'Booking', bookingTitle: 'Book your stay',
+                bookingSub: 'Choose your dates and room type. We offer 10% lower prices when you book directly!',
+                reviewsLabel: 'Reviews', reviewsTitle: 'What our guests say',
+                reviewsSub: 'We are proud of our guests\' feedback.',
+                locationLabel: 'Location', locationTitle: 'Where to find us?',
+                legendFree: 'Available', legendBooked: 'Booked', legendSelected: 'Selected', legendToday: 'Today',
+                months: ['January', 'February', 'March', 'April', 'May', 'June',
+                         'July', 'August', 'September', 'October', 'November', 'December'],
+                days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                roomTypeLabel: 'Room type:', perNightShort: '/night',
+                guests: 'guests', perNight: '/ night', bookBtn: 'Book', photos: 'photos',
+                galleryTooltip: 'Click to open gallery',
+                selectCheckout: 'Please select the checkout date!',
+                rangeBooked: 'The selected period contains booked dates. Please choose another period!',
+                minStayError: 'Minimum stay is {n} nights. Please choose a longer period!',
+                nightsUnit: 'nights', perNightCalc: '/ night', totalLabel: 'Total',
+                bookingCompare: 'On Booking.com:', savingLabel: 'You save:',
+                formTitle: 'Booking details',
+                labelCheckin: 'Check-in', labelCheckout: 'Check-out',
+                labelGuests: 'Number of guests', labelRoom: 'Room type',
+                labelName: 'Name', labelEmail: 'Email', labelPhone: 'Phone number',
+                labelMessage: 'Message (optional)',
+                placeholderName: 'Full name', placeholderEmail: 'example@email.com',
+                placeholderPhone: '+36 30 123 4567',
+                placeholderMessage: 'Special requests, questions...',
+                errCheckin: 'Please select a check-in date on the calendar!',
+                errCheckout: 'Please select a check-out date on the calendar!',
+                errName: 'Please enter your name!',
+                errEmail: 'Please enter a valid email address!',
+                errPhone: 'Please enter a valid phone number!',
+                submitBtn: 'Send booking request →', submitting: 'Sending...',
+                whyDirectTitle: '🏷️ Why book directly?',
+                thankYouTitle: 'Thank you for your booking request!',
+                thankYouText: 'We have received your booking request. We will confirm within 24 hours by email or phone.',
+                newBookingBtn: 'New booking',
+                ctaTitle: 'Any questions? Give us a call!',
+                ctaSub: 'We are happy to help with your booking and answer any questions.',
+                ctaBookBtn: 'Book now →',
+                footerRooms: 'Our rooms', footerInfo: 'Information', footerContact: 'Contact',
+                footerNtak: 'NTAK registration no:', footerCredit: 'Created by:',
+                seoSuffix: 'Accommodation in Hajdúszoboszló',
+                mapFallback: 'Map coming soon',
+                mapTitle: 'Map'
+            }
+        };
+
+        function t(key) {
+            return (UI[currentLang] && UI[currentLang][key]) || UI.hu[key] || key;
+        }
+
+        function ct(val) {
+            if (val && typeof val === 'object' && !Array.isArray(val) && val[currentLang] !== undefined) {
+                return val[currentLang];
+            }
+            return (typeof val === 'string') ? val : (val || '');
+        }
+
+        async function loadConfig() {
+            try {
+                const response = await fetch('config.json');
+                if (!response.ok) throw new Error('Config not found');
+                CONFIG = await response.json();
+                renderAll(false);
+                initLangToggle();
+            } catch (err) {
+                console.error('Failed to load config.json:', err);
+                document.body.innerHTML = '<div style="text-align:center;padding:80px 20px;"><h2>Hiba történt</h2><p>A konfiguráció betöltése sikertelen. Kérjük, próbálja újra később.</p></div>';
+            }
+        }
+
+        /* ========================================
+           RENDER ALL SECTIONS
+           ======================================== */
+        function renderAll(isLangSwitch) {
+            renderNav();
+            renderHero();
+            renderStats();
+            renderRooms();
+            renderServices();
+            renderReviews();
+            renderLocation();
+            renderCTA();
+            renderFooter();
+            renderCalendar();
+            if (!isLangSwitch) {
+                initCalendar();
+                initBookingForm();
+            }
+            renderBookingForm();
+            updateSEO();
+            if (!isLangSwitch) {
+                initAnimations();
+                initNavScroll();
+                initMobileMenu();
+            } else {
+                // Nyelvváltáskor az új elemek azonnal láthatóak legyenek
+                document.querySelectorAll('.fade-up').forEach(function(el) {
+                    el.classList.add('visible');
+                });
+                initAnimations(); // Újra figyeljük az elemeket scroll-ra
+            }
+            applyTranslations();
+        }
+
+        /* ========================================
+           NAVIGATION
+           ======================================== */
+        function renderNav() {
+            const logo = document.getElementById('nav-logo');
+            const ctaBtn = document.getElementById('nav-cta-btn');
+            logo.innerHTML = '<span>' + escHtml(CONFIG.branding.logoText.split(' ')[0]) + '</span> ' + escHtml(CONFIG.branding.logoText.split(' ').slice(1).join(' '));
+            if (CONFIG.booking.ctaText) {
+                ctaBtn.textContent = ct(CONFIG.booking.ctaText);
+            }
+        }
+
+        function initNavScroll() {
+            const nav = document.getElementById('navbar');
+            let ticking = false;
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    requestAnimationFrame(function() {
+                        if (window.scrollY > 80) {
+                            nav.classList.add('scrolled');
+                        } else {
+                            nav.classList.remove('scrolled');
+                        }
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+        }
+
+        function initMobileMenu() {
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const links = mobileMenu.querySelectorAll('a');
+
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+            });
+
+            links.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
+
+        /* ========================================
+           HERO
+           ======================================== */
+        function renderHero() {
+            document.getElementById('hero-badge').textContent = ct(CONFIG.property.heroBadge);
+            document.getElementById('hero-title').textContent = ct(CONFIG.property.heroTitle);
+            document.getElementById('hero-subtitle').textContent = ct(CONFIG.property.heroSubtitle);
+        }
+
+        /* ========================================
+           STATS
+           ======================================== */
+        function renderStats() {
+            var grid = document.getElementById('stats-grid');
+            grid.innerHTML = CONFIG.stats.map(function(stat, i) {
+                return '<div class="stat-item fade-up fade-up-delay-' + (i + 1) + '">' +
+                    '<div class="stat-icon">' + escHtml(stat.icon || '') + '</div>' +
+                    '<div class="stat-value">' + escHtml(ct(stat.value)) + '</div>' +
+                    '<div class="stat-label">' + escHtml(ct(stat.label)) + '</div>' +
+                '</div>';
+            }).join('');
+        }
+
+        /* ========================================
+           ROOMS
+           ======================================== */
+        function renderRooms() {
+            var grid = document.getElementById('rooms-grid');
+            grid.innerHTML = CONFIG.rooms.map(function(room, i) {
+                var amenitiesHtml = room.amenities.map(function(a) {
+                    return '<span class="room-amenity">' + escHtml(ct(a)) + '</span>';
+                }).join('');
+
+                var badgeHtml = room.badge
+                    ? '<div class="room-badge">' + escHtml(ct(room.badge)) + '</div>'
+                    : '';
+
+                var compareHtml = room.bookingPrice
+                    ? '<span class="room-price-compare">Booking: ' + formatPrice(room.bookingPrice) + '</span>'
+                    : '';
+
+                var gallery = room.gallery || [room.image];
+                var galleryBadge = gallery.length > 1
+                    ? '<div class="room-gallery-badge" data-room="' + i + '">' +
+                        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>' +
+                        gallery.length + ' ' + t('photos') + '</div>'
+                    : '';
+
+                return '<div class="room-card fade-up fade-up-delay-' + ((i % 3) + 1) + '">' +
+                    '<div class="room-image" data-room="' + i + '" style="cursor:pointer;" title="' + t('galleryTooltip') + '">' +
+                        badgeHtml +
+                        '<img src="' + escAttr(room.image) + '" alt="' + escAttr(ct(room.name)) + '" loading="lazy">' +
+                        galleryBadge +
+                    '</div>' +
+                    '<div class="room-body">' +
+                        '<h3 class="room-name">' + escHtml(ct(room.name)) + '</h3>' +
+                        '<div class="room-meta">' +
+                            '<span>👤 ' + room.guests + ' ' + t('guests') + '</span>' +
+                            '<span>📐 ' + escHtml(room.size) + '</span>' +
+                        '</div>' +
+                        '<p class="room-desc">' + escHtml(ct(room.description)) + '</p>' +
+                        '<div class="room-amenities">' + amenitiesHtml + '</div>' +
+                        '<div class="room-footer">' +
+                            '<div class="room-price">' +
+                                '<span class="room-price-value">' + formatPrice(room.pricePerNight) + '</span>' +
+                                '<span class="room-price-unit">' + t('perNight') + '</span>' +
+                                compareHtml +
+                            '</div>' +
+                            '<a href="#foglalas" class="btn btn-primary room-book-btn">' + t('bookBtn') + '</a>' +
+                        '</div>' +
+                    '</div>' +
+                '</div>';
+            }).join('');
+
+            // Attach gallery click handlers
+            grid.querySelectorAll('.room-image').forEach(function(el) {
+                el.addEventListener('click', function(e) {
+                    if (e.target.closest('.room-book-btn')) return;
+                    var roomIdx = parseInt(el.getAttribute('data-room'));
+                    openLightbox(roomIdx, 0);
+                });
+            });
+        }
+
+        /* ========================================
+           SERVICES
+           ======================================== */
+        function renderServices() {
+            var grid = document.getElementById('services-grid');
+            grid.innerHTML = CONFIG.services.map(function(svc, i) {
+                return '<div class="service-card fade-up fade-up-delay-' + ((i % 3) + 1) + '">' +
+                    '<div class="service-icon">' + svc.icon + '</div>' +
+                    '<h3 class="service-title">' + escHtml(ct(svc.title)) + '</h3>' +
+                    '<p class="service-desc">' + escHtml(ct(svc.description)) + '</p>' +
+                '</div>';
+            }).join('');
+        }
+
+        /* ========================================
+           REVIEWS
+           ======================================== */
+        function renderReviews() {
+            var grid = document.getElementById('reviews-grid');
+            grid.innerHTML = CONFIG.reviews.map(function(rev, i) {
+                var stars = '';
+                for (var s = 0; s < rev.stars; s++) stars += '★';
+                for (var s2 = rev.stars; s2 < 5; s2++) stars += '☆';
+
+                return '<div class="review-card fade-up fade-up-delay-' + ((i % 3) + 1) + '">' +
+                    '<div class="review-stars">' + stars + '</div>' +
+                    '<p class="review-text">"' + escHtml(ct(rev.text)) + '"</p>' +
+                    '<div class="review-author">' +
+                        '<div class="review-author-info">' +
+                            '<span class="review-author-name">' + escHtml(rev.author) + '</span>' +
+                            '<span class="review-author-date">' + escHtml(ct(rev.date)) + '</span>' +
+                        '</div>' +
+                        '<span class="review-source">' + escHtml(rev.source) + '</span>' +
+                    '</div>' +
+                '</div>';
+            }).join('');
+        }
+
+        /* ========================================
+           LOCATION
+           ======================================== */
+        function renderLocation() {
+            document.getElementById('location-address').textContent = CONFIG.property.address;
+
+            var mapContainer = document.getElementById('location-map');
+            if (CONFIG.property.googleMapsEmbed) {
+                mapContainer.innerHTML = '<iframe src="' + escAttr(CONFIG.property.googleMapsEmbed) + '" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="' + t('mapTitle') + ' - ' + escAttr(CONFIG.property.name) + '"></iframe>';
+            } else {
+                mapContainer.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-light);">' + t('mapFallback') + '</div>';
+            }
+
+            var list = document.getElementById('distances-list');
+            list.innerHTML = CONFIG.distances.map(function(d) {
+                return '<div class="distance-item">' +
+                    '<span class="distance-icon">' + (d.icon || '📍') + '</span>' +
+                    '<div class="distance-info">' +
+                        '<span class="distance-place">' + escHtml(ct(d.place)) + '</span>' +
+                        '<span class="distance-value">' + escHtml(ct(d.distance)) + '</span>' +
+                    '</div>' +
+                '</div>';
+            }).join('');
+        }
+
+        /* ========================================
+           CTA
+           ======================================== */
+        function renderCTA() {
+            var container = document.getElementById('cta-contacts');
+            container.innerHTML =
+                '<a href="tel:' + escAttr(CONFIG.property.phone.replace(/\s/g, '')) + '" class="cta-contact">' +
+                    '<span class="cta-contact-icon">📞</span>' +
+                    '<span>' + escHtml(CONFIG.property.phone) + '</span>' +
+                '</a>' +
+                '<a href="mailto:' + escAttr(CONFIG.property.email) + '" class="cta-contact">' +
+                    '<span class="cta-contact-icon">✉️</span>' +
+                    '<span>' + escHtml(CONFIG.property.email) + '</span>' +
+                '</a>';
+        }
+
+        /* ========================================
+           CALENDAR
+           ======================================== */
+        var calState = {
+            baseMonth: new Date().getMonth(),
+            baseYear: new Date().getFullYear(),
+            checkin: null,
+            checkout: null,
+            bookedDates: new Set(),
+            selectedRoom: 0
+        };
+
+        // HU_MONTHS and HU_DAYS replaced by t('months') and t('days')
+
+        function loadBookedDates() {
+            // Fallback dátumok betöltése alapértelmezettként
+            calState.bookedDates = new Set(CONFIG.ical.fallbackBookedDates || []);
+
+            // Ha az iCal proxy engedélyezve van, próbáljuk meg lekérni
+            if (CONFIG.ical && CONFIG.ical.enabled && CONFIG.ical.proxyUrl &&
+                !CONFIG.ical.proxyUrl.includes('your-worker') &&
+                !CONFIG.ical.proxyUrl.includes('your-subdomain') &&
+                CONFIG.ical.feeds && CONFIG.ical.feeds.length > 0) {
+
+                var validFeeds = CONFIG.ical.feeds.filter(function(f) {
+                    return f.url && !f.url.includes('PLACEHOLDER') && !f.url.includes('xxxxx');
+                });
+
+                if (validFeeds.length > 0) {
+                    var feedsParam = btoa(JSON.stringify(validFeeds));
+                    var proxyUrl = CONFIG.ical.proxyUrl + '?feeds=' + encodeURIComponent(feedsParam);
+
+                    fetch(proxyUrl, { signal: AbortSignal.timeout(8000) })
+                        .then(function(res) {
+                            if (!res.ok) throw new Error('HTTP ' + res.status);
+                            return res.json();
+                        })
+                        .then(function(data) {
+                            if (data.bookedDates && Array.isArray(data.bookedDates)) {
+                                calState.bookedDates = new Set(data.bookedDates);
+                                calState.icalSource = 'ical';
+                                updateCalendarDisplay();
+                                console.log('[iCal] Foglalt napok betöltve: ' + data.bookedDates.length + ' nap, forrás: iCal proxy');
+                            }
+                        })
+                        .catch(function(err) {
+                            console.warn('[iCal] Proxy nem elérhető, fallback használata:', err.message);
+                            calState.icalSource = 'fallback';
+                        });
+                }
+            }
+        }
+
+        function renderCalendar() {
+            // Load booked dates
+            loadBookedDates();
+
+            // Room selector
+            var selector = document.getElementById('room-selector');
+            if (CONFIG.rooms.length > 1) {
+                var options = CONFIG.rooms.map(function(r, i) {
+                    return '<option value="' + i + '">' + escHtml(ct(r.name)) + ' — ' + formatPrice(r.pricePerNight) + t('perNightShort') + '</option>';
+                }).join('');
+                selector.innerHTML = '<label for="room-select">' + t('roomTypeLabel') + '</label>' +
+                    '<select id="room-select">' + options + '</select>';
+            } else {
+                selector.style.display = 'none';
+            }
+
+            updateCalendarDisplay();
+        }
+
+        function initCalendar() {
+            document.getElementById('cal-prev').addEventListener('click', function() {
+                var now = new Date();
+                if (calState.baseYear > now.getFullYear() ||
+                    (calState.baseYear === now.getFullYear() && calState.baseMonth > now.getMonth())) {
+                    calState.baseMonth--;
+                    if (calState.baseMonth < 0) {
+                        calState.baseMonth = 11;
+                        calState.baseYear--;
+                    }
+                    updateCalendarDisplay();
+                }
+            });
+
+            document.getElementById('cal-next').addEventListener('click', function() {
+                calState.baseMonth++;
+                if (calState.baseMonth > 11) {
+                    calState.baseMonth = 0;
+                    calState.baseYear++;
+                }
+                updateCalendarDisplay();
+            });
+
+            var roomSelect = document.getElementById('room-select');
+            if (roomSelect) {
+                roomSelect.addEventListener('change', function() {
+                    calState.selectedRoom = parseInt(this.value);
+                    updatePriceCalc();
+                });
+            }
+        }
+
+        function updateCalendarDisplay() {
+            var container = document.getElementById('calendars-container');
+            var navTitle = document.getElementById('cal-nav-title');
+
+            var m1 = calState.baseMonth;
+            var y1 = calState.baseYear;
+            var m2 = m1 + 1;
+            var y2 = y1;
+            if (m2 > 11) { m2 = 0; y2++; }
+
+            navTitle.textContent = t('months')[m1] + ' ' + y1 + ' — ' + t('months')[m2] + ' ' + y2;
+
+            container.innerHTML =
+                '<div class="calendar-month">' +
+                    '<div class="calendar-month-title">' + t('months')[m1] + ' ' + y1 + '</div>' +
+                    buildMonthGrid(y1, m1) +
+                '</div>' +
+                '<div class="calendar-month">' +
+                    '<div class="calendar-month-title">' + t('months')[m2] + ' ' + y2 + '</div>' +
+                    buildMonthGrid(y2, m2) +
+                '</div>';
+
+            // Attach day click handlers
+            container.querySelectorAll('.calendar-day[data-date]').forEach(function(el) {
+                if (!el.classList.contains('day-past') && !el.classList.contains('day-booked') && !el.classList.contains('day-empty')) {
+                    el.addEventListener('click', function() {
+                        handleDayClick(this.getAttribute('data-date'));
+                    });
+                }
+            });
+        }
+
+        function buildMonthGrid(year, month) {
+            var html = '<div class="calendar-grid">';
+
+            // Day names header
+            t('days').forEach(function(d) {
+                html += '<div class="calendar-dayname">' + d + '</div>';
+            });
+
+            var firstDay = new Date(year, month, 1).getDay();
+            // Convert Sunday=0 to Monday-first: Mon=0, Tue=1, ..., Sun=6
+            var startOffset = (firstDay === 0) ? 6 : firstDay - 1;
+            var daysInMonth = new Date(year, month + 1, 0).getDate();
+            var today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            // Empty cells for offset
+            for (var e = 0; e < startOffset; e++) {
+                html += '<div class="calendar-day day-empty"></div>';
+            }
+
+            for (var d = 1; d <= daysInMonth; d++) {
+                var dateStr = year + '-' + String(month + 1).padStart(2, '0') + '-' + String(d).padStart(2, '0');
+                var dateObj = new Date(year, month, d);
+                var classes = ['calendar-day'];
+
+                var isPast = dateObj < today;
+                var isToday = dateObj.getTime() === today.getTime();
+                var isBooked = calState.bookedDates.has(dateStr);
+
+                if (isPast && !isToday) {
+                    classes.push('day-past');
+                } else if (isBooked) {
+                    classes.push('day-booked');
+                }
+
+                if (isToday) classes.push('day-today');
+
+                // Selection highlighting
+                if (calState.checkin === dateStr) {
+                    classes.push('day-checkin');
+                } else if (calState.checkout === dateStr) {
+                    classes.push('day-checkout');
+                } else if (calState.checkin && calState.checkout) {
+                    if (dateStr > calState.checkin && dateStr < calState.checkout) {
+                        classes.push('day-range');
+                    }
+                }
+
+                html += '<div class="' + classes.join(' ') + '" data-date="' + dateStr + '">' + d + '</div>';
+            }
+
+            html += '</div>';
+            return html;
+        }
+
+        function handleDayClick(dateStr) {
+            hideCalMessage();
+
+            if (!calState.checkin || calState.checkout) {
+                // First click or reset: set check-in
+                calState.checkin = dateStr;
+                calState.checkout = null;
+                hidePriceCalc();
+                showCalMessage(t('selectCheckout'), 'info');
+            } else {
+                // Second click: set check-out
+                if (dateStr <= calState.checkin) {
+                    // Clicked before or same as checkin — restart
+                    calState.checkin = dateStr;
+                    calState.checkout = null;
+                    hidePriceCalc();
+                    showCalMessage(t('selectCheckout'), 'info');
+                } else {
+                    // Check if range contains booked dates
+                    if (rangeHasBooked(calState.checkin, dateStr)) {
+                        calState.checkin = null;
+                        calState.checkout = null;
+                        hidePriceCalc();
+                        showCalMessage(t('rangeBooked'), 'error');
+                    } else {
+                        // Check minimum stay
+                        var nights = countNights(calState.checkin, dateStr);
+                        var minStay = CONFIG.booking.minStay || 2;
+                        if (nights < minStay) {
+                            calState.checkout = null;
+                            showCalMessage(t('minStayError').replace('{n}', minStay), 'error');
+                        } else {
+                            calState.checkout = dateStr;
+                            hideCalMessage();
+                            updatePriceCalc();
+                        }
+                    }
+                }
+            }
+
+            syncFormDates();
+            updateCalendarDisplay();
+        }
+
+        function rangeHasBooked(start, end) {
+            var current = new Date(start);
+            var endDate = new Date(end);
+            current.setDate(current.getDate() + 1); // skip check-in day itself
+            while (current < endDate) {
+                var ds = current.getFullYear() + '-' +
+                    String(current.getMonth() + 1).padStart(2, '0') + '-' +
+                    String(current.getDate()).padStart(2, '0');
+                if (calState.bookedDates.has(ds)) return true;
+                current.setDate(current.getDate() + 1);
+            }
+            return false;
+        }
+
+        function countNights(start, end) {
+            var d1 = new Date(start);
+            var d2 = new Date(end);
+            return Math.round((d2 - d1) / (1000 * 60 * 60 * 24));
+        }
+
+        function updatePriceCalc() {
+            if (!calState.checkin || !calState.checkout) { hidePriceCalc(); return; }
+
+            var nights = countNights(calState.checkin, calState.checkout);
+            var room = CONFIG.rooms[calState.selectedRoom];
+            var totalDirect = nights * room.pricePerNight;
+            var bookingPrice = room.bookingPrice || Math.round(room.pricePerNight / (1 - CONFIG.booking.directDiscount / 100));
+            var totalBooking = nights * bookingPrice;
+            var saving = totalBooking - totalDirect;
+
+            var calc = document.getElementById('price-calc');
+            calc.innerHTML =
+                '<div class="price-calc-row">' +
+                    '<span class="price-calc-label">' + escHtml(ct(room.name)) + '</span>' +
+                    '<span class="price-calc-value" style="font-size:0.95rem;">' + formatPrice(room.pricePerNight) + ' ' + t('perNightCalc') + '</span>' +
+                '</div>' +
+                '<div class="price-calc-row">' +
+                    '<span class="price-calc-label">' + nights + ' ' + t('nightsUnit') + ' × ' + formatPrice(room.pricePerNight) + '</span>' +
+                    '<span class="price-calc-value" style="font-size:0.95rem;">' + formatPrice(totalDirect) + '</span>' +
+                '</div>' +
+                '<div class="price-calc-row price-calc-total">' +
+                    '<span class="price-calc-label" style="font-weight:600;color:var(--warm-dark);">' + t('totalLabel') + '</span>' +
+                    '<span class="price-calc-value">' + formatPrice(totalDirect) + '</span>' +
+                '</div>' +
+                '<div class="price-calc-compare">' +
+                    t('bookingCompare') + ' <span class="compare-old">' + formatPrice(totalBooking) + '</span>' +
+                    '<span class="price-calc-saving">' + t('savingLabel') + ' ' + formatPrice(saving) + '</span>' +
+                '</div>';
+            calc.classList.add('visible');
+        }
+
+        function hidePriceCalc() {
+            var calc = document.getElementById('price-calc');
+            calc.classList.remove('visible');
+        }
+
+        function showCalMessage(msg, type) {
+            var el = document.getElementById('cal-message');
+            el.textContent = msg;
+            el.className = 'calendar-message msg-' + type;
+        }
+
+        function hideCalMessage() {
+            var el = document.getElementById('cal-message');
+            el.className = 'calendar-message';
+        }
+
+        /* ========================================
+           BOOKING FORM
+           ======================================== */
+        function renderBookingForm() {
+            // Guest dropdown
+            var guestSelect = document.getElementById('f-guests');
+            var maxGuests = CONFIG.booking.maxGuests || 6;
+            var opts = '';
+            for (var g = 1; g <= maxGuests; g++) {
+                opts += '<option value="' + g + '">' + g + ' ' + t('guests') + '</option>';
+            }
+            guestSelect.innerHTML = opts;
+
+            // Room dropdown (synced with calendar room selector)
+            var roomSelect = document.getElementById('f-room');
+            roomSelect.innerHTML = CONFIG.rooms.map(function(r, i) {
+                return '<option value="' + i + '">' + escHtml(ct(r.name)) + '</option>';
+            }).join('');
+            roomSelect.value = calState.selectedRoom;
+
+            // Why direct list
+            var whyList = document.getElementById('why-direct-list');
+            var reasons = CONFIG.booking.whyDirect || [
+                '10% kedvezmény a Booking.com árhoz képest',
+                'Nincs közvetítői díj',
+                'Személyes egyeztetés a szállásadóval',
+                'Rugalmas fizetési feltételek'
+            ];
+            whyList.innerHTML = reasons.map(function(r) {
+                return '<li><span class="why-direct-check">✓</span> ' + escHtml(ct(r)) + '</li>';
+            }).join('');
+        }
+
+        function initBookingForm() {
+            var form = document.getElementById('booking-form');
+            var formSection = document.getElementById('booking-form-section');
+            var thankYou = document.getElementById('booking-thank-you');
+
+            // Sync room selector with calendar
+            var calRoomSelect = document.getElementById('room-select');
+            var formRoomSelect = document.getElementById('f-room');
+
+            if (calRoomSelect) {
+                calRoomSelect.addEventListener('change', function() {
+                    formRoomSelect.value = this.value;
+                });
+                formRoomSelect.addEventListener('change', function() {
+                    calRoomSelect.value = this.value;
+                    calState.selectedRoom = parseInt(this.value);
+                    updatePriceCalc();
+                });
+            }
+
+            // Form submission
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                if (!validateForm()) return;
+
+                var formData = getFormData();
+
+                // Try Formspree first
+                if (CONFIG.booking.emailService === 'formspree' && CONFIG.booking.formspreeEndpoint &&
+                    !CONFIG.booking.formspreeEndpoint.includes('xyzexample') &&
+                    !CONFIG.booking.formspreeEndpoint.includes('xxxxx')) {
+                    submitFormspree(formData);
+                } else {
+                    // Fallback: mailto
+                    submitMailto(formData);
+                    showThankYou();
+                }
+            });
+
+            // New booking button
+            document.getElementById('new-booking-btn').addEventListener('click', function() {
+                thankYou.classList.remove('visible');
+                formSection.style.display = '';
+                calState.checkin = null;
+                calState.checkout = null;
+                hidePriceCalc();
+                updateCalendarDisplay();
+                form.reset();
+                clearAllErrors();
+            });
+        }
+
+        // Sync form dates when calendar selection changes
+        function syncFormDates() {
+            var checkinInput = document.getElementById('f-checkin');
+            var checkoutInput = document.getElementById('f-checkout');
+            if (checkinInput) checkinInput.value = calState.checkin || '';
+            if (checkoutInput) checkoutInput.value = calState.checkout || '';
+        }
+
+        function validateForm() {
+            var valid = true;
+            clearAllErrors();
+
+            // Check dates
+            if (!calState.checkin) {
+                showFieldError('checkin');
+                valid = false;
+            }
+            if (!calState.checkout) {
+                showFieldError('checkout');
+                valid = false;
+            }
+
+            // Name
+            var name = document.getElementById('f-name').value.trim();
+            if (!name || name.length < 2) {
+                showFieldError('name');
+                valid = false;
+            }
+
+            // Email
+            var email = document.getElementById('f-email').value.trim();
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email || !emailRegex.test(email)) {
+                showFieldError('email');
+                valid = false;
+            }
+
+            // Phone
+            var phone = document.getElementById('f-phone').value.trim();
+            var phoneClean = phone.replace(/[\s\-\(\)]/g, '');
+            if (!phone || phoneClean.length < 8 || !/^\+?\d+$/.test(phoneClean)) {
+                showFieldError('phone');
+                valid = false;
+            }
+
+            return valid;
+        }
+
+        function showFieldError(field) {
+            var errEl = document.getElementById('err-' + field);
+            var input = document.getElementById('f-' + field);
+            if (errEl) errEl.classList.add('visible');
+            if (input) input.classList.add('input-error');
+        }
+
+        function clearAllErrors() {
+            document.querySelectorAll('.field-error').forEach(function(el) {
+                el.classList.remove('visible');
+            });
+            document.querySelectorAll('.input-error').forEach(function(el) {
+                el.classList.remove('input-error');
+            });
+        }
+
+        function getFormData() {
+            var room = CONFIG.rooms[calState.selectedRoom];
+            var nights = countNights(calState.checkin, calState.checkout);
+            var total = nights * room.pricePerNight;
+
+            return {
+                propertyName: CONFIG.property.name,
+                checkin: calState.checkin,
+                checkout: calState.checkout,
+                nights: nights,
+                room: ct(room.name),
+                guests: document.getElementById('f-guests').value,
+                name: document.getElementById('f-name').value.trim(),
+                email: document.getElementById('f-email').value.trim(),
+                phone: document.getElementById('f-phone').value.trim(),
+                message: document.getElementById('f-message').value.trim(),
+                pricePerNight: room.pricePerNight,
+                totalPrice: total
+            };
+        }
+
+        function submitFormspree(data) {
+            var btn = document.getElementById('form-submit-btn');
+            btn.disabled = true;
+            btn.textContent = t('submitting');
+
+            var body = {
+                'Szálláshely': data.propertyName,
+                'Érkezés': data.checkin,
+                'Távozás': data.checkout,
+                'Éjszakák': data.nights,
+                'Szobatípus': data.room,
+                'Vendégek': data.guests + ' fő',
+                'Becsült ár': formatPrice(data.totalPrice) + ' (' + formatPrice(data.pricePerNight) + '/éj)',
+                'Név': data.name,
+                'Email': data.email,
+                'Telefon': data.phone,
+                'Megjegyzés': data.message || '—',
+                '_replyto': data.email,
+                '_subject': 'Foglalási kérelem — ' + data.checkin + ' – ' + data.checkout
+            };
+
+            fetch(CONFIG.booking.formspreeEndpoint, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify(body)
+            })
+            .then(function(res) {
+                if (res.ok) {
+                    showThankYou();
+                } else {
+                    // Fallback to mailto if Formspree fails
+                    submitMailto(data);
+                    showThankYou();
+                }
+            })
+            .catch(function() {
+                submitMailto(data);
+                showThankYou();
+            })
+            .finally(function() {
+                btn.disabled = false;
+                btn.textContent = t('submitBtn');
+            });
+        }
+
+        function submitMailto(data) {
+            var subject = encodeURIComponent('Foglalási kérelem — ' + data.checkin + ' – ' + data.checkout);
+            var bodyLines = [
+                'Új foglalási kérelem érkezett!',
+                '',
+                'Szálláshely: ' + data.propertyName,
+                'Érkezés: ' + data.checkin,
+                'Távozás: ' + data.checkout,
+                'Éjszakák száma: ' + data.nights,
+                'Szobatípus: ' + data.room,
+                'Vendégek száma: ' + data.guests + ' fő',
+                '',
+                'Becsült ár: ' + formatPrice(data.totalPrice) + ' (' + formatPrice(data.pricePerNight) + '/éj)',
+                '',
+                'Vendég adatai:',
+                'Név: ' + data.name,
+                'Email: ' + data.email,
+                'Telefon: ' + data.phone,
+                'Megjegyzés: ' + (data.message || '—'),
+                '',
+                '---',
+                'Ez egy foglalási KÉRELEM, nem automatikus foglalás.',
+                'Kérjük, vegye fel a kapcsolatot a vendéggel 24 órán belül a visszaigazoláshoz.'
+            ];
+            var body = encodeURIComponent(bodyLines.join('\n'));
+            var email = CONFIG.booking.fallbackEmail || CONFIG.property.email;
+            window.location.href = 'mailto:' + email + '?subject=' + subject + '&body=' + body;
+        }
+
+        function showThankYou() {
+            var formSection = document.getElementById('booking-form-section');
+            var thankYou = document.getElementById('booking-thank-you');
+            formSection.style.display = 'none';
+            thankYou.classList.add('visible');
+            thankYou.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        /* ========================================
+           LIGHTBOX / GALLERY
+           ======================================== */
+        var lightboxState = { images: [], current: 0, roomName: '' };
+
+        function openLightbox(roomIdx, imgIdx) {
+            var room = CONFIG.rooms[roomIdx];
+            var gallery = room.gallery || [room.image];
+            lightboxState.images = gallery;
+            lightboxState.current = imgIdx || 0;
+            lightboxState.roomName = ct(room.name);
+
+            updateLightboxDisplay();
+            renderLightboxThumbs();
+            document.getElementById('lightbox-overlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox-overlay').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function updateLightboxDisplay() {
+            var img = document.getElementById('lightbox-img');
+            img.src = lightboxState.images[lightboxState.current];
+            img.alt = lightboxState.roomName + ' — ' + (lightboxState.current + 1) + '/' + lightboxState.images.length;
+            document.getElementById('lightbox-counter').textContent =
+                (lightboxState.current + 1) + ' / ' + lightboxState.images.length;
+            document.getElementById('lightbox-room-name').textContent = lightboxState.roomName;
+
+            // Update active thumb
+            document.querySelectorAll('.lightbox-thumb').forEach(function(th, i) {
+                th.classList.toggle('active', i === lightboxState.current);
+            });
+
+            // Show/hide nav buttons
+            document.getElementById('lightbox-prev').style.display = lightboxState.images.length > 1 ? '' : 'none';
+            document.getElementById('lightbox-next').style.display = lightboxState.images.length > 1 ? '' : 'none';
+        }
+
+        function renderLightboxThumbs() {
+            var container = document.getElementById('lightbox-thumbs');
+            container.innerHTML = lightboxState.images.map(function(src, i) {
+                return '<div class="lightbox-thumb' + (i === lightboxState.current ? ' active' : '') + '" data-idx="' + i + '">' +
+                    '<img src="' + escAttr(src) + '" alt="">' +
+                '</div>';
+            }).join('');
+
+            container.querySelectorAll('.lightbox-thumb').forEach(function(th) {
+                th.addEventListener('click', function() {
+                    lightboxState.current = parseInt(th.getAttribute('data-idx'));
+                    updateLightboxDisplay();
+                });
+            });
+        }
+
+        function lightboxNav(dir) {
+            lightboxState.current += dir;
+            if (lightboxState.current < 0) lightboxState.current = lightboxState.images.length - 1;
+            if (lightboxState.current >= lightboxState.images.length) lightboxState.current = 0;
+            updateLightboxDisplay();
+        }
+
+        // Event listeners
+        document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+        document.getElementById('lightbox-prev').addEventListener('click', function() { lightboxNav(-1); });
+        document.getElementById('lightbox-next').addEventListener('click', function() { lightboxNav(1); });
+
+        document.getElementById('lightbox-overlay').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (!document.getElementById('lightbox-overlay').classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') lightboxNav(-1);
+            if (e.key === 'ArrowRight') lightboxNav(1);
+        });
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        function renderFooter() {
+            var grid = document.getElementById('footer-grid');
+
+            // Rooms links
+            var roomLinks = CONFIG.rooms.map(function(r) {
+                return '<li><a href="#szobak">' + escHtml(ct(r.name)) + '</a></li>';
+            }).join('');
+
+            // Info links
+            var infoLinks = CONFIG.footer.links.map(function(l) {
+                return '<li><a href="' + escAttr(l.url) + '">' + escHtml(ct(l.text)) + '</a></li>';
+            }).join('') + '<li><a href="#">NTAK: ' + escHtml(CONFIG.property.ntak) + '</a></li>';
+
+            // Contact links
+            var contactLinks =
+                '<li><a href="tel:' + escAttr(CONFIG.property.phone.replace(/\s/g, '')) + '">' + escHtml(CONFIG.property.phone) + '</a></li>' +
+                '<li><a href="mailto:' + escAttr(CONFIG.property.email) + '">' + escHtml(CONFIG.property.email) + '</a></li>';
+
+            grid.innerHTML =
+                '<div class="footer-brand">' +
+                    '<h3>' + escHtml(CONFIG.property.name) + '</h3>' +
+                    '<p>' + escHtml(ct(CONFIG.footer.description)) + '</p>' +
+                    '<div class="footer-social">' +
+                        (CONFIG.property.facebook ? '<a href="' + escAttr(CONFIG.property.facebook) + '" aria-label="Facebook" target="_blank" rel="noopener">f</a>' : '') +
+                        (CONFIG.property.instagram ? '<a href="' + escAttr(CONFIG.property.instagram) + '" aria-label="Instagram" target="_blank" rel="noopener">ig</a>' : '') +
+                    '</div>' +
+                '</div>' +
+                '<div class="footer-col"><h4>' + t('footerRooms') + '</h4><ul>' + roomLinks + '</ul></div>' +
+                '<div class="footer-col"><h4>' + t('footerInfo') + '</h4><ul>' + infoLinks + '</ul></div>' +
+                '<div class="footer-col"><h4>' + t('footerContact') + '</h4><ul>' + contactLinks + '</ul></div>';
+
+            var bottom = document.getElementById('footer-bottom');
+            bottom.innerHTML =
+                '<span class="footer-ntak">' + t('footerNtak') + ' ' + escHtml(CONFIG.property.ntak) + '</span>' +
+                '<span class="footer-credit">' + t('footerCredit') + ' <a href="' + escAttr(CONFIG.branding.creditUrl) + '" target="_blank" rel="noopener">' + escHtml(CONFIG.branding.creditText) + '</a></span>';
+        }
+
+        /* ========================================
+           SEO UPDATE
+           ======================================== */
+        function updateSEO() {
+            document.title = CONFIG.property.name + ' — ' + t('seoSuffix');
+            var metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) metaDesc.content = ct(CONFIG.property.description);
+            var ogTitle = document.querySelector('meta[property="og:title"]');
+            if (ogTitle) ogTitle.content = CONFIG.property.name + ' — ' + t('seoSuffix');
+            var ogDesc = document.querySelector('meta[property="og:description"]');
+            if (ogDesc) ogDesc.content = ct(CONFIG.property.description);
+            document.documentElement.lang = currentLang;
+
+            // Update JSON-LD
+            var jsonLd = document.getElementById('jsonld-data');
+            if (jsonLd) {
+                var ld = {
+                    "@context": "https://schema.org",
+                    "@type": "LodgingBusiness",
+                    "name": CONFIG.property.name,
+                    "description": ct(CONFIG.property.description),
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": CONFIG.property.address.split(',').pop().trim(),
+                        "addressLocality": "Hajdúszoboszló",
+                        "postalCode": "4200",
+                        "addressCountry": "HU"
+                    },
+                    "telephone": CONFIG.property.phone.replace(/\s/g, ''),
+                    "email": CONFIG.property.email,
+                    "priceRange": CONFIG.rooms[0].pricePerNight + '-' + CONFIG.rooms[CONFIG.rooms.length-1].pricePerNight + ' HUF'
+                };
+                jsonLd.textContent = JSON.stringify(ld);
+            }
+        }
+
+        /* ========================================
+           TRANSLATIONS
+           ======================================== */
+        function applyTranslations() {
+            // data-i18n: replace textContent
+            document.querySelectorAll('[data-i18n]').forEach(function(el) {
+                var key = el.getAttribute('data-i18n');
+                var text = t(key);
+                if (text !== key) el.textContent = text;
+            });
+
+            // data-i18n-placeholder: replace placeholder
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+                var key = el.getAttribute('data-i18n-placeholder');
+                var text = t(key);
+                if (text !== key) el.placeholder = text;
+            });
+
+            document.documentElement.lang = currentLang;
+        }
+
+        function initLangToggle() {
+            // Desktop toggle
+            var toggle = document.getElementById('lang-toggle');
+            if (toggle) {
+                toggle.addEventListener('click', function(e) {
+                    var opt = e.target.closest('.lang-opt');
+                    if (!opt) return;
+                    switchLanguage(opt.getAttribute('data-lang'));
+                });
+            }
+
+            // Mobile toggle
+            var mobileToggle = document.getElementById('mobile-lang-toggle');
+            if (mobileToggle) {
+                mobileToggle.addEventListener('click', function(e) {
+                    var btn = e.target.closest('button');
+                    if (!btn) return;
+                    switchLanguage(btn.getAttribute('data-lang'));
+                    // Close mobile menu
+                    var hamburger = document.getElementById('hamburger');
+                    var mobileMenu = document.getElementById('mobile-menu');
+                    if (hamburger) hamburger.classList.remove('active');
+                    if (mobileMenu) mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            }
+
+            updateLangToggleUI();
+        }
+
+        function switchLanguage(lang) {
+            if (lang === currentLang) return;
+            currentLang = lang;
+            localStorage.setItem('villa-termal-lang', lang);
+
+            // Save form values before re-render
+            var savedName = document.getElementById('f-name').value;
+            var savedEmail = document.getElementById('f-email').value;
+            var savedPhone = document.getElementById('f-phone').value;
+            var savedMessage = document.getElementById('f-message').value;
+            var savedGuests = document.getElementById('f-guests').value;
+
+            renderAll(true);
+
+            // Restore form values
+            document.getElementById('f-name').value = savedName;
+            document.getElementById('f-email').value = savedEmail;
+            document.getElementById('f-phone').value = savedPhone;
+            document.getElementById('f-message').value = savedMessage;
+            document.getElementById('f-guests').value = savedGuests;
+            syncFormDates();
+
+            updateLangToggleUI();
+        }
+
+        function updateLangToggleUI() {
+            // Desktop
+            document.querySelectorAll('#lang-toggle .lang-opt').forEach(function(el) {
+                el.classList.toggle('active', el.getAttribute('data-lang') === currentLang);
+            });
+            // Mobile
+            document.querySelectorAll('#mobile-lang-toggle button').forEach(function(el) {
+                el.classList.toggle('active', el.getAttribute('data-lang') === currentLang);
+            });
+        }
+
+        /* ========================================
+           SCROLL ANIMATIONS
+           ======================================== */
+        function initAnimations() {
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -40px 0px'
+            });
+
+            document.querySelectorAll('.fade-up').forEach(function(el) {
+                observer.observe(el);
+            });
+        }
+
+        /* ========================================
+           UTILITIES
+           ======================================== */
+        function escHtml(str) {
+            if (!str) return '';
+            var div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        function escAttr(str) {
+            if (!str) return '';
+            return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+
+        function formatPrice(num) {
+            if (!num) return '';
+            return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' Ft';
+        }
+
+        /* ========================================
+           INIT
+           ======================================== */
+        loadConfig();
+    })();
+    </script>
+</body>
+</html>

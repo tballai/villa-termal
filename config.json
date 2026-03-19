@@ -1,0 +1,276 @@
+{
+  "property": {
+    "name": "Villa Termál",
+    "tagline": {
+      "hu": "Családias szállás Hajdúszoboszló szívében",
+      "en": "Family accommodation in the heart of Hajdúszoboszló"
+    },
+    "description": {
+      "hu": "Családias hangulatú, felújított szállás a Hungarospa Gyógyfürdőtől mindössze 3 percre gyalog. Klimatizált szobák, ingyenes WiFi, privát parkoló.",
+      "en": "Renovated family accommodation just 3 minutes walk from Hungarospa Thermal Bath. Air-conditioned rooms, free WiFi, private parking."
+    },
+    "heroTitle": {
+      "hu": "Pihenjen a gyógyvíz közelében",
+      "en": "Relax near the thermal waters"
+    },
+    "heroSubtitle": {
+      "hu": "Fedezze fel Hajdúszoboszló legkedveltebb családias szállását — közvetlenül a fürdő mellett, a belváros szívében. Foglaljon nálunk közvetlenül és élvezze a kedvezményes árakat!",
+      "en": "Discover the most popular family accommodation in Hajdúszoboszló — right next to the thermal bath, in the heart of the city. Book directly with us and enjoy discounted rates!"
+    },
+    "heroBadge": {
+      "hu": "✦ Hajdúszoboszló szívében",
+      "en": "✦ In the heart of Hajdúszoboszló"
+    },
+    "address": "4200 Hajdúszoboszló, Fürdő sor 12.",
+    "phone": "+36 30 123 4567",
+    "email": "info@villatermal.hu",
+    "googleMapsEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.123!2d21.3923!3d47.4498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDI2JzU5LjMiTiAyMcKwMjMnMzIuMyJF!5e0!3m2!1shu!2shu!4v1234567890",
+    "facebook": "https://facebook.com/villatermal",
+    "instagram": "https://instagram.com/villatermal",
+    "ntak": "MA19876543"
+  },
+  "branding": {
+    "primaryColor": "#C4975C",
+    "primaryColorLight": "#E8D5B5",
+    "darkColor": "#1A1A1A",
+    "warmDarkColor": "#2C2520",
+    "creamColor": "#FAF6F1",
+    "creamDarkColor": "#F0E8DC",
+    "textColor": "#3D3530",
+    "textLightColor": "#7A7068",
+    "logoText": "Villa Termál",
+    "creditText": "Ballai Digital",
+    "creditUrl": "https://ballaidigital.hu"
+  },
+  "stats": [
+    { "value": "4.9", "label": { "hu": "Google értékelés", "en": "Google rating" }, "icon": "⭐" },
+    { "value": "500+", "label": { "hu": "Elégedett vendég", "en": "Happy guests" }, "icon": "👥" },
+    { "value": { "hu": "3 perc", "en": "3 min" }, "label": { "hu": "Gyógyfürdőtől", "en": "From thermal bath" }, "icon": "🏊" },
+    { "value": "2015", "label": { "hu": "Óta várjuk vendégeinket", "en": "Welcoming guests since" }, "icon": "🏠" }
+  ],
+  "rooms": [
+    {
+      "id": "ketagyas",
+      "name": { "hu": "Kétágyas szoba", "en": "Double Room" },
+      "description": {
+        "hu": "Kényelmes, klimatizált szoba franciaággyal és erkéllyel a belső kertre néző kilátással. Tökéletes pároknak.",
+        "en": "Comfortable, air-conditioned room with a double bed and balcony overlooking the inner garden. Perfect for couples."
+      },
+      "guests": 2,
+      "size": "22 m²",
+      "amenities": [
+        { "hu": "Klíma", "en": "A/C" },
+        { "hu": "WiFi", "en": "WiFi" },
+        { "hu": "Smart TV", "en": "Smart TV" },
+        { "hu": "Mini hűtő", "en": "Mini fridge" },
+        { "hu": "Erkély", "en": "Balcony" },
+        { "hu": "Hajszárító", "en": "Hairdryer" }
+      ],
+      "pricePerNight": 18000,
+      "bookingPrice": 20000,
+      "badge": { "hu": "Népszerű", "en": "Popular" },
+      "image": "images/room1.jpg",
+      "gallery": ["images/room1.jpg", "images/room2.webp"]
+    },
+    {
+      "id": "csaladi",
+      "name": { "hu": "Családi apartman", "en": "Family Apartment" },
+      "description": {
+        "hu": "Tágas, két szobás apartman nappalival, teljes konyhával és két fürdőszobával. Ideális családoknak vagy baráti társaságoknak.",
+        "en": "Spacious two-bedroom apartment with living room, full kitchen and two bathrooms. Ideal for families or groups of friends."
+      },
+      "guests": 4,
+      "size": "45 m²",
+      "amenities": [
+        { "hu": "Klíma", "en": "A/C" },
+        { "hu": "WiFi", "en": "WiFi" },
+        { "hu": "Smart TV", "en": "Smart TV" },
+        { "hu": "Teljes konyha", "en": "Full kitchen" },
+        { "hu": "Mosógép", "en": "Washing machine" },
+        { "hu": "Erkély", "en": "Balcony" },
+        { "hu": "Hajszárító", "en": "Hairdryer" },
+        { "hu": "Vasaló", "en": "Iron" }
+      ],
+      "pricePerNight": 28000,
+      "bookingPrice": 32000,
+      "badge": { "hu": "Családoknak", "en": "For families" },
+      "image": "images/csaladi1.jpg",
+      "gallery": ["images/csaladi1.jpg", "images/csaladi2.jpg", "images/csaladi3.jpeg"]
+    },
+    {
+      "id": "premium",
+      "name": { "hu": "Prémium apartman", "en": "Premium Apartment" },
+      "description": {
+        "hu": "Luxus apartman jakuzzival, panorámás kilátással a parkra. Két hálószoba, nappali, teljes konyha és privát terasz.",
+        "en": "Luxury apartment with jacuzzi and panoramic park views. Two bedrooms, living room, full kitchen and private terrace."
+      },
+      "guests": 5,
+      "size": "60 m²",
+      "amenities": [
+        { "hu": "Klíma", "en": "A/C" },
+        { "hu": "WiFi", "en": "WiFi" },
+        { "hu": "Smart TV", "en": "Smart TV" },
+        { "hu": "Jakuzzi", "en": "Jacuzzi" },
+        { "hu": "Teljes konyha", "en": "Full kitchen" },
+        { "hu": "Mosógép", "en": "Washing machine" },
+        { "hu": "Privát terasz", "en": "Private terrace" },
+        { "hu": "Hajszárító", "en": "Hairdryer" },
+        { "hu": "Vasaló", "en": "Iron" },
+        { "hu": "Nespresso gép", "en": "Nespresso machine" }
+      ],
+      "pricePerNight": 38000,
+      "bookingPrice": 44000,
+      "badge": { "hu": "Prémium", "en": "Premium" },
+      "image": "images/premiumr.jpg",
+      "gallery": ["images/premiumr.jpg", "images/premium2.jpg"]
+    }
+  ],
+  "services": [
+    {
+      "icon": "🅿️",
+      "title": { "hu": "Ingyenes parkoló", "en": "Free parking" },
+      "description": {
+        "hu": "Zárt, kamerával felügyelt privát parkoló közvetlenül a szállás mellett.",
+        "en": "Enclosed, camera-monitored private parking right next to the accommodation."
+      }
+    },
+    {
+      "icon": "📶",
+      "title": { "hu": "Gyors WiFi", "en": "Fast WiFi" },
+      "description": {
+        "hu": "100 Mbps optikai internet az egész épületben, korlátlanul.",
+        "en": "100 Mbps fibre-optic internet throughout the building, unlimited."
+      }
+    },
+    {
+      "icon": "🏊",
+      "title": { "hu": "Fürdőbelépő kedvezmény", "en": "Thermal bath discount" },
+      "description": {
+        "hu": "10% kedvezmény a Hungarospa összes szolgáltatására vendégeinknek.",
+        "en": "10% discount on all Hungarospa services for our guests."
+      }
+    },
+    {
+      "icon": "🥐",
+      "title": { "hu": "Reggeli csomag", "en": "Breakfast package" },
+      "description": {
+        "hu": "Friss pékáru, felvágott, sajt, gyümölcs — kérésre a szobába szállítva.",
+        "en": "Fresh pastries, cold cuts, cheese, fruit — delivered to your room on request."
+      }
+    },
+    {
+      "icon": "🔑",
+      "title": { "hu": "Önálló bejelentkezés", "en": "Self check-in" },
+      "description": {
+        "hu": "Kódos kulcsszéf a bejáratnál — érkezzen bármikor, mi készenlétben vagyunk.",
+        "en": "Key safe with code at the entrance — arrive anytime, we are always ready."
+      }
+    },
+    {
+      "icon": "👶",
+      "title": { "hu": "Családbarát felszerelés", "en": "Family-friendly equipment" },
+      "description": {
+        "hu": "Babaágy, etetőszék és gyerekjátékok díjmentesen igényelhetők.",
+        "en": "Baby cot, high chair and toys available free of charge."
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "stars": 5,
+      "text": {
+        "hu": "Fantasztikus hely! A szoba tiszta és modern volt, a fürdő tényleg 3 percre van. A házigazda nagyon kedves és segítőkész. Jövőre is itt foglalunk!",
+        "en": "Fantastic place! The room was clean and modern, the thermal bath is really 3 minutes away. The host was very kind and helpful. We will book here again next year!"
+      },
+      "author": "Kovács Anna",
+      "date": { "hu": "2025. augusztus", "en": "August 2025" },
+      "source": "Google"
+    },
+    {
+      "stars": 5,
+      "text": {
+        "hu": "Már harmadszor voltunk itt és mindig tökéletes. A családi apartman tágas, a konyha jól felszerelt, a gyerekek imádják a kertet. A Booking-on találtuk, de most már közvetlenül foglalunk — olcsóbb is!",
+        "en": "This was our third visit and it is always perfect. The family apartment is spacious, the kitchen well equipped, the kids love the garden. We found it on Booking but now we book directly — it is cheaper too!"
+      },
+      "author": "Nagy Péter",
+      "date": { "hu": "2025. július", "en": "July 2025" },
+      "source": "Booking.com"
+    },
+    {
+      "stars": 5,
+      "text": {
+        "hu": "A prémium apartman jakuzzija egyszerűen álomszerű volt. A kilátás a parkra gyönyörű, a terasz este romantikus. Párkapcsolat-felfrissítőnek tökéletes választás!",
+        "en": "The jacuzzi in the premium apartment was simply dreamy. The view of the park is beautiful, the terrace is romantic in the evening. Perfect choice for a romantic getaway!"
+      },
+      "author": "Szabó Éva",
+      "date": { "hu": "2025. szeptember", "en": "September 2025" },
+      "source": "Szállás.hu"
+    }
+  ],
+  "distances": [
+    { "place": { "hu": "Hungarospa Gyógyfürdő", "en": "Hungarospa Thermal Bath" }, "distance": { "hu": "3 perc gyalog", "en": "3 min walk" }, "icon": "🏊" },
+    { "place": { "hu": "SPAR szupermarket", "en": "SPAR supermarket" }, "distance": { "hu": "5 perc gyalog", "en": "5 min walk" }, "icon": "🛒" },
+    { "place": { "hu": "Étteremsor (Szilfás sétány)", "en": "Restaurant row (Szilfás promenade)" }, "distance": { "hu": "4 perc gyalog", "en": "4 min walk" }, "icon": "🍽️" },
+    { "place": { "hu": "Aquapark", "en": "Aquapark" }, "distance": { "hu": "8 perc gyalog", "en": "8 min walk" }, "icon": "🎢" },
+    { "place": { "hu": "Vasútállomás", "en": "Train station" }, "distance": { "hu": "12 perc gyalog", "en": "12 min walk" }, "icon": "🚂" },
+    { "place": { "hu": "Debrecen reptér", "en": "Debrecen airport" }, "distance": { "hu": "25 perc autóval", "en": "25 min by car" }, "icon": "✈️" }
+  ],
+  "booking": {
+    "directDiscount": 10,
+    "emailService": "formspree",
+    "formspreeEndpoint": "https://formspree.io/f/xyzexample",
+    "fallbackEmail": "info@villatermal.hu",
+    "currency": "Ft",
+    "minStay": 2,
+    "maxGuests": 6,
+    "ctaText": {
+      "hu": "Foglaljon közvetlenül — 10% kedvezmény!",
+      "en": "Book directly — 10% discount!"
+    },
+    "whyDirect": [
+      { "hu": "10% kedvezmény a Booking.com árhoz képest", "en": "10% discount compared to Booking.com" },
+      { "hu": "Nincs közvetítői díj", "en": "No intermediary fees" },
+      { "hu": "Személyes egyeztetés a szállásadóval", "en": "Personal communication with the host" },
+      { "hu": "Rugalmas fizetési feltételek", "en": "Flexible payment terms" }
+    ]
+  },
+  "ical": {
+    "enabled": true,
+    "feeds": [
+      {
+        "name": "Booking.com",
+        "url": "https://admin.booking.com/hotel/hoteladmin/ical.html?t=PLACEHOLDER_BOOKING_TOKEN"
+      },
+      {
+        "name": "Airbnb",
+        "url": "https://www.airbnb.com/calendar/ical/PLACEHOLDER_AIRBNB_ID.ics"
+      }
+    ],
+    "proxyUrl": "https://your-worker.your-subdomain.workers.dev/ical",
+    "fallbackBookedDates": [
+      "2026-03-20", "2026-03-21", "2026-03-22",
+      "2026-04-01", "2026-04-02", "2026-04-03", "2026-04-04",
+      "2026-04-10", "2026-04-11", "2026-04-12",
+      "2026-04-25", "2026-04-26", "2026-04-27", "2026-04-28", "2026-04-29",
+      "2026-05-05", "2026-05-06", "2026-05-07",
+      "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-18",
+      "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05",
+      "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23",
+      "2026-07-01", "2026-07-02", "2026-07-03", "2026-07-04", "2026-07-05", "2026-07-06", "2026-07-07",
+      "2026-07-15", "2026-07-16", "2026-07-17", "2026-07-18", "2026-07-19",
+      "2026-08-01", "2026-08-02", "2026-08-03", "2026-08-04",
+      "2026-08-10", "2026-08-11", "2026-08-12", "2026-08-13", "2026-08-14"
+    ]
+  },
+  "footer": {
+    "description": {
+      "hu": "Családias hangulatú szállás Hajdúszoboszló szívében, a Hungarospa Gyógyfürdőtől mindössze 3 perc sétára.",
+      "en": "Family accommodation in the heart of Hajdúszoboszló, just a 3-minute walk from Hungarospa Thermal Bath."
+    },
+    "links": [
+      { "text": { "hu": "Házirendünk", "en": "House rules" }, "url": "#" },
+      { "text": { "hu": "ÁSZF", "en": "Terms & Conditions" }, "url": "#" },
+      { "text": { "hu": "Adatvédelem", "en": "Privacy policy" }, "url": "#" }
+    ]
+  }
+}
