@@ -327,6 +327,17 @@
             overflow: hidden;
         }
 
+        .hero-bg {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.18;
+            z-index: 0;
+            pointer-events: none;
+        }
+
         .hero::before {
             content: '';
             position: absolute;
@@ -336,6 +347,7 @@
                 radial-gradient(ellipse at 80% 20%, rgba(196, 151, 92, 0.05) 0%, transparent 50%),
                 radial-gradient(ellipse at 50% 80%, rgba(196, 151, 92, 0.06) 0%, transparent 40%);
             pointer-events: none;
+            z-index: 1;
         }
 
         .hero::after {
@@ -2163,6 +2175,7 @@
 
     <!-- HERO -->
     <section class="hero" id="hero">
+        <div class="hero-bg" id="hero-bg"></div>
         <div class="hero-decor hero-decor-1"></div>
         <div class="hero-decor hero-decor-2"></div>
         <div class="hero-decor hero-decor-3"></div>
@@ -2834,6 +2847,12 @@
             document.getElementById('hero-badge').textContent = ct(CONFIG.property.heroBadge);
             document.getElementById('hero-title').textContent = ct(CONFIG.property.heroTitle);
             document.getElementById('hero-subtitle').textContent = ct(CONFIG.property.heroSubtitle);
+
+            // Hero background image
+            var heroBg = document.getElementById('hero-bg');
+            if (heroBg && CONFIG.property.heroImage) {
+                heroBg.style.backgroundImage = 'url(' + CONFIG.property.heroImage + ')';
+            }
         }
 
         /* ========================================
