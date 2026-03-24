@@ -392,7 +392,10 @@
         }
 
         .hero-badge {
-            display: inline-block;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             padding: 8px 24px;
             background: rgba(196, 151, 92, 0.12);
             border: 1px solid rgba(196, 151, 92, 0.25);
@@ -402,6 +405,30 @@
             font-weight: 500;
             letter-spacing: 0.08em;
             margin-bottom: 28px;
+            overflow: hidden;
+            cursor: default;
+        }
+        .hero-badge .hero-badge-wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 200%;
+            height: 200%;
+            border-radius: 40%;
+            background: var(--gold);
+            transform: translate(-100%, 100%);
+            transition: transform 0.5s var(--ease-out);
+        }
+        .hero-badge:hover .hero-badge-wave {
+            transform: translate(-30%, 30%);
+        }
+        .hero-badge .hero-badge-text {
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s var(--ease-out);
+        }
+        .hero-badge:hover .hero-badge-text {
+            color: var(--dark);
         }
 
         .hero h1 {
@@ -2954,7 +2981,7 @@
            HERO
            ======================================== */
         function renderHero() {
-            document.getElementById('hero-badge').textContent = ct(CONFIG.property.heroBadge);
+            document.getElementById('hero-badge').innerHTML = '<span class="hero-badge-wave"></span><span class="hero-badge-text">' + escHtml(ct(CONFIG.property.heroBadge)) + '</span>';
             document.getElementById('hero-title').textContent = ct(CONFIG.property.heroTitle);
             document.getElementById('hero-subtitle').textContent = ct(CONFIG.property.heroSubtitle);
 
