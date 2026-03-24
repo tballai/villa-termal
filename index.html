@@ -291,7 +291,9 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 28px;
+            gap: 20px;
+            padding: 70px 24px 32px;
+            overflow-y: auto;
             opacity: 0;
             transition: opacity 0.4s var(--ease-out);
         }
@@ -303,7 +305,7 @@
 
         .mobile-menu a {
             font-family: var(--font-heading);
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             color: var(--cream);
             font-weight: 500;
             transition: color 0.3s var(--ease-out);
@@ -909,16 +911,12 @@
         .lang-dropdown-btn {
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 4px;
             background: none;
             border: 1px solid rgba(255,255,255,0.3);
             border-radius: 100px;
-            padding: 5px 12px 5px 8px;
+            padding: 6px 10px;
             cursor: pointer;
-            font-family: var(--font-body);
-            font-size: 0.8rem;
-            font-weight: 600;
-            letter-spacing: 0.03em;
             color: rgba(255,255,255,0.85);
             transition: border-color 0.3s var(--ease-out), background 0.3s var(--ease-out);
         }
@@ -928,14 +926,25 @@
         }
 
         .lang-dropdown-btn .lang-flag {
-            font-size: 1.1rem;
-            line-height: 1;
+            width: 22px;
+            height: 15px;
+            border-radius: 2px;
+            overflow: hidden;
+            display: flex;
+            flex-shrink: 0;
+        }
+
+        .lang-dropdown-btn .lang-flag svg,
+        .lang-flag svg {
+            width: 100%;
+            height: 100%;
+            display: block;
         }
 
         .lang-dropdown-btn .lang-arrow {
-            font-size: 0.55rem;
-            margin-left: 2px;
+            font-size: 0.5rem;
             transition: transform 0.25s var(--ease-out);
+            opacity: 0.7;
         }
 
         .lang-dropdown.open .lang-dropdown-btn .lang-arrow {
@@ -1001,8 +1010,12 @@
         }
 
         .lang-dropdown-item .lang-flag {
-            font-size: 1.2rem;
-            line-height: 1;
+            width: 22px;
+            height: 15px;
+            border-radius: 2px;
+            overflow: hidden;
+            display: flex;
+            flex-shrink: 0;
         }
 
         /* Mobile lang toggle in mobile menu */
@@ -1011,7 +1024,7 @@
             flex-wrap: wrap;
             gap: 8px;
             justify-content: center;
-            margin-top: 24px;
+            margin-top: 12px;
         }
 
         .mobile-lang-toggle button {
@@ -1031,7 +1044,12 @@
         }
 
         .mobile-lang-toggle button .lang-flag {
-            font-size: 1.15rem;
+            width: 20px;
+            height: 14px;
+            border-radius: 2px;
+            overflow: hidden;
+            display: inline-flex;
+            flex-shrink: 0;
         }
 
         .mobile-lang-toggle button.active {
@@ -2104,17 +2122,16 @@
             </ul>
             <div class="lang-dropdown desktop-only" id="lang-dropdown">
                 <button class="lang-dropdown-btn" id="lang-dropdown-btn" aria-label="Nyelv váltás">
-                    <span class="lang-flag" id="lang-current-flag">🇭🇺</span>
-                    <span class="lang-code" id="lang-current-code">HU</span>
+                    <span class="lang-flag" id="lang-current-flag"></span>
                     <span class="lang-arrow">▼</span>
                 </button>
                 <div class="lang-dropdown-menu" id="lang-dropdown-menu">
-                    <button class="lang-dropdown-item active" data-lang="hu"><span class="lang-flag">🇭🇺</span> Magyar</button>
-                    <button class="lang-dropdown-item" data-lang="en"><span class="lang-flag">🇬🇧</span> English</button>
-                    <button class="lang-dropdown-item" data-lang="de"><span class="lang-flag">🇩🇪</span> Deutsch</button>
-                    <button class="lang-dropdown-item" data-lang="pl"><span class="lang-flag">🇵🇱</span> Polski</button>
-                    <button class="lang-dropdown-item" data-lang="sk"><span class="lang-flag">🇸🇰</span> Slovenčina</button>
-                    <button class="lang-dropdown-item" data-lang="ro"><span class="lang-flag">🇷🇴</span> Română</button>
+                    <button class="lang-dropdown-item active" data-lang="hu"><span class="lang-flag" data-flag="hu"></span> Magyar</button>
+                    <button class="lang-dropdown-item" data-lang="en"><span class="lang-flag" data-flag="en"></span> English</button>
+                    <button class="lang-dropdown-item" data-lang="de"><span class="lang-flag" data-flag="de"></span> Deutsch</button>
+                    <button class="lang-dropdown-item" data-lang="pl"><span class="lang-flag" data-flag="pl"></span> Polski</button>
+                    <button class="lang-dropdown-item" data-lang="sk"><span class="lang-flag" data-flag="sk"></span> Slovenčina</button>
+                    <button class="lang-dropdown-item" data-lang="ro"><span class="lang-flag" data-flag="ro"></span> Română</button>
                 </div>
             </div>
             <a href="#foglalas" class="nav-cta desktop-only" id="nav-cta-btn">Foglaljon most</a>
@@ -2135,12 +2152,12 @@
         <a href="#helyszin" data-i18n="navLocation">Helyszín</a>
         <a href="#kapcsolat" data-i18n="navContact">Kapcsolat</a>
         <div class="mobile-lang-toggle" id="mobile-lang-toggle">
-            <button class="active" data-lang="hu"><span class="lang-flag">🇭🇺</span> HU</button>
-            <button data-lang="en"><span class="lang-flag">🇬🇧</span> EN</button>
-            <button data-lang="de"><span class="lang-flag">🇩🇪</span> DE</button>
-            <button data-lang="pl"><span class="lang-flag">🇵🇱</span> PL</button>
-            <button data-lang="sk"><span class="lang-flag">🇸🇰</span> SK</button>
-            <button data-lang="ro"><span class="lang-flag">🇷🇴</span> RO</button>
+            <button class="active" data-lang="hu"><span class="lang-flag" data-flag="hu"></span> HU</button>
+            <button data-lang="en"><span class="lang-flag" data-flag="en"></span> EN</button>
+            <button data-lang="de"><span class="lang-flag" data-flag="de"></span> DE</button>
+            <button data-lang="pl"><span class="lang-flag" data-flag="pl"></span> PL</button>
+            <button data-lang="sk"><span class="lang-flag" data-flag="sk"></span> SK</button>
+            <button data-lang="ro"><span class="lang-flag" data-flag="ro"></span> RO</button>
         </div>
     </div>
 
@@ -3704,7 +3721,15 @@
             document.documentElement.lang = currentLang;
         }
 
-        var LANG_FLAGS = { hu: '🇭🇺', en: '🇬🇧', de: '🇩🇪', pl: '🇵🇱', sk: '🇸🇰', ro: '🇷🇴' };
+        // SVG flags for cross-platform support (Windows doesn't render country flag emojis)
+        var LANG_FLAGS = {
+            hu: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24"><rect width="36" height="8" fill="#CE2939"/><rect y="8" width="36" height="8" fill="#fff"/><rect y="16" width="36" height="8" fill="#477050"/></svg>',
+            en: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24"><rect width="36" height="24" fill="#012169"/><path d="M0 0L36 24M36 0L0 24" stroke="#fff" stroke-width="4"/><path d="M0 0L36 24M36 0L0 24" stroke="#C8102E" stroke-width="2.5"/><path d="M18 0v24M0 12h36" stroke="#fff" stroke-width="6"/><path d="M18 0v24M0 12h36" stroke="#C8102E" stroke-width="3.5"/></svg>',
+            de: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24"><rect width="36" height="8" fill="#000"/><rect y="8" width="36" height="8" fill="#D00"/><rect y="16" width="36" height="8" fill="#FFCE00"/></svg>',
+            pl: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24"><rect width="36" height="12" fill="#fff"/><rect y="12" width="36" height="12" fill="#DC143C"/></svg>',
+            sk: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24"><rect width="36" height="8" fill="#fff"/><rect y="8" width="36" height="8" fill="#0B4EA2"/><rect y="16" width="36" height="8" fill="#EE1C25"/><path d="M5 4v16h10c3-3 3-5 0-8 3-3 3-5 0-8z" fill="#EE1C25" opacity="0.3"/></svg>',
+            ro: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24"><rect width="12" height="24" fill="#002B7F"/><rect x="12" width="12" height="24" fill="#FCD116"/><rect x="24" width="12" height="24" fill="#CE1126"/></svg>'
+        };
         var LANG_CODES = { hu: 'HU', en: 'EN', de: 'DE', pl: 'PL', sk: 'SK', ro: 'RO' };
 
         function initLangToggle() {
@@ -3753,6 +3778,7 @@
                 });
             }
 
+            injectFlags();
             updateLangToggleUI();
         }
 
@@ -3781,12 +3807,21 @@
             updateLangToggleUI();
         }
 
+        function injectFlags() {
+            document.querySelectorAll('.lang-flag[data-flag]').forEach(function(el) {
+                var lang = el.getAttribute('data-flag');
+                if (LANG_FLAGS[lang]) el.innerHTML = LANG_FLAGS[lang];
+            });
+            var currentFlagEl = document.getElementById('lang-current-flag');
+            if (currentFlagEl && LANG_FLAGS[currentLang]) {
+                currentFlagEl.innerHTML = LANG_FLAGS[currentLang];
+            }
+        }
+
         function updateLangToggleUI() {
-            // Desktop dropdown button
+            // Desktop dropdown button flag
             var flagEl = document.getElementById('lang-current-flag');
-            var codeEl = document.getElementById('lang-current-code');
-            if (flagEl) flagEl.textContent = LANG_FLAGS[currentLang] || '🌐';
-            if (codeEl) codeEl.textContent = LANG_CODES[currentLang] || currentLang.toUpperCase();
+            if (flagEl && LANG_FLAGS[currentLang]) flagEl.innerHTML = LANG_FLAGS[currentLang];
 
             // Desktop menu items
             document.querySelectorAll('#lang-dropdown-menu .lang-dropdown-item').forEach(function(el) {
