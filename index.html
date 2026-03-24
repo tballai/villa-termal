@@ -1770,6 +1770,38 @@
             letter-spacing: 0.03em;
         }
 
+        /* Review CTA */
+        .review-cta {
+            text-align: center;
+            margin-top: 48px;
+        }
+
+        .review-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 32px;
+            border: 1.5px solid rgba(196, 151, 92, 0.4);
+            border-radius: 100px;
+            color: var(--cream);
+            font-family: var(--font-body);
+            font-size: 0.92rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            transition: background 0.3s var(--ease-out), border-color 0.3s var(--ease-out), transform 0.2s var(--ease-out);
+        }
+
+        .review-cta-btn:hover {
+            background: rgba(196, 151, 92, 0.12);
+            border-color: var(--gold);
+            transform: translateY(-2px);
+        }
+
+        .review-cta-star {
+            font-size: 1.15rem;
+        }
+
         /* ========================================
            LOCATION
            ======================================== */
@@ -2340,6 +2372,12 @@
             <div class="reviews-grid" id="reviews-grid">
                 <!-- Filled by JS -->
             </div>
+            <div class="review-cta fade-up" id="review-cta" style="display:none;">
+                <a href="#" id="review-cta-link" class="review-cta-btn" target="_blank" rel="noopener">
+                    <span class="review-cta-star">⭐</span>
+                    <span class="review-cta-text" id="review-cta-text"></span>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -2472,7 +2510,8 @@
                 footerNtak: 'NTAK regisztrációs szám:', footerCredit: 'Készítette:',
                 seoSuffix: 'Szállás Hajdúszoboszlón',
                 mapFallback: 'Térkép hamarosan',
-                mapTitle: 'Térkép'
+                mapTitle: 'Térkép',
+                reviewCta: 'Értékeljen minket a Google-ön!'
             },
             en: {
                 navRooms: 'Rooms', navServices: 'Services', navBooking: 'Booking',
@@ -2524,7 +2563,8 @@
                 footerNtak: 'NTAK registration no:', footerCredit: 'Created by:',
                 seoSuffix: 'Accommodation in Hajdúszoboszló',
                 mapFallback: 'Map coming soon',
-                mapTitle: 'Map'
+                mapTitle: 'Map',
+                reviewCta: 'Rate us on Google!'
             },
             de: {
                 navRooms: 'Zimmer', navServices: 'Ausstattung', navBooking: 'Buchung',
@@ -2575,7 +2615,8 @@
                 footerRooms: 'Unsere Zimmer', footerInfo: 'Information', footerContact: 'Kontakt',
                 footerNtak: 'NTAK-Registrierungsnr.:', footerCredit: 'Erstellt von:',
                 seoSuffix: 'Unterkunft in Hajdúszoboszló',
-                mapFallback: 'Karte demnächst', mapTitle: 'Karte'
+                mapFallback: 'Karte demnächst', mapTitle: 'Karte',
+                reviewCta: 'Bewerten Sie uns auf Google!'
             },
             pl: {
                 navRooms: 'Pokoje', navServices: 'Usługi', navBooking: 'Rezerwacja',
@@ -2626,7 +2667,8 @@
                 footerRooms: 'Nasze pokoje', footerInfo: 'Informacje', footerContact: 'Kontakt',
                 footerNtak: 'Nr rejestracyjny NTAK:', footerCredit: 'Stworzone przez:',
                 seoSuffix: 'Zakwaterowanie w Hajdúszoboszló',
-                mapFallback: 'Mapa wkrótce', mapTitle: 'Mapa'
+                mapFallback: 'Mapa wkrótce', mapTitle: 'Mapa',
+                reviewCta: 'Oceń nas na Google!'
             },
             sk: {
                 navRooms: 'Izby', navServices: 'Služby', navBooking: 'Rezervácia',
@@ -2677,7 +2719,8 @@
                 footerRooms: 'Naše izby', footerInfo: 'Informácie', footerContact: 'Kontakt',
                 footerNtak: 'Registračné číslo NTAK:', footerCredit: 'Vytvorené:',
                 seoSuffix: 'Ubytovanie v Hajdúszoboszló',
-                mapFallback: 'Mapa čoskoro', mapTitle: 'Mapa'
+                mapFallback: 'Mapa čoskoro', mapTitle: 'Mapa',
+                reviewCta: 'Ohodnoťte nás na Google!'
             },
             ro: {
                 navRooms: 'Camere', navServices: 'Servicii', navBooking: 'Rezervare',
@@ -2728,7 +2771,8 @@
                 footerRooms: 'Camerele noastre', footerInfo: 'Informații', footerContact: 'Contact',
                 footerNtak: 'Nr. înregistrare NTAK:', footerCredit: 'Creat de:',
                 seoSuffix: 'Cazare în Hajdúszoboszló',
-                mapFallback: 'Hartă în curând', mapTitle: 'Hartă'
+                mapFallback: 'Hartă în curând', mapTitle: 'Hartă',
+                reviewCta: 'Evaluați-ne pe Google!'
             }
         };
 
@@ -2966,6 +3010,18 @@
                     '</div>' +
                 '</div>';
             }).join('');
+
+            // Google review CTA
+            var cta = document.getElementById('review-cta');
+            var link = document.getElementById('review-cta-link');
+            var text = document.getElementById('review-cta-text');
+            if (CONFIG.property.googleReviewUrl && CONFIG.property.googleReviewUrl.trim()) {
+                link.href = CONFIG.property.googleReviewUrl;
+                text.textContent = t('reviewCta');
+                cta.style.display = '';
+            } else {
+                cta.style.display = 'none';
+            }
         }
 
         /* ========================================
