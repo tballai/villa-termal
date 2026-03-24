@@ -3,23 +3,43 @@
     "name": "Villa Termál",
     "tagline": {
       "hu": "Családias szállás Hajdúszoboszló szívében",
-      "en": "Family accommodation in the heart of Hajdúszoboszló"
+      "en": "Family accommodation in the heart of Hajdúszoboszló",
+      "de": "Familienunterkunft im Herzen von Hajdúszoboszló",
+      "pl": "Rodzinne zakwaterowanie w sercu Hajdúszoboszló",
+      "sk": "Rodinné ubytovanie v srdci Hajdúszoboszló",
+      "ro": "Cazare familială în inima orașului Hajdúszoboszló"
     },
     "description": {
       "hu": "Családias hangulatú, felújított szállás a Hungarospa Gyógyfürdőtől mindössze 3 percre gyalog. Klimatizált szobák, ingyenes WiFi, privát parkoló.",
-      "en": "Renovated family accommodation just 3 minutes walk from Hungarospa Thermal Bath. Air-conditioned rooms, free WiFi, private parking."
+      "en": "Renovated family accommodation just 3 minutes walk from Hungarospa Thermal Bath. Air-conditioned rooms, free WiFi, private parking.",
+      "de": "Renovierte Familienunterkunft nur 3 Gehminuten von der Hungarospa-Therme entfernt. Klimatisierte Zimmer, kostenloses WLAN, Privatparkplatz.",
+      "pl": "Odnowiony obiekt rodzinny zaledwie 3 minuty spacerem od Term Hungarospa. Klimatyzowane pokoje, bezpłatne WiFi, prywatny parking.",
+      "sk": "Zrekonštruované rodinné ubytovanie len 3 minúty pešo od kúpeľov Hungarospa. Klimatizované izby, bezplatné WiFi, súkromné parkovisko.",
+      "ro": "Cazare familială renovată la doar 3 minute de mers pe jos de Termele Hungarospa. Camere climatizate, WiFi gratuit, parcare privată."
     },
     "heroTitle": {
       "hu": "Pihenjen a gyógyvíz közelében",
-      "en": "Relax near the thermal waters"
+      "en": "Relax near the thermal waters",
+      "de": "Entspannen Sie nahe der Thermalquellen",
+      "pl": "Odpocznij przy wodach termalnych",
+      "sk": "Oddýchnite si pri termálnych vodách",
+      "ro": "Relaxați-vă lângă apele termale"
     },
     "heroSubtitle": {
       "hu": "Fedezze fel Hajdúszoboszló legkedveltebb családias szállását — közvetlenül a fürdő mellett, a belváros szívében. Foglaljon nálunk közvetlenül és élvezze a kedvezményes árakat!",
-      "en": "Discover the most popular family accommodation in Hajdúszoboszló — right next to the thermal bath, in the heart of the city. Book directly with us and enjoy discounted rates!"
+      "en": "Discover the most popular family accommodation in Hajdúszoboszló — right next to the thermal bath, in the heart of the city. Book directly with us and enjoy discounted rates!",
+      "de": "Entdecken Sie die beliebteste Familienunterkunft in Hajdúszoboszló — direkt neben der Therme, im Herzen der Stadt. Buchen Sie direkt bei uns und genießen Sie ermäßigte Preise!",
+      "pl": "Odkryj najpopularniejsze rodzinne zakwaterowanie w Hajdúszoboszló — tuż obok term, w sercu miasta. Zarezerwuj bezpośrednio i ciesz się zniżkowymi cenami!",
+      "sk": "Objavte najobľúbenejšie rodinné ubytovanie v Hajdúszoboszló — priamo vedľa kúpeľov, v srdci mesta. Rezervujte priamo u nás a užívajte si zľavnené ceny!",
+      "ro": "Descoperiți cea mai populară cazare familială din Hajdúszoboszló — chiar lângă terme, în inima orașului. Rezervați direct la noi și bucurați-vă de prețuri reduse!"
     },
     "heroBadge": {
       "hu": "✦ Hajdúszoboszló szívében",
-      "en": "✦ In the heart of Hajdúszoboszló"
+      "en": "✦ In the heart of Hajdúszoboszló",
+      "de": "✦ Im Herzen von Hajdúszoboszló",
+      "pl": "✦ W sercu Hajdúszoboszló",
+      "sk": "✦ V srdci Hajdúszoboszló",
+      "ro": "✦ În inima orașului Hajdúszoboszló"
     },
     "address": "4200 Hajdúszoboszló, Fürdő sor 12.",
     "phone": "+36 30 123 4567",
@@ -43,84 +63,96 @@
     "creditUrl": "https://ballaidigital.hu"
   },
   "stats": [
-    { "value": "4.9", "label": { "hu": "Google értékelés", "en": "Google rating" }, "icon": "⭐" },
-    { "value": "500+", "label": { "hu": "Elégedett vendég", "en": "Happy guests" }, "icon": "👥" },
-    { "value": { "hu": "3 perc", "en": "3 min" }, "label": { "hu": "Gyógyfürdőtől", "en": "From thermal bath" }, "icon": "🏊" },
-    { "value": "2015", "label": { "hu": "Óta várjuk vendégeinket", "en": "Welcoming guests since" }, "icon": "🏠" }
+    { "value": "4.9", "label": { "hu": "Google értékelés", "en": "Google rating", "de": "Google-Bewertung", "pl": "Ocena Google", "sk": "Hodnotenie Google", "ro": "Evaluare Google" }, "icon": "⭐" },
+    { "value": "500+", "label": { "hu": "Elégedett vendég", "en": "Happy guests", "de": "Zufriedene Gäste", "pl": "Zadowolonych gości", "sk": "Spokojných hostí", "ro": "Oaspeți mulțumiți" }, "icon": "👥" },
+    { "value": { "hu": "3 perc", "en": "3 min", "de": "3 Min.", "pl": "3 min", "sk": "3 min", "ro": "3 min" }, "label": { "hu": "Gyógyfürdőtől", "en": "From thermal bath", "de": "Von der Therme", "pl": "Od term", "sk": "Od kúpeľov", "ro": "De la terme" }, "icon": "🏊" },
+    { "value": "2015", "label": { "hu": "Óta várjuk vendégeinket", "en": "Welcoming guests since", "de": "Begrüßen Gäste seit", "pl": "Witamy gości od", "sk": "Vítame hostí od", "ro": "Primim oaspeți din" }, "icon": "🏠" }
   ],
   "rooms": [
     {
       "id": "ketagyas",
-      "name": { "hu": "Kétágyas szoba", "en": "Double Room" },
+      "name": { "hu": "Kétágyas szoba", "en": "Double Room", "de": "Doppelzimmer", "pl": "Pokój dwuosobowy", "sk": "Dvojlôžková izba", "ro": "Cameră dublă" },
       "description": {
         "hu": "Kényelmes, klimatizált szoba franciaággyal és erkéllyel a belső kertre néző kilátással. Tökéletes pároknak.",
-        "en": "Comfortable, air-conditioned room with a double bed and balcony overlooking the inner garden. Perfect for couples."
+        "en": "Comfortable, air-conditioned room with a double bed and balcony overlooking the inner garden. Perfect for couples.",
+        "de": "Komfortables, klimatisiertes Zimmer mit Doppelbett und Balkon mit Blick auf den Innengarten. Perfekt für Paare.",
+        "pl": "Komfortowy, klimatyzowany pokój z łóżkiem podwójnym i balkonem z widokiem na wewnętrzny ogród. Idealny dla par.",
+        "sk": "Komfortná, klimatizovaná izba s manželskou posteľou a balkónom s výhľadom na vnútornú záhradu. Ideálna pre páry.",
+        "ro": "Cameră confortabilă, climatizată, cu pat dublu și balcon cu vedere la grădina interioară. Perfectă pentru cupluri."
       },
       "guests": 2,
       "size": "22 m²",
       "amenities": [
-        { "hu": "Klíma", "en": "A/C" },
-        { "hu": "WiFi", "en": "WiFi" },
-        { "hu": "Smart TV", "en": "Smart TV" },
-        { "hu": "Mini hűtő", "en": "Mini fridge" },
-        { "hu": "Erkély", "en": "Balcony" },
-        { "hu": "Hajszárító", "en": "Hairdryer" }
+        { "hu": "Klíma", "en": "A/C", "de": "Klimaanlage", "pl": "Klimatyzacja", "sk": "Klimatizácia", "ro": "Aer condiționat" },
+        { "hu": "WiFi", "en": "WiFi", "de": "WLAN", "pl": "WiFi", "sk": "WiFi", "ro": "WiFi" },
+        { "hu": "Smart TV", "en": "Smart TV", "de": "Smart TV", "pl": "Smart TV", "sk": "Smart TV", "ro": "Smart TV" },
+        { "hu": "Mini hűtő", "en": "Mini fridge", "de": "Minibar", "pl": "Lodówka", "sk": "Minichladnička", "ro": "Mini frigider" },
+        { "hu": "Erkély", "en": "Balcony", "de": "Balkon", "pl": "Balkon", "sk": "Balkón", "ro": "Balcon" },
+        { "hu": "Hajszárító", "en": "Hairdryer", "de": "Haartrockner", "pl": "Suszarka", "sk": "Sušič vlasov", "ro": "Uscător de păr" }
       ],
       "pricePerNight": 18000,
       "bookingPrice": 20000,
-      "badge": { "hu": "Népszerű", "en": "Popular" },
+      "badge": { "hu": "Népszerű", "en": "Popular", "de": "Beliebt", "pl": "Popularny", "sk": "Obľúbená", "ro": "Popular" },
       "image": "images/room1.jpg",
       "gallery": ["images/room1.jpg", "images/room2.webp"]
     },
     {
       "id": "csaladi",
-      "name": { "hu": "Családi apartman", "en": "Family Apartment" },
+      "name": { "hu": "Családi apartman", "en": "Family Apartment", "de": "Familienapartment", "pl": "Apartament rodzinny", "sk": "Rodinný apartmán", "ro": "Apartament familial" },
       "description": {
         "hu": "Tágas, két szobás apartman nappalival, teljes konyhával és két fürdőszobával. Ideális családoknak vagy baráti társaságoknak.",
-        "en": "Spacious two-bedroom apartment with living room, full kitchen and two bathrooms. Ideal for families or groups of friends."
+        "en": "Spacious two-bedroom apartment with living room, full kitchen and two bathrooms. Ideal for families or groups of friends.",
+        "de": "Geräumiges Zwei-Schlafzimmer-Apartment mit Wohnzimmer, voll ausgestatteter Küche und zwei Badezimmern. Ideal für Familien oder Freundesgruppen.",
+        "pl": "Przestronny apartament z dwoma sypialniami, salonem, pełną kuchnią i dwoma łazienkami. Idealny dla rodzin i grup przyjaciół.",
+        "sk": "Priestranný dvojizbový apartmán s obývačkou, plne vybavenou kuchyňou a dvoma kúpeľňami. Ideálny pre rodiny alebo skupiny priateľov.",
+        "ro": "Apartament spațios cu două dormitoare, living, bucătărie complet utilată și două băi. Ideal pentru familii sau grupuri de prieteni."
       },
       "guests": 4,
       "size": "45 m²",
       "amenities": [
-        { "hu": "Klíma", "en": "A/C" },
-        { "hu": "WiFi", "en": "WiFi" },
-        { "hu": "Smart TV", "en": "Smart TV" },
-        { "hu": "Teljes konyha", "en": "Full kitchen" },
-        { "hu": "Mosógép", "en": "Washing machine" },
-        { "hu": "Erkély", "en": "Balcony" },
-        { "hu": "Hajszárító", "en": "Hairdryer" },
-        { "hu": "Vasaló", "en": "Iron" }
+        { "hu": "Klíma", "en": "A/C", "de": "Klimaanlage", "pl": "Klimatyzacja", "sk": "Klimatizácia", "ro": "Aer condiționat" },
+        { "hu": "WiFi", "en": "WiFi", "de": "WLAN", "pl": "WiFi", "sk": "WiFi", "ro": "WiFi" },
+        { "hu": "Smart TV", "en": "Smart TV", "de": "Smart TV", "pl": "Smart TV", "sk": "Smart TV", "ro": "Smart TV" },
+        { "hu": "Teljes konyha", "en": "Full kitchen", "de": "Voll ausgestattete Küche", "pl": "Pełna kuchnia", "sk": "Plne vybavená kuchyňa", "ro": "Bucătărie completă" },
+        { "hu": "Mosógép", "en": "Washing machine", "de": "Waschmaschine", "pl": "Pralka", "sk": "Práčka", "ro": "Mașină de spălat" },
+        { "hu": "Erkély", "en": "Balcony", "de": "Balkon", "pl": "Balkon", "sk": "Balkón", "ro": "Balcon" },
+        { "hu": "Hajszárító", "en": "Hairdryer", "de": "Haartrockner", "pl": "Suszarka", "sk": "Sušič vlasov", "ro": "Uscător de păr" },
+        { "hu": "Vasaló", "en": "Iron", "de": "Bügeleisen", "pl": "Żelazko", "sk": "Žehlička", "ro": "Fier de călcat" }
       ],
       "pricePerNight": 28000,
       "bookingPrice": 32000,
-      "badge": { "hu": "Családoknak", "en": "For families" },
+      "badge": { "hu": "Családoknak", "en": "For families", "de": "Für Familien", "pl": "Dla rodzin", "sk": "Pre rodiny", "ro": "Pentru familii" },
       "image": "images/csaladi1.jpg",
       "gallery": ["images/csaladi1.jpg", "images/csaladi2.jpg", "images/csaladi3.jpeg"]
     },
     {
       "id": "premium",
-      "name": { "hu": "Prémium apartman", "en": "Premium Apartment" },
+      "name": { "hu": "Prémium apartman", "en": "Premium Apartment", "de": "Premium-Apartment", "pl": "Apartament premium", "sk": "Prémiový apartmán", "ro": "Apartament premium" },
       "description": {
         "hu": "Luxus apartman jakuzzival, panorámás kilátással a parkra. Két hálószoba, nappali, teljes konyha és privát terasz.",
-        "en": "Luxury apartment with jacuzzi and panoramic park views. Two bedrooms, living room, full kitchen and private terrace."
+        "en": "Luxury apartment with jacuzzi and panoramic park views. Two bedrooms, living room, full kitchen and private terrace.",
+        "de": "Luxusapartment mit Whirlpool und Panoramablick auf den Park. Zwei Schlafzimmer, Wohnzimmer, voll ausgestattete Küche und private Terrasse.",
+        "pl": "Luksusowy apartament z jacuzzi i panoramicznym widokiem na park. Dwie sypialnie, salon, pełna kuchnia i prywatny taras.",
+        "sk": "Luxusný apartmán s vírivkou a panoramatickým výhľadom na park. Dve spálne, obývačka, plne vybavená kuchyňa a súkromná terasa.",
+        "ro": "Apartament de lux cu jacuzzi și vedere panoramică la parc. Două dormitoare, living, bucătărie completă și terasă privată."
       },
       "guests": 5,
       "size": "60 m²",
       "amenities": [
-        { "hu": "Klíma", "en": "A/C" },
-        { "hu": "WiFi", "en": "WiFi" },
-        { "hu": "Smart TV", "en": "Smart TV" },
-        { "hu": "Jakuzzi", "en": "Jacuzzi" },
-        { "hu": "Teljes konyha", "en": "Full kitchen" },
-        { "hu": "Mosógép", "en": "Washing machine" },
-        { "hu": "Privát terasz", "en": "Private terrace" },
-        { "hu": "Hajszárító", "en": "Hairdryer" },
-        { "hu": "Vasaló", "en": "Iron" },
-        { "hu": "Nespresso gép", "en": "Nespresso machine" }
+        { "hu": "Klíma", "en": "A/C", "de": "Klimaanlage", "pl": "Klimatyzacja", "sk": "Klimatizácia", "ro": "Aer condiționat" },
+        { "hu": "WiFi", "en": "WiFi", "de": "WLAN", "pl": "WiFi", "sk": "WiFi", "ro": "WiFi" },
+        { "hu": "Smart TV", "en": "Smart TV", "de": "Smart TV", "pl": "Smart TV", "sk": "Smart TV", "ro": "Smart TV" },
+        { "hu": "Jakuzzi", "en": "Jacuzzi", "de": "Whirlpool", "pl": "Jacuzzi", "sk": "Vírivka", "ro": "Jacuzzi" },
+        { "hu": "Teljes konyha", "en": "Full kitchen", "de": "Voll ausgestattete Küche", "pl": "Pełna kuchnia", "sk": "Plne vybavená kuchyňa", "ro": "Bucătărie completă" },
+        { "hu": "Mosógép", "en": "Washing machine", "de": "Waschmaschine", "pl": "Pralka", "sk": "Práčka", "ro": "Mașină de spălat" },
+        { "hu": "Privát terasz", "en": "Private terrace", "de": "Private Terrasse", "pl": "Prywatny taras", "sk": "Súkromná terasa", "ro": "Terasă privată" },
+        { "hu": "Hajszárító", "en": "Hairdryer", "de": "Haartrockner", "pl": "Suszarka", "sk": "Sušič vlasov", "ro": "Uscător de păr" },
+        { "hu": "Vasaló", "en": "Iron", "de": "Bügeleisen", "pl": "Żelazko", "sk": "Žehlička", "ro": "Fier de călcat" },
+        { "hu": "Nespresso gép", "en": "Nespresso machine", "de": "Nespresso-Maschine", "pl": "Ekspres Nespresso", "sk": "Nespresso kávovar", "ro": "Aparat Nespresso" }
       ],
       "pricePerNight": 38000,
       "bookingPrice": 44000,
-      "badge": { "hu": "Prémium", "en": "Premium" },
+      "badge": { "hu": "Prémium", "en": "Premium", "de": "Premium", "pl": "Premium", "sk": "Prémiový", "ro": "Premium" },
       "image": "images/premiumr.jpg",
       "gallery": ["images/premiumr.jpg", "images/premium2.jpg"]
     }
@@ -128,50 +160,74 @@
   "services": [
     {
       "icon": "🅿️",
-      "title": { "hu": "Ingyenes parkoló", "en": "Free parking" },
+      "title": { "hu": "Ingyenes parkoló", "en": "Free parking", "de": "Kostenloser Parkplatz", "pl": "Darmowy parking", "sk": "Bezplatné parkovanie", "ro": "Parcare gratuită" },
       "description": {
         "hu": "Zárt, kamerával felügyelt privát parkoló közvetlenül a szállás mellett.",
-        "en": "Enclosed, camera-monitored private parking right next to the accommodation."
+        "en": "Enclosed, camera-monitored private parking right next to the accommodation.",
+        "de": "Geschlossener, kameraüberwachter Privatparkplatz direkt neben der Unterkunft.",
+        "pl": "Zamknięty, monitorowany parking prywatny tuż obok obiektu.",
+        "sk": "Uzavreté, kamerami monitorované súkromné parkovisko priamo vedľa ubytovania.",
+        "ro": "Parcare privată închisă, monitorizată video, chiar lângă cazare."
       }
     },
     {
       "icon": "📶",
-      "title": { "hu": "Gyors WiFi", "en": "Fast WiFi" },
+      "title": { "hu": "Gyors WiFi", "en": "Fast WiFi", "de": "Schnelles WLAN", "pl": "Szybkie WiFi", "sk": "Rýchle WiFi", "ro": "WiFi rapid" },
       "description": {
         "hu": "100 Mbps optikai internet az egész épületben, korlátlanul.",
-        "en": "100 Mbps fibre-optic internet throughout the building, unlimited."
+        "en": "100 Mbps fibre-optic internet throughout the building, unlimited.",
+        "de": "100 Mbit/s Glasfaser-Internet im gesamten Gebäude, unbegrenzt.",
+        "pl": "100 Mbps internet światłowodowy w całym budynku, bez limitu.",
+        "sk": "100 Mbps optický internet v celej budove, bez obmedzení.",
+        "ro": "Internet fibră optică 100 Mbps în toată clădirea, nelimitat."
       }
     },
     {
       "icon": "🏊",
-      "title": { "hu": "Fürdőbelépő kedvezmény", "en": "Thermal bath discount" },
+      "title": { "hu": "Fürdőbelépő kedvezmény", "en": "Thermal bath discount", "de": "Therme-Rabatt", "pl": "Zniżka na termy", "sk": "Zľava na kúpele", "ro": "Reducere la terme" },
       "description": {
         "hu": "10% kedvezmény a Hungarospa összes szolgáltatására vendégeinknek.",
-        "en": "10% discount on all Hungarospa services for our guests."
+        "en": "10% discount on all Hungarospa services for our guests.",
+        "de": "10% Rabatt auf alle Hungarospa-Leistungen für unsere Gäste.",
+        "pl": "10% zniżki na wszystkie usługi Hungarospa dla naszych gości.",
+        "sk": "10% zľava na všetky služby Hungarospa pre našich hostí.",
+        "ro": "10% reducere la toate serviciile Hungarospa pentru oaspeții noștri."
       }
     },
     {
       "icon": "🥐",
-      "title": { "hu": "Reggeli csomag", "en": "Breakfast package" },
+      "title": { "hu": "Reggeli csomag", "en": "Breakfast package", "de": "Frühstückspaket", "pl": "Pakiet śniadaniowy", "sk": "Raňajkový balíček", "ro": "Pachet de mic dejun" },
       "description": {
         "hu": "Friss pékáru, felvágott, sajt, gyümölcs — kérésre a szobába szállítva.",
-        "en": "Fresh pastries, cold cuts, cheese, fruit — delivered to your room on request."
+        "en": "Fresh pastries, cold cuts, cheese, fruit — delivered to your room on request.",
+        "de": "Frische Backwaren, Aufschnitt, Käse, Obst — auf Wunsch aufs Zimmer geliefert.",
+        "pl": "Świeże pieczywo, wędliny, ser, owoce — na życzenie dostarczane do pokoju.",
+        "sk": "Čerstvé pečivo, údeniny, syr, ovocie — na požiadanie doručené na izbu.",
+        "ro": "Produse proaspete de patiserie, mezeluri, brânză, fructe — livrate la cameră la cerere."
       }
     },
     {
       "icon": "🔑",
-      "title": { "hu": "Önálló bejelentkezés", "en": "Self check-in" },
+      "title": { "hu": "Önálló bejelentkezés", "en": "Self check-in", "de": "Selbst-Check-in", "pl": "Samodzielne zameldowanie", "sk": "Samoobslužný check-in", "ro": "Check-in automat" },
       "description": {
         "hu": "Kódos kulcsszéf a bejáratnál — érkezzen bármikor, mi készenlétben vagyunk.",
-        "en": "Key safe with code at the entrance — arrive anytime, we are always ready."
+        "en": "Key safe with code at the entrance — arrive anytime, we are always ready.",
+        "de": "Schlüsseltresor mit Code am Eingang — kommen Sie jederzeit, wir sind bereit.",
+        "pl": "Sejf na klucze z kodem przy wejściu — przyjedź o dowolnej porze, jesteśmy gotowi.",
+        "sk": "Kľúčový trezor s kódom pri vchode — príďte kedykoľvek, sme pripravení.",
+        "ro": "Seif cu cod la intrare — sosiți oricând, suntem mereu pregătiți."
       }
     },
     {
       "icon": "👶",
-      "title": { "hu": "Családbarát felszerelés", "en": "Family-friendly equipment" },
+      "title": { "hu": "Családbarát felszerelés", "en": "Family-friendly equipment", "de": "Familienfreundliche Ausstattung", "pl": "Wyposażenie dla rodzin", "sk": "Rodinné vybavenie", "ro": "Echipamente pentru familii" },
       "description": {
         "hu": "Babaágy, etetőszék és gyerekjátékok díjmentesen igényelhetők.",
-        "en": "Baby cot, high chair and toys available free of charge."
+        "en": "Baby cot, high chair and toys available free of charge.",
+        "de": "Babybett, Hochstuhl und Spielzeug kostenlos verfügbar.",
+        "pl": "Łóżeczko dziecięce, krzesełko do karmienia i zabawki dostępne bezpłatnie.",
+        "sk": "Detská postieľka, vysoká stolička a hračky k dispozícii zadarmo.",
+        "ro": "Pătuț, scaun înalt și jucării disponibile gratuit."
       }
     }
   ],
@@ -180,40 +236,52 @@
       "stars": 5,
       "text": {
         "hu": "Fantasztikus hely! A szoba tiszta és modern volt, a fürdő tényleg 3 percre van. A házigazda nagyon kedves és segítőkész. Jövőre is itt foglalunk!",
-        "en": "Fantastic place! The room was clean and modern, the thermal bath is really 3 minutes away. The host was very kind and helpful. We will book here again next year!"
+        "en": "Fantastic place! The room was clean and modern, the thermal bath is really 3 minutes away. The host was very kind and helpful. We will book here again next year!",
+        "de": "Fantastischer Ort! Das Zimmer war sauber und modern, die Therme ist wirklich nur 3 Minuten entfernt. Der Gastgeber war sehr freundlich und hilfsbereit. Wir buchen nächstes Jahr wieder!",
+        "pl": "Fantastyczne miejsce! Pokój był czysty i nowoczesny, termy naprawdę 3 minuty stąd. Gospodarz bardzo miły i pomocny. W przyszłym roku znów tu zarezerwujemy!",
+        "sk": "Fantastické miesto! Izba bola čistá a moderná, kúpele sú naozaj len 3 minúty odtiaľ. Hostiteľ bol veľmi milý a nápomocný. Budúci rok tu opäť rezervujeme!",
+        "ro": "Loc fantastic! Camera era curată și modernă, termele sunt chiar la 3 minute distanță. Gazda a fost foarte amabilă și de ajutor. Vom rezerva din nou anul viitor!"
       },
       "author": "Kovács Anna",
-      "date": { "hu": "2025. augusztus", "en": "August 2025" },
+      "date": { "hu": "2025. augusztus", "en": "August 2025", "de": "August 2025", "pl": "Sierpień 2025", "sk": "August 2025", "ro": "August 2025" },
       "source": "Google"
     },
     {
       "stars": 5,
       "text": {
         "hu": "Már harmadszor voltunk itt és mindig tökéletes. A családi apartman tágas, a konyha jól felszerelt, a gyerekek imádják a kertet. A Booking-on találtuk, de most már közvetlenül foglalunk — olcsóbb is!",
-        "en": "This was our third visit and it is always perfect. The family apartment is spacious, the kitchen well equipped, the kids love the garden. We found it on Booking but now we book directly — it is cheaper too!"
+        "en": "This was our third visit and it is always perfect. The family apartment is spacious, the kitchen well equipped, the kids love the garden. We found it on Booking but now we book directly — it is cheaper too!",
+        "de": "Das war unser dritter Besuch und es ist immer perfekt. Das Familienapartment ist geräumig, die Küche gut ausgestattet, die Kinder lieben den Garten. Wir haben es auf Booking gefunden, buchen aber jetzt direkt — ist auch günstiger!",
+        "pl": "To była nasza trzecia wizyta i zawsze jest perfekcyjnie. Apartament rodzinny jest przestronny, kuchnia dobrze wyposażona, dzieci uwielbiają ogród. Znaleźliśmy na Booking, ale teraz rezerwujemy bezpośrednio — taniej!",
+        "sk": "Toto bola naša tretia návšteva a je to vždy perfektné. Rodinný apartmán je priestranný, kuchyňa dobre vybavená, deti milujú záhradu. Našli sme to na Bookingu, ale teraz rezervujeme priamo — je to aj lacnejšie!",
+        "ro": "A fost a treia noastră vizită și este mereu perfect. Apartamentul familial este spațios, bucătăria bine echipată, copiii adoră grădina. Am găsit pe Booking, dar acum rezervăm direct — e și mai ieftin!"
       },
       "author": "Nagy Péter",
-      "date": { "hu": "2025. július", "en": "July 2025" },
+      "date": { "hu": "2025. július", "en": "July 2025", "de": "Juli 2025", "pl": "Lipiec 2025", "sk": "Júl 2025", "ro": "Iulie 2025" },
       "source": "Booking.com"
     },
     {
       "stars": 5,
       "text": {
         "hu": "A prémium apartman jakuzzija egyszerűen álomszerű volt. A kilátás a parkra gyönyörű, a terasz este romantikus. Párkapcsolat-felfrissítőnek tökéletes választás!",
-        "en": "The jacuzzi in the premium apartment was simply dreamy. The view of the park is beautiful, the terrace is romantic in the evening. Perfect choice for a romantic getaway!"
+        "en": "The jacuzzi in the premium apartment was simply dreamy. The view of the park is beautiful, the terrace is romantic in the evening. Perfect choice for a romantic getaway!",
+        "de": "Der Whirlpool im Premium-Apartment war einfach traumhaft. Der Blick auf den Park ist wunderschön, die Terrasse abends romantisch. Perfekte Wahl für einen romantischen Kurzurlaub!",
+        "pl": "Jacuzzi w apartamencie premium było po prostu bajeczne. Widok na park jest piękny, taras wieczorem romantyczny. Idealny wybór na romantyczny wypad!",
+        "sk": "Vírivka v prémiovom apartmáne bola jednoducho snová. Výhľad na park je nádherný, terasa je večer romantická. Perfektná voľba na romantický pobyt!",
+        "ro": "Jacuzzi-ul din apartamentul premium a fost pur și simplu de vis. Vederea la parc este frumoasă, terasa e romantică seara. Alegerea perfectă pentru o escapadă romantică!"
       },
       "author": "Szabó Éva",
-      "date": { "hu": "2025. szeptember", "en": "September 2025" },
+      "date": { "hu": "2025. szeptember", "en": "September 2025", "de": "September 2025", "pl": "Wrzesień 2025", "sk": "September 2025", "ro": "Septembrie 2025" },
       "source": "Szállás.hu"
     }
   ],
   "distances": [
-    { "place": { "hu": "Hungarospa Gyógyfürdő", "en": "Hungarospa Thermal Bath" }, "distance": { "hu": "3 perc gyalog", "en": "3 min walk" }, "icon": "🏊" },
-    { "place": { "hu": "SPAR szupermarket", "en": "SPAR supermarket" }, "distance": { "hu": "5 perc gyalog", "en": "5 min walk" }, "icon": "🛒" },
-    { "place": { "hu": "Étteremsor (Szilfás sétány)", "en": "Restaurant row (Szilfás promenade)" }, "distance": { "hu": "4 perc gyalog", "en": "4 min walk" }, "icon": "🍽️" },
-    { "place": { "hu": "Aquapark", "en": "Aquapark" }, "distance": { "hu": "8 perc gyalog", "en": "8 min walk" }, "icon": "🎢" },
-    { "place": { "hu": "Vasútállomás", "en": "Train station" }, "distance": { "hu": "12 perc gyalog", "en": "12 min walk" }, "icon": "🚂" },
-    { "place": { "hu": "Debrecen reptér", "en": "Debrecen airport" }, "distance": { "hu": "25 perc autóval", "en": "25 min by car" }, "icon": "✈️" }
+    { "place": { "hu": "Hungarospa Gyógyfürdő", "en": "Hungarospa Thermal Bath", "de": "Hungarospa Therme", "pl": "Termy Hungarospa", "sk": "Kúpele Hungarospa", "ro": "Termele Hungarospa" }, "distance": { "hu": "3 perc gyalog", "en": "3 min walk", "de": "3 Min. zu Fuß", "pl": "3 min pieszo", "sk": "3 min pešo", "ro": "3 min pe jos" }, "icon": "🏊" },
+    { "place": { "hu": "SPAR szupermarket", "en": "SPAR supermarket", "de": "SPAR Supermarkt", "pl": "Supermarket SPAR", "sk": "Supermarket SPAR", "ro": "Supermarket SPAR" }, "distance": { "hu": "5 perc gyalog", "en": "5 min walk", "de": "5 Min. zu Fuß", "pl": "5 min pieszo", "sk": "5 min pešo", "ro": "5 min pe jos" }, "icon": "🛒" },
+    { "place": { "hu": "Étteremsor (Szilfás sétány)", "en": "Restaurant row (Szilfás promenade)", "de": "Restaurantzeile (Szilfás Promenade)", "pl": "Ulica restauracyjna (Szilfás promenada)", "sk": "Reštauračná ulica (Szilfás promenáda)", "ro": "Zona de restaurante (Promenada Szilfás)" }, "distance": { "hu": "4 perc gyalog", "en": "4 min walk", "de": "4 Min. zu Fuß", "pl": "4 min pieszo", "sk": "4 min pešo", "ro": "4 min pe jos" }, "icon": "🍽️" },
+    { "place": { "hu": "Aquapark", "en": "Aquapark", "de": "Aquapark", "pl": "Aquapark", "sk": "Aquapark", "ro": "Aquapark" }, "distance": { "hu": "8 perc gyalog", "en": "8 min walk", "de": "8 Min. zu Fuß", "pl": "8 min pieszo", "sk": "8 min pešo", "ro": "8 min pe jos" }, "icon": "🎢" },
+    { "place": { "hu": "Vasútállomás", "en": "Train station", "de": "Bahnhof", "pl": "Dworzec kolejowy", "sk": "Železničná stanica", "ro": "Gara" }, "distance": { "hu": "12 perc gyalog", "en": "12 min walk", "de": "12 Min. zu Fuß", "pl": "12 min pieszo", "sk": "12 min pešo", "ro": "12 min pe jos" }, "icon": "🚂" },
+    { "place": { "hu": "Debrecen reptér", "en": "Debrecen airport", "de": "Flughafen Debrecen", "pl": "Lotnisko Debreczyn", "sk": "Letisko Debrecín", "ro": "Aeroportul Debrecen" }, "distance": { "hu": "25 perc autóval", "en": "25 min by car", "de": "25 Min. mit dem Auto", "pl": "25 min samochodem", "sk": "25 min autom", "ro": "25 min cu mașina" }, "icon": "✈️" }
   ],
   "booking": {
     "directDiscount": 10,
@@ -225,13 +293,17 @@
     "maxGuests": 6,
     "ctaText": {
       "hu": "Foglaljon közvetlenül — 10% kedvezmény!",
-      "en": "Book directly — 10% discount!"
+      "en": "Book directly — 10% discount!",
+      "de": "Direkt buchen — 10% Rabatt!",
+      "pl": "Zarezerwuj bezpośrednio — 10% zniżki!",
+      "sk": "Rezervujte priamo — 10% zľava!",
+      "ro": "Rezervați direct — 10% reducere!"
     },
     "whyDirect": [
-      { "hu": "10% kedvezmény a Booking.com árhoz képest", "en": "10% discount compared to Booking.com" },
-      { "hu": "Nincs közvetítői díj", "en": "No intermediary fees" },
-      { "hu": "Személyes egyeztetés a szállásadóval", "en": "Personal communication with the host" },
-      { "hu": "Rugalmas fizetési feltételek", "en": "Flexible payment terms" }
+      { "hu": "10% kedvezmény a Booking.com árhoz képest", "en": "10% discount compared to Booking.com", "de": "10% Rabatt gegenüber Booking.com", "pl": "10% zniżki w porównaniu z Booking.com", "sk": "10% zľava oproti Booking.com", "ro": "10% reducere față de Booking.com" },
+      { "hu": "Nincs közvetítői díj", "en": "No intermediary fees", "de": "Keine Vermittlungsgebühren", "pl": "Bez prowizji pośrednika", "sk": "Žiadne sprostredkovateľské poplatky", "ro": "Fără taxe de intermediere" },
+      { "hu": "Személyes egyeztetés a szállásadóval", "en": "Personal communication with the host", "de": "Persönliche Kommunikation mit dem Gastgeber", "pl": "Bezpośredni kontakt z gospodarzem", "sk": "Osobná komunikácia s hostiteľom", "ro": "Comunicare directă cu gazda" },
+      { "hu": "Rugalmas fizetési feltételek", "en": "Flexible payment terms", "de": "Flexible Zahlungsbedingungen", "pl": "Elastyczne warunki płatności", "sk": "Flexibilné platobné podmienky", "ro": "Condiții flexibile de plată" }
     ]
   },
   "ical": {
@@ -265,12 +337,16 @@
   "footer": {
     "description": {
       "hu": "Családias hangulatú szállás Hajdúszoboszló szívében, a Hungarospa Gyógyfürdőtől mindössze 3 perc sétára.",
-      "en": "Family accommodation in the heart of Hajdúszoboszló, just a 3-minute walk from Hungarospa Thermal Bath."
+      "en": "Family accommodation in the heart of Hajdúszoboszló, just a 3-minute walk from Hungarospa Thermal Bath.",
+      "de": "Familienunterkunft im Herzen von Hajdúszoboszló, nur 3 Gehminuten von der Hungarospa-Therme entfernt.",
+      "pl": "Rodzinne zakwaterowanie w sercu Hajdúszoboszló, zaledwie 3 minuty spacerem od Term Hungarospa.",
+      "sk": "Rodinné ubytovanie v srdci Hajdúszoboszló, len 3 minúty pešo od kúpeľov Hungarospa.",
+      "ro": "Cazare familială în inima orașului Hajdúszoboszló, la doar 3 minute de mers pe jos de Termele Hungarospa."
     },
     "links": [
-      { "text": { "hu": "Házirendünk", "en": "House rules" }, "url": "#" },
-      { "text": { "hu": "ÁSZF", "en": "Terms & Conditions" }, "url": "#" },
-      { "text": { "hu": "Adatvédelem", "en": "Privacy policy" }, "url": "#" }
+      { "text": { "hu": "Házirendünk", "en": "House rules", "de": "Hausordnung", "pl": "Regulamin", "sk": "Domový poriadok", "ro": "Regulament" }, "url": "#" },
+      { "text": { "hu": "ÁSZF", "en": "Terms & Conditions", "de": "AGB", "pl": "Regulamin", "sk": "Obchodné podmienky", "ro": "Termeni și condiții" }, "url": "#" },
+      { "text": { "hu": "Adatvédelem", "en": "Privacy policy", "de": "Datenschutz", "pl": "Polityka prywatności", "sk": "Ochrana osobných údajov", "ro": "Politica de confidențialitate" }, "url": "#" }
     ]
   }
 }

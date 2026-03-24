@@ -901,65 +901,137 @@
         /* ========================================
            LANGUAGE TOGGLE
            ======================================== */
-        .lang-toggle {
+        /* Language dropdown */
+        .lang-dropdown {
+            position: relative;
+        }
+
+        .lang-dropdown-btn {
             display: flex;
             align-items: center;
-            gap: 4px;
+            gap: 6px;
             background: none;
             border: 1px solid rgba(255,255,255,0.3);
             border-radius: 100px;
-            padding: 4px 12px;
+            padding: 5px 12px 5px 8px;
             cursor: pointer;
             font-family: var(--font-body);
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             font-weight: 600;
-            letter-spacing: 0.05em;
-            transition: border-color 0.3s var(--ease-out);
+            letter-spacing: 0.03em;
+            color: rgba(255,255,255,0.85);
+            transition: border-color 0.3s var(--ease-out), background 0.3s var(--ease-out);
         }
 
-        .lang-toggle .lang-opt {
-            padding: 2px 6px;
-            border-radius: 100px;
-            transition: all 0.3s var(--ease-out);
-            color: rgba(255,255,255,0.5);
+        .lang-dropdown-btn:hover {
+            border-color: rgba(255,255,255,0.5);
         }
 
-        .lang-toggle .lang-opt.active {
-            background: var(--gold);
-            color: white;
+        .lang-dropdown-btn .lang-flag {
+            font-size: 1.1rem;
+            line-height: 1;
         }
 
-        .nav.scrolled .lang-toggle {
+        .lang-dropdown-btn .lang-arrow {
+            font-size: 0.55rem;
+            margin-left: 2px;
+            transition: transform 0.25s var(--ease-out);
+        }
+
+        .lang-dropdown.open .lang-dropdown-btn .lang-arrow {
+            transform: rotate(180deg);
+        }
+
+        .nav.scrolled .lang-dropdown-btn {
             border-color: var(--cream-dark);
+            color: var(--text);
         }
 
-        .nav.scrolled .lang-toggle .lang-opt {
-            color: var(--text-light);
+        .nav.scrolled .lang-dropdown-btn:hover {
+            border-color: var(--gold-light);
         }
 
-        .nav.scrolled .lang-toggle .lang-opt.active {
-            color: white;
+        .lang-dropdown-menu {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            background: var(--white);
+            border: 1px solid var(--cream-dark);
+            border-radius: var(--radius-sm);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            min-width: 160px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-8px);
+            transition: opacity 0.25s var(--ease-out), transform 0.25s var(--ease-out), visibility 0.25s;
+            z-index: 1001;
+            overflow: hidden;
+        }
+
+        .lang-dropdown.open .lang-dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .lang-dropdown-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 16px;
+            cursor: pointer;
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            color: var(--text);
+            transition: background 0.2s;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+        }
+
+        .lang-dropdown-item:hover {
+            background: var(--cream);
+        }
+
+        .lang-dropdown-item.active {
+            background: var(--cream);
+            font-weight: 600;
+            color: var(--warm-dark);
+        }
+
+        .lang-dropdown-item .lang-flag {
+            font-size: 1.2rem;
+            line-height: 1;
         }
 
         /* Mobile lang toggle in mobile menu */
         .mobile-lang-toggle {
             display: flex;
-            gap: 12px;
+            flex-wrap: wrap;
+            gap: 8px;
             justify-content: center;
             margin-top: 24px;
         }
 
         .mobile-lang-toggle button {
-            padding: 8px 24px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
             border: 2px solid rgba(255,255,255,0.2);
             border-radius: 100px;
             background: none;
             color: rgba(255,255,255,0.5);
             font-family: var(--font-body);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s var(--ease-out);
+            transition: background 0.3s var(--ease-out), border-color 0.3s var(--ease-out), color 0.3s var(--ease-out);
+        }
+
+        .mobile-lang-toggle button .lang-flag {
+            font-size: 1.15rem;
         }
 
         .mobile-lang-toggle button.active {
@@ -1935,7 +2007,7 @@
 
             .nav-links { display: none; }
             .nav-cta.desktop-only { display: none; }
-            .lang-toggle.desktop-only { display: none; }
+            .lang-dropdown.desktop-only { display: none; }
             .hamburger { display: flex; }
 
             .stats-grid {
@@ -2030,10 +2102,21 @@
                 <li><a href="#helyszin" data-i18n="navLocation">Helyszín</a></li>
                 <li><a href="#kapcsolat" data-i18n="navContact">Kapcsolat</a></li>
             </ul>
-            <button class="lang-toggle desktop-only" id="lang-toggle" aria-label="Nyelv váltás">
-                <span class="lang-opt active" data-lang="hu">HU</span>
-                <span class="lang-opt" data-lang="en">EN</span>
-            </button>
+            <div class="lang-dropdown desktop-only" id="lang-dropdown">
+                <button class="lang-dropdown-btn" id="lang-dropdown-btn" aria-label="Nyelv váltás">
+                    <span class="lang-flag" id="lang-current-flag">🇭🇺</span>
+                    <span class="lang-code" id="lang-current-code">HU</span>
+                    <span class="lang-arrow">▼</span>
+                </button>
+                <div class="lang-dropdown-menu" id="lang-dropdown-menu">
+                    <button class="lang-dropdown-item active" data-lang="hu"><span class="lang-flag">🇭🇺</span> Magyar</button>
+                    <button class="lang-dropdown-item" data-lang="en"><span class="lang-flag">🇬🇧</span> English</button>
+                    <button class="lang-dropdown-item" data-lang="de"><span class="lang-flag">🇩🇪</span> Deutsch</button>
+                    <button class="lang-dropdown-item" data-lang="pl"><span class="lang-flag">🇵🇱</span> Polski</button>
+                    <button class="lang-dropdown-item" data-lang="sk"><span class="lang-flag">🇸🇰</span> Slovenčina</button>
+                    <button class="lang-dropdown-item" data-lang="ro"><span class="lang-flag">🇷🇴</span> Română</button>
+                </div>
+            </div>
             <a href="#foglalas" class="nav-cta desktop-only" id="nav-cta-btn">Foglaljon most</a>
             <button class="hamburger" id="hamburger" aria-label="Menü megnyitása">
                 <span></span>
@@ -2052,8 +2135,12 @@
         <a href="#helyszin" data-i18n="navLocation">Helyszín</a>
         <a href="#kapcsolat" data-i18n="navContact">Kapcsolat</a>
         <div class="mobile-lang-toggle" id="mobile-lang-toggle">
-            <button class="active" data-lang="hu">Magyar</button>
-            <button data-lang="en">English</button>
+            <button class="active" data-lang="hu"><span class="lang-flag">🇭🇺</span> HU</button>
+            <button data-lang="en"><span class="lang-flag">🇬🇧</span> EN</button>
+            <button data-lang="de"><span class="lang-flag">🇩🇪</span> DE</button>
+            <button data-lang="pl"><span class="lang-flag">🇵🇱</span> PL</button>
+            <button data-lang="sk"><span class="lang-flag">🇸🇰</span> SK</button>
+            <button data-lang="ro"><span class="lang-flag">🇷🇴</span> RO</button>
         </div>
     </div>
 
@@ -2408,6 +2495,210 @@
                 seoSuffix: 'Accommodation in Hajdúszoboszló',
                 mapFallback: 'Map coming soon',
                 mapTitle: 'Map'
+            },
+            de: {
+                navRooms: 'Zimmer', navServices: 'Ausstattung', navBooking: 'Buchung',
+                navReviews: 'Bewertungen', navLocation: 'Lage', navContact: 'Kontakt',
+                heroBtn1: 'Verfügbare Zimmer ansehen →', heroBtn2: 'Unsere Zimmer',
+                roomsLabel: 'Unterkunft', roomsTitle: 'Unsere Zimmer & Apartments',
+                roomsSub: 'Alle Zimmer sind klimatisiert und verfügen über kostenloses WLAN und hochwertige Ausstattung.',
+                servicesLabel: 'Komfort', servicesTitle: 'Unsere Leistungen',
+                servicesSub: 'Wir tun alles, damit sich unsere Gäste so wohl wie möglich fühlen.',
+                bookingLabel: 'Buchung', bookingTitle: 'Buchen Sie Ihren Aufenthalt',
+                bookingSub: 'Wählen Sie Ihre Daten und Ihren Zimmertyp. Bei Direktbuchung bieten wir 10% günstigere Preise!',
+                reviewsLabel: 'Bewertungen', reviewsTitle: 'Was unsere Gäste sagen',
+                reviewsSub: 'Wir sind stolz auf das Feedback unserer Gäste.',
+                locationLabel: 'Lage', locationTitle: 'Wo Sie uns finden',
+                legendFree: 'Frei', legendBooked: 'Belegt', legendSelected: 'Ausgewählt', legendToday: 'Heute',
+                months: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
+                         'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
+                days: ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'],
+                roomTypeLabel: 'Zimmertyp:', perNightShort: '/Nacht',
+                guests: 'Gäste', perNight: '/ Nacht', bookBtn: 'Buchen', photos: 'Fotos',
+                galleryTooltip: 'Klicken Sie, um die Galerie zu öffnen',
+                selectCheckout: 'Bitte wählen Sie das Abreisedatum!',
+                rangeBooked: 'Der gewählte Zeitraum enthält belegte Tage. Bitte wählen Sie einen anderen Zeitraum!',
+                minStayError: 'Mindestaufenthalt: {n} Nächte. Bitte wählen Sie einen längeren Zeitraum!',
+                nightsUnit: 'Nächte', perNightCalc: '/ Nacht', totalLabel: 'Gesamt',
+                bookingCompare: 'Auf Booking.com:', savingLabel: 'Sie sparen:',
+                formTitle: 'Buchungsdetails',
+                labelCheckin: 'Anreise', labelCheckout: 'Abreise',
+                labelGuests: 'Anzahl der Gäste', labelRoom: 'Zimmertyp',
+                labelName: 'Name', labelEmail: 'E-Mail', labelPhone: 'Telefonnummer',
+                labelMessage: 'Nachricht (optional)',
+                placeholderName: 'Vollständiger Name', placeholderEmail: 'beispiel@email.de',
+                placeholderPhone: '+36 30 123 4567',
+                placeholderMessage: 'Besondere Wünsche, Fragen...',
+                errCheckin: 'Bitte wählen Sie ein Anreisedatum im Kalender!',
+                errCheckout: 'Bitte wählen Sie ein Abreisedatum im Kalender!',
+                errName: 'Bitte geben Sie Ihren Namen ein!',
+                errEmail: 'Bitte geben Sie eine gültige E-Mail-Adresse ein!',
+                errPhone: 'Bitte geben Sie eine gültige Telefonnummer ein!',
+                submitBtn: 'Buchungsanfrage senden →', submitting: 'Wird gesendet...',
+                whyDirectTitle: '🏷️ Warum direkt buchen?',
+                thankYouTitle: 'Vielen Dank für Ihre Buchungsanfrage!',
+                thankYouText: 'Wir haben Ihre Anfrage erhalten. Wir bestätigen innerhalb von 24 Stunden per E-Mail oder Telefon.',
+                newBookingBtn: 'Neue Buchung',
+                ctaTitle: 'Haben Sie Fragen? Rufen Sie uns an!',
+                ctaSub: 'Wir helfen Ihnen gerne bei der Buchung und beantworten alle Ihre Fragen.',
+                ctaBookBtn: 'Jetzt buchen →',
+                footerRooms: 'Unsere Zimmer', footerInfo: 'Information', footerContact: 'Kontakt',
+                footerNtak: 'NTAK-Registrierungsnr.:', footerCredit: 'Erstellt von:',
+                seoSuffix: 'Unterkunft in Hajdúszoboszló',
+                mapFallback: 'Karte demnächst', mapTitle: 'Karte'
+            },
+            pl: {
+                navRooms: 'Pokoje', navServices: 'Usługi', navBooking: 'Rezerwacja',
+                navReviews: 'Opinie', navLocation: 'Lokalizacja', navContact: 'Kontakt',
+                heroBtn1: 'Zobacz dostępne pokoje →', heroBtn2: 'Nasze pokoje',
+                roomsLabel: 'Zakwaterowanie', roomsTitle: 'Nasze pokoje i apartamenty',
+                roomsSub: 'Wszystkie pokoje są klimatyzowane, z bezpłatnym WiFi i wyposażeniem premium.',
+                servicesLabel: 'Komfort', servicesTitle: 'Nasze usługi',
+                servicesSub: 'Robimy wszystko, aby nasi goście czuli się jak najbardziej komfortowo.',
+                bookingLabel: 'Rezerwacja', bookingTitle: 'Zarezerwuj pobyt',
+                bookingSub: 'Wybierz terminy i typ pokoju. Przy rezerwacji bezpośredniej oferujemy ceny niższe o 10%!',
+                reviewsLabel: 'Opinie', reviewsTitle: 'Co mówią nasi goście',
+                reviewsSub: 'Jesteśmy dumni z opinii naszych gości.',
+                locationLabel: 'Lokalizacja', locationTitle: 'Gdzie nas znaleźć?',
+                legendFree: 'Wolny', legendBooked: 'Zajęty', legendSelected: 'Wybrany', legendToday: 'Dziś',
+                months: ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec',
+                         'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'],
+                days: ['Pn', 'Wt', 'Śr', 'Cz', 'Pt', 'So', 'Nd'],
+                roomTypeLabel: 'Typ pokoju:', perNightShort: '/noc',
+                guests: 'osób', perNight: '/ noc', bookBtn: 'Rezerwuj', photos: 'zdjęć',
+                galleryTooltip: 'Kliknij, aby otworzyć galerię',
+                selectCheckout: 'Proszę wybrać datę wyjazdu!',
+                rangeBooked: 'Wybrany okres zawiera zajęte dni. Proszę wybrać inny okres!',
+                minStayError: 'Minimalny pobyt to {n} nocy. Proszę wybrać dłuższy okres!',
+                nightsUnit: 'nocy', perNightCalc: '/ noc', totalLabel: 'Razem',
+                bookingCompare: 'Na Booking.com:', savingLabel: 'Oszczędzasz:',
+                formTitle: 'Dane rezerwacji',
+                labelCheckin: 'Przyjazd', labelCheckout: 'Wyjazd',
+                labelGuests: 'Liczba gości', labelRoom: 'Typ pokoju',
+                labelName: 'Imię i nazwisko', labelEmail: 'E-mail', labelPhone: 'Numer telefonu',
+                labelMessage: 'Wiadomość (opcjonalnie)',
+                placeholderName: 'Imię i nazwisko', placeholderEmail: 'przyklad@email.pl',
+                placeholderPhone: '+48 123 456 789',
+                placeholderMessage: 'Specjalne życzenia, pytania...',
+                errCheckin: 'Proszę wybrać datę przyjazdu w kalendarzu!',
+                errCheckout: 'Proszę wybrać datę wyjazdu w kalendarzu!',
+                errName: 'Proszę podać imię i nazwisko!',
+                errEmail: 'Proszę podać prawidłowy adres e-mail!',
+                errPhone: 'Proszę podać prawidłowy numer telefonu!',
+                submitBtn: 'Wyślij rezerwację →', submitting: 'Wysyłanie...',
+                whyDirectTitle: '🏷️ Dlaczego rezerwować bezpośrednio?',
+                thankYouTitle: 'Dziękujemy za rezerwację!',
+                thankYouText: 'Otrzymaliśmy Twoją prośbę o rezerwację. Potwierdzimy w ciągu 24 godzin e-mailem lub telefonicznie.',
+                newBookingBtn: 'Nowa rezerwacja',
+                ctaTitle: 'Masz pytania? Zadzwoń do nas!',
+                ctaSub: 'Chętnie pomożemy z rezerwacją i odpowiemy na wszystkie pytania.',
+                ctaBookBtn: 'Zarezerwuj teraz →',
+                footerRooms: 'Nasze pokoje', footerInfo: 'Informacje', footerContact: 'Kontakt',
+                footerNtak: 'Nr rejestracyjny NTAK:', footerCredit: 'Stworzone przez:',
+                seoSuffix: 'Zakwaterowanie w Hajdúszoboszló',
+                mapFallback: 'Mapa wkrótce', mapTitle: 'Mapa'
+            },
+            sk: {
+                navRooms: 'Izby', navServices: 'Služby', navBooking: 'Rezervácia',
+                navReviews: 'Hodnotenia', navLocation: 'Poloha', navContact: 'Kontakt',
+                heroBtn1: 'Zobraziť voľné izby →', heroBtn2: 'Naše izby',
+                roomsLabel: 'Ubytovanie', roomsTitle: 'Naše izby a apartmány',
+                roomsSub: 'Všetky izby sú klimatizované, s bezplatným WiFi a prémiovým vybavením.',
+                servicesLabel: 'Komfort', servicesTitle: 'Naše služby',
+                servicesSub: 'Robíme všetko pre to, aby sa naši hostia cítili čo najpohodlnejšie.',
+                bookingLabel: 'Rezervácia', bookingTitle: 'Rezervujte si pobyt',
+                bookingSub: 'Vyberte si dátumy a typ izby. Pri priamej rezervácii ponúkame o 10% nižšie ceny!',
+                reviewsLabel: 'Hodnotenia', reviewsTitle: 'Čo hovoria naši hostia',
+                reviewsSub: 'Sme hrdí na spätnú väzbu od našich hostí.',
+                locationLabel: 'Poloha', locationTitle: 'Kde nás nájdete?',
+                legendFree: 'Voľný', legendBooked: 'Obsadený', legendSelected: 'Vybraný', legendToday: 'Dnes',
+                months: ['Január', 'Február', 'Marec', 'Apríl', 'Máj', 'Jún',
+                         'Júl', 'August', 'September', 'Október', 'November', 'December'],
+                days: ['Po', 'Ut', 'St', 'Št', 'Pi', 'So', 'Ne'],
+                roomTypeLabel: 'Typ izby:', perNightShort: '/noc',
+                guests: 'hostí', perNight: '/ noc', bookBtn: 'Rezervovať', photos: 'fotiek',
+                galleryTooltip: 'Kliknite pre otvorenie galérie',
+                selectCheckout: 'Prosím vyberte dátum odchodu!',
+                rangeBooked: 'Vybrané obdobie obsahuje obsadené dni. Prosím vyberte iné obdobie!',
+                minStayError: 'Minimálny pobyt je {n} nocí. Prosím vyberte dlhšie obdobie!',
+                nightsUnit: 'nocí', perNightCalc: '/ noc', totalLabel: 'Celkom',
+                bookingCompare: 'Na Booking.com:', savingLabel: 'Ušetríte:',
+                formTitle: 'Údaje rezervácie',
+                labelCheckin: 'Príchod', labelCheckout: 'Odchod',
+                labelGuests: 'Počet hostí', labelRoom: 'Typ izby',
+                labelName: 'Meno', labelEmail: 'E-mail', labelPhone: 'Telefónne číslo',
+                labelMessage: 'Správa (voliteľné)',
+                placeholderName: 'Celé meno', placeholderEmail: 'priklad@email.sk',
+                placeholderPhone: '+421 900 123 456',
+                placeholderMessage: 'Špeciálne požiadavky, otázky...',
+                errCheckin: 'Prosím vyberte dátum príchodu v kalendári!',
+                errCheckout: 'Prosím vyberte dátum odchodu v kalendári!',
+                errName: 'Prosím zadajte svoje meno!',
+                errEmail: 'Prosím zadajte platnú e-mailovú adresu!',
+                errPhone: 'Prosím zadajte platné telefónne číslo!',
+                submitBtn: 'Odoslať rezerváciu →', submitting: 'Odosielanie...',
+                whyDirectTitle: '🏷️ Prečo rezervovať priamo?',
+                thankYouTitle: 'Ďakujeme za vašu rezerváciu!',
+                thankYouText: 'Vašu žiadosť o rezerváciu sme prijali. Potvrdíme do 24 hodín e-mailom alebo telefonicky.',
+                newBookingBtn: 'Nová rezervácia',
+                ctaTitle: 'Máte otázky? Zavolajte nám!',
+                ctaSub: 'Radi vám pomôžeme s rezerváciou a odpovieme na všetky vaše otázky.',
+                ctaBookBtn: 'Rezervovať teraz →',
+                footerRooms: 'Naše izby', footerInfo: 'Informácie', footerContact: 'Kontakt',
+                footerNtak: 'Registračné číslo NTAK:', footerCredit: 'Vytvorené:',
+                seoSuffix: 'Ubytovanie v Hajdúszoboszló',
+                mapFallback: 'Mapa čoskoro', mapTitle: 'Mapa'
+            },
+            ro: {
+                navRooms: 'Camere', navServices: 'Servicii', navBooking: 'Rezervare',
+                navReviews: 'Recenzii', navLocation: 'Locație', navContact: 'Contact',
+                heroBtn1: 'Vezi camerele disponibile →', heroBtn2: 'Camerele noastre',
+                roomsLabel: 'Cazare', roomsTitle: 'Camerele și apartamentele noastre',
+                roomsSub: 'Toate camerele sunt climatizate, cu WiFi gratuit și dotări premium.',
+                servicesLabel: 'Confort', servicesTitle: 'Serviciile noastre',
+                servicesSub: 'Facem totul pentru ca oaspeții noștri să se simtă cât mai confortabil.',
+                bookingLabel: 'Rezervare', bookingTitle: 'Rezervați-vă sejurul',
+                bookingSub: 'Alegeți datele și tipul camerei. La rezervarea directă oferim prețuri cu 10% mai mici!',
+                reviewsLabel: 'Recenzii', reviewsTitle: 'Ce spun oaspeții noștri',
+                reviewsSub: 'Suntem mândri de feedback-ul oaspeților noștri.',
+                locationLabel: 'Locație', locationTitle: 'Unde ne găsiți?',
+                legendFree: 'Liber', legendBooked: 'Ocupat', legendSelected: 'Selectat', legendToday: 'Astăzi',
+                months: ['Ianuarie', 'Februarie', 'Martie', 'Aprilie', 'Mai', 'Iunie',
+                         'Iulie', 'August', 'Septembrie', 'Octombrie', 'Noiembrie', 'Decembrie'],
+                days: ['Lu', 'Ma', 'Mi', 'Jo', 'Vi', 'Sâ', 'Du'],
+                roomTypeLabel: 'Tip cameră:', perNightShort: '/noapte',
+                guests: 'oaspeți', perNight: '/ noapte', bookBtn: 'Rezervă', photos: 'foto',
+                galleryTooltip: 'Click pentru a deschide galeria',
+                selectCheckout: 'Vă rugăm selectați data de plecare!',
+                rangeBooked: 'Perioada selectată conține zile ocupate. Vă rugăm alegeți altă perioadă!',
+                minStayError: 'Sejurul minim este de {n} nopți. Vă rugăm alegeți o perioadă mai lungă!',
+                nightsUnit: 'nopți', perNightCalc: '/ noapte', totalLabel: 'Total',
+                bookingCompare: 'Pe Booking.com:', savingLabel: 'Economisești:',
+                formTitle: 'Detalii rezervare',
+                labelCheckin: 'Sosire', labelCheckout: 'Plecare',
+                labelGuests: 'Număr oaspeți', labelRoom: 'Tip cameră',
+                labelName: 'Nume', labelEmail: 'E-mail', labelPhone: 'Număr telefon',
+                labelMessage: 'Mesaj (opțional)',
+                placeholderName: 'Nume complet', placeholderEmail: 'exemplu@email.ro',
+                placeholderPhone: '+40 700 123 456',
+                placeholderMessage: 'Cerințe speciale, întrebări...',
+                errCheckin: 'Vă rugăm selectați data de sosire din calendar!',
+                errCheckout: 'Vă rugăm selectați data de plecare din calendar!',
+                errName: 'Vă rugăm introduceți numele!',
+                errEmail: 'Vă rugăm introduceți o adresă de e-mail validă!',
+                errPhone: 'Vă rugăm introduceți un număr de telefon valid!',
+                submitBtn: 'Trimite rezervarea →', submitting: 'Se trimite...',
+                whyDirectTitle: '🏷️ De ce să rezervi direct?',
+                thankYouTitle: 'Vă mulțumim pentru rezervare!',
+                thankYouText: 'Am primit cererea dvs. de rezervare. Vom confirma în 24 de ore prin e-mail sau telefon.',
+                newBookingBtn: 'Rezervare nouă',
+                ctaTitle: 'Aveți întrebări? Sunați-ne!',
+                ctaSub: 'Vă ajutăm cu plăcere la rezervare și răspundem la toate întrebările.',
+                ctaBookBtn: 'Rezervă acum →',
+                footerRooms: 'Camerele noastre', footerInfo: 'Informații', footerContact: 'Contact',
+                footerNtak: 'Nr. înregistrare NTAK:', footerCredit: 'Creat de:',
+                seoSuffix: 'Cazare în Hajdúszoboszló',
+                mapFallback: 'Hartă în curând', mapTitle: 'Hartă'
             }
         };
 
@@ -3413,15 +3704,37 @@
             document.documentElement.lang = currentLang;
         }
 
+        var LANG_FLAGS = { hu: '🇭🇺', en: '🇬🇧', de: '🇩🇪', pl: '🇵🇱', sk: '🇸🇰', ro: '🇷🇴' };
+        var LANG_CODES = { hu: 'HU', en: 'EN', de: 'DE', pl: 'PL', sk: 'SK', ro: 'RO' };
+
         function initLangToggle() {
-            // Desktop toggle
-            var toggle = document.getElementById('lang-toggle');
-            if (toggle) {
-                toggle.addEventListener('click', function(e) {
-                    var opt = e.target.closest('.lang-opt');
-                    if (!opt) return;
-                    switchLanguage(opt.getAttribute('data-lang'));
+            // Desktop dropdown
+            var dropdownBtn = document.getElementById('lang-dropdown-btn');
+            var dropdown = document.getElementById('lang-dropdown');
+            var menu = document.getElementById('lang-dropdown-menu');
+
+            if (dropdownBtn && dropdown) {
+                dropdownBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    dropdown.classList.toggle('open');
                 });
+
+                // Close on click outside
+                document.addEventListener('click', function(e) {
+                    if (!dropdown.contains(e.target)) {
+                        dropdown.classList.remove('open');
+                    }
+                });
+
+                // Menu item clicks
+                if (menu) {
+                    menu.addEventListener('click', function(e) {
+                        var item = e.target.closest('.lang-dropdown-item');
+                        if (!item) return;
+                        switchLanguage(item.getAttribute('data-lang'));
+                        dropdown.classList.remove('open');
+                    });
+                }
             }
 
             // Mobile toggle
@@ -3469,8 +3782,14 @@
         }
 
         function updateLangToggleUI() {
-            // Desktop
-            document.querySelectorAll('#lang-toggle .lang-opt').forEach(function(el) {
+            // Desktop dropdown button
+            var flagEl = document.getElementById('lang-current-flag');
+            var codeEl = document.getElementById('lang-current-code');
+            if (flagEl) flagEl.textContent = LANG_FLAGS[currentLang] || '🌐';
+            if (codeEl) codeEl.textContent = LANG_CODES[currentLang] || currentLang.toUpperCase();
+
+            // Desktop menu items
+            document.querySelectorAll('#lang-dropdown-menu .lang-dropdown-item').forEach(function(el) {
                 el.classList.toggle('active', el.getAttribute('data-lang') === currentLang);
             });
             // Mobile
