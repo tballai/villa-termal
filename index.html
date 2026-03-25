@@ -1720,6 +1720,130 @@
             flex-shrink: 0;
         }
 
+        /* Booking form + info panel layout */
+        .booking-form-layout {
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 28px;
+            align-items: start;
+        }
+
+        /* Info panel */
+        .booking-info-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .info-card {
+            background: var(--white);
+            border: 1px solid var(--cream-dark);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+        .info-card-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 13px 16px;
+            background: var(--cream);
+            border-bottom: 1px solid var(--cream-dark);
+        }
+        .info-card-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+        .info-card-icon.icon-blue { background: #E6F1FB; }
+        .info-card-icon.icon-amber { background: #FAEEDA; }
+        .info-card-icon.icon-green { background: #EAF3DE; }
+        .info-card-icon.icon-purple { background: #EEEDFE; }
+        .info-card-title {
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--warm-dark);
+        }
+        .info-card-body {
+            padding: 14px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .info-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 9px;
+            font-size: 0.8rem;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        .info-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            margin-top: 6px;
+        }
+        .info-dot.dot-blue { background: #378ADD; }
+        .info-dot.dot-amber { background: #BA7517; }
+        .info-dot.dot-green { background: #639922; }
+        .info-dot.dot-purple { background: #7F77DD; }
+        .info-row strong {
+            color: var(--warm-dark);
+            font-weight: 600;
+        }
+        .info-chip-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding: 10px 16px;
+            border-top: 1px solid var(--cream-dark);
+        }
+        .info-chip {
+            font-size: 0.72rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 100px;
+        }
+        .info-chip.chip-amber { background: #FAEEDA; color: #633806; }
+        .info-chip.chip-blue { background: #E6F1FB; color: #0C447C; }
+        .info-chip.chip-gray { background: var(--cream); color: var(--text-light); }
+        .booking-info-highlight {
+            background: #EAF3DE;
+            border: 1px solid #C0DD97;
+            border-radius: var(--radius-md);
+            padding: 14px 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .booking-info-highlight-icon {
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+        .booking-info-highlight-text {
+            font-size: 0.8rem;
+            color: #27500A;
+            line-height: 1.6;
+        }
+        .booking-info-highlight-text strong {
+            font-weight: 600;
+            display: block;
+            font-size: 0.85rem;
+            margin-bottom: 2px;
+        }
+
+        @media (max-width: 900px) {
+            .booking-form-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* Thank you message */
         .booking-thank-you {
             display: none;
@@ -2516,59 +2640,66 @@
                     <div class="legend-item"><span class="legend-swatch swatch-today"></span> <span data-i18n="legendToday">Ma</span></div>
                 </div>
 
-                <!-- Booking Form -->
+                <!-- Booking Form + Info Panel -->
                 <div class="booking-form-section" id="booking-form-section">
                     <h3 class="booking-form-title" data-i18n="formTitle">Foglalási adatok</h3>
-                    <form id="booking-form" novalidate>
-                        <div class="booking-form-grid">
-                            <div class="form-group">
-                                <label for="f-checkin"><span data-i18n="labelCheckin">Érkezés</span> <span class="required">*</span></label>
-                                <input type="date" id="f-checkin" name="checkin" readonly>
-                                <span class="field-error" id="err-checkin" data-i18n="errCheckin">Kérjük, válasszon érkezési dátumot a naptárban!</span>
-                            </div>
-                            <div class="form-group">
-                                <label for="f-checkout"><span data-i18n="labelCheckout">Távozás</span> <span class="required">*</span></label>
-                                <input type="date" id="f-checkout" name="checkout" readonly>
-                                <span class="field-error" id="err-checkout" data-i18n="errCheckout">Kérjük, válasszon távozási dátumot a naptárban!</span>
-                            </div>
-                            <div class="form-group">
-                                <label for="f-guests"><span data-i18n="labelGuests">Vendégek száma</span> <span class="required">*</span></label>
-                                <select id="f-guests" name="guests"></select>
-                            </div>
-                            <div class="form-group">
-                                <label for="f-room"><span data-i18n="labelRoom">Szobatípus</span> <span class="required">*</span></label>
-                                <select id="f-room" name="room" readonly></select>
-                            </div>
-                            <div class="form-group">
-                                <label for="f-name"><span data-i18n="labelName">Név</span> <span class="required">*</span></label>
-                                <input type="text" id="f-name" name="name" placeholder="Teljes név" data-i18n-placeholder="placeholderName" autocomplete="name">
-                                <span class="field-error" id="err-name" data-i18n="errName">Kérjük, adja meg a nevét!</span>
-                            </div>
-                            <div class="form-group">
-                                <label for="f-email"><span data-i18n="labelEmail">Email</span> <span class="required">*</span></label>
-                                <input type="email" id="f-email" name="email" placeholder="pelda@email.hu" data-i18n-placeholder="placeholderEmail" autocomplete="email">
-                                <span class="field-error" id="err-email" data-i18n="errEmail">Kérjük, adjon meg egy érvényes email címet!</span>
-                            </div>
-                            <div class="form-group">
-                                <label for="f-phone"><span data-i18n="labelPhone">Telefonszám</span> <span class="required">*</span></label>
-                                <input type="tel" id="f-phone" name="phone" placeholder="+36 30 123 4567" data-i18n-placeholder="placeholderPhone" autocomplete="tel">
-                                <span class="field-error" id="err-phone" data-i18n="errPhone">Kérjük, adjon meg egy érvényes telefonszámot!</span>
-                            </div>
-                            <div class="form-group full-width">
-                                <label for="f-message" data-i18n="labelMessage">Megjegyzés (opcionális)</label>
-                                <textarea id="f-message" name="message" placeholder="Különleges kérések, kérdések..." data-i18n-placeholder="placeholderMessage"></textarea>
-                            </div>
-                        </div>
-                        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-                        <div class="form-actions">
-                            <button type="submit" class="btn btn-primary form-submit-btn" id="form-submit-btn"><span class="btn-text" data-i18n="submitBtn">Foglalás küldése</span><span class="btn-icon"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></button>
-                        </div>
-                    </form>
+                    <div class="booking-form-layout">
+                        <div class="booking-form-col">
+                            <form id="booking-form" novalidate>
+                                <div class="booking-form-grid">
+                                    <div class="form-group">
+                                        <label for="f-checkin"><span data-i18n="labelCheckin">Érkezés</span> <span class="required">*</span></label>
+                                        <input type="date" id="f-checkin" name="checkin" readonly>
+                                        <span class="field-error" id="err-checkin" data-i18n="errCheckin">Kérjük, válasszon érkezési dátumot a naptárban!</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="f-checkout"><span data-i18n="labelCheckout">Távozás</span> <span class="required">*</span></label>
+                                        <input type="date" id="f-checkout" name="checkout" readonly>
+                                        <span class="field-error" id="err-checkout" data-i18n="errCheckout">Kérjük, válasszon távozási dátumot a naptárban!</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="f-guests"><span data-i18n="labelGuests">Vendégek száma</span> <span class="required">*</span></label>
+                                        <select id="f-guests" name="guests"></select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="f-room"><span data-i18n="labelRoom">Szobatípus</span> <span class="required">*</span></label>
+                                        <select id="f-room" name="room" readonly></select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="f-name"><span data-i18n="labelName">Név</span> <span class="required">*</span></label>
+                                        <input type="text" id="f-name" name="name" placeholder="Teljes név" data-i18n-placeholder="placeholderName" autocomplete="name">
+                                        <span class="field-error" id="err-name" data-i18n="errName">Kérjük, adja meg a nevét!</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="f-email"><span data-i18n="labelEmail">Email</span> <span class="required">*</span></label>
+                                        <input type="email" id="f-email" name="email" placeholder="pelda@email.hu" data-i18n-placeholder="placeholderEmail" autocomplete="email">
+                                        <span class="field-error" id="err-email" data-i18n="errEmail">Kérjük, adjon meg egy érvényes email címet!</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="f-phone"><span data-i18n="labelPhone">Telefonszám</span> <span class="required">*</span></label>
+                                        <input type="tel" id="f-phone" name="phone" placeholder="+36 30 123 4567" data-i18n-placeholder="placeholderPhone" autocomplete="tel">
+                                        <span class="field-error" id="err-phone" data-i18n="errPhone">Kérjük, adjon meg egy érvényes telefonszámot!</span>
+                                    </div>
+                                    <div class="form-group full-width">
+                                        <label for="f-message" data-i18n="labelMessage">Megjegyzés (opcionális)</label>
+                                        <textarea id="f-message" name="message" placeholder="Különleges kérések, kérdések..." data-i18n-placeholder="placeholderMessage"></textarea>
+                                    </div>
+                                </div>
+                                <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary form-submit-btn" id="form-submit-btn"><span class="btn-text" data-i18n="submitBtn">Foglalás küldése</span><span class="btn-icon"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></button>
+                                </div>
+                            </form>
 
-                    <!-- Why Direct -->
-                    <div class="why-direct" id="why-direct">
-                        <div class="why-direct-title" data-i18n="whyDirectTitle">🏷️ Miért foglaljon közvetlenül?</div>
-                        <ul class="why-direct-list" id="why-direct-list"></ul>
+                            <!-- Why Direct -->
+                            <div class="why-direct" id="why-direct">
+                                <div class="why-direct-title" data-i18n="whyDirectTitle">🏷️ Miért foglaljon közvetlenül?</div>
+                                <ul class="why-direct-list" id="why-direct-list"></ul>
+                            </div>
+                        </div>
+
+                        <!-- Info Panel -->
+                        <div class="booking-info-panel" id="booking-info-panel"></div>
                     </div>
                 </div>
 
@@ -2744,7 +2875,25 @@
                 seoSuffix: 'Szállás Hajdúszoboszlón',
                 mapFallback: 'Térkép hamarosan',
                 mapTitle: 'Térkép',
-                reviewCta: 'Értékeljen minket a Google-ön!'
+                reviewCta: 'Értékeljen minket a Google-ön!',
+                infoProcess: 'Hogyan zajlik a foglalás?',
+                infoProcessStep1: 'Elküldi a foglalási kérelmet',
+                infoProcessStep2: '<strong>24 órán belül</strong> emailben visszaigazolunk és megküldjük az előleg fizetési adatait',
+                infoProcessStep3: 'Az előleg beérkezése után a foglalás végleges — visszaigazoló emailt küldünk',
+                infoProcessStep4: 'A fennmaradó összeget bejelentkezéskor fizeti',
+                infoPayment: 'Fizetési módok',
+                infoPaymentDeposit: 'Előleg: <strong>banki átutalás</strong> (a foglalástól számított 48 órán belül)',
+                infoPaymentOnsite: 'Helyszínen:',
+                infoCancellation: 'Lemondási feltételek',
+                infoComm: 'Kommunikáció',
+                infoCommHelp: 'Szívesen segítünk',
+                infoCommTranslate: 'Más nyelveken Google Fordítóval örömmel segítünk',
+                infoCommContact: 'Telefonon és emailen egyaránt elérhetők vagyunk',
+                infoQuestion: 'Kérdése van a foglalással kapcsolatban?',
+                infoQuestionText: 'Hívjon minket közvetlenül! Szívesen segítünk mielőtt elküldi a kérelmet.',
+                infoCash: 'Készpénz',
+                infoBankCard: 'Bankkártya',
+                infoSzepCard: 'SZÉP kártya'
             },
             en: {
                 navRooms: 'Rooms', navServices: 'Services', navBooking: 'Booking',
@@ -2797,7 +2946,25 @@
                 seoSuffix: 'Accommodation in Hajdúszoboszló',
                 mapFallback: 'Map coming soon',
                 mapTitle: 'Map',
-                reviewCta: 'Rate us on Google!'
+                reviewCta: 'Rate us on Google!',
+                infoProcess: 'How does booking work?',
+                infoProcessStep1: 'Submit your booking request',
+                infoProcessStep2: 'We confirm by email <strong>within 24 hours</strong> and send deposit payment details',
+                infoProcessStep3: 'Once the deposit is received, the booking is confirmed — we send a confirmation email',
+                infoProcessStep4: 'Pay the remaining amount at check-in',
+                infoPayment: 'Payment methods',
+                infoPaymentDeposit: 'Deposit: <strong>bank transfer</strong> (within 48 hours of booking)',
+                infoPaymentOnsite: 'On-site:',
+                infoCancellation: 'Cancellation policy',
+                infoComm: 'Communication',
+                infoCommHelp: 'We are happy to assist in',
+                infoCommTranslate: 'For other languages we gladly help via Google Translate',
+                infoCommContact: 'Available by phone and email',
+                infoQuestion: 'Questions about your booking?',
+                infoQuestionText: 'Call us directly! We are happy to help before you submit your request.',
+                infoCash: 'Cash',
+                infoBankCard: 'Bank card',
+                infoSzepCard: 'SZÉP card'
             },
             de: {
                 navRooms: 'Zimmer', navServices: 'Ausstattung', navBooking: 'Buchung',
@@ -2849,7 +3016,25 @@
                 footerNtak: 'NTAK-Registrierungsnr.:', footerCredit: 'Erstellt von:',
                 seoSuffix: 'Unterkunft in Hajdúszoboszló',
                 mapFallback: 'Karte demnächst', mapTitle: 'Karte',
-                reviewCta: 'Bewerten Sie uns auf Google!'
+                reviewCta: 'Bewerten Sie uns auf Google!',
+                infoProcess: 'Wie funktioniert die Buchung?',
+                infoProcessStep1: 'Senden Sie Ihre Buchungsanfrage',
+                infoProcessStep2: 'Wir bestätigen per E-Mail <strong>innerhalb von 24 Stunden</strong> und senden die Anzahlungsdaten',
+                infoProcessStep3: 'Nach Eingang der Anzahlung ist die Buchung bestätigt — wir senden eine Bestätigungs-E-Mail',
+                infoProcessStep4: 'Den Restbetrag zahlen Sie beim Check-in',
+                infoPayment: 'Zahlungsmethoden',
+                infoPaymentDeposit: 'Anzahlung: <strong>Banküberweisung</strong> (innerhalb von 48 Stunden)',
+                infoPaymentOnsite: 'Vor Ort:',
+                infoCancellation: 'Stornierungsbedingungen',
+                infoComm: 'Kommunikation',
+                infoCommHelp: 'Wir helfen gerne auf',
+                infoCommTranslate: 'Für andere Sprachen helfen wir gerne mit Google Translate',
+                infoCommContact: 'Telefonisch und per E-Mail erreichbar',
+                infoQuestion: 'Fragen zu Ihrer Buchung?',
+                infoQuestionText: 'Rufen Sie uns direkt an! Wir helfen gerne, bevor Sie Ihre Anfrage absenden.',
+                infoCash: 'Bargeld',
+                infoBankCard: 'Bankkarte',
+                infoSzepCard: 'SZÉP Karte'
             },
             pl: {
                 navRooms: 'Pokoje', navServices: 'Usługi', navBooking: 'Rezerwacja',
@@ -2901,7 +3086,25 @@
                 footerNtak: 'Nr rejestracyjny NTAK:', footerCredit: 'Stworzone przez:',
                 seoSuffix: 'Zakwaterowanie w Hajdúszoboszló',
                 mapFallback: 'Mapa wkrótce', mapTitle: 'Mapa',
-                reviewCta: 'Oceń nas na Google!'
+                reviewCta: 'Oceń nas na Google!',
+                infoProcess: 'Jak przebiega rezerwacja?',
+                infoProcessStep1: 'Wyślij prośbę o rezerwację',
+                infoProcessStep2: 'Potwierdzamy e-mailem <strong>w ciągu 24 godzin</strong> i wysyłamy dane do wpłaty zaliczki',
+                infoProcessStep3: 'Po wpłynięciu zaliczki rezerwacja jest potwierdzona — wysyłamy e-mail z potwierdzeniem',
+                infoProcessStep4: 'Pozostałą kwotę płacisz przy zameldowaniu',
+                infoPayment: 'Metody płatności',
+                infoPaymentDeposit: 'Zaliczka: <strong>przelew bankowy</strong> (w ciągu 48 godzin od rezerwacji)',
+                infoPaymentOnsite: 'Na miejscu:',
+                infoCancellation: 'Warunki anulowania',
+                infoComm: 'Komunikacja',
+                infoCommHelp: 'Chętnie pomożemy w języku',
+                infoCommTranslate: 'W innych językach chętnie pomożemy za pomocą Google Translate',
+                infoCommContact: 'Dostępni telefonicznie i mailowo',
+                infoQuestion: 'Pytania dotyczące rezerwacji?',
+                infoQuestionText: 'Zadzwoń do nas! Chętnie pomożemy przed wysłaniem zapytania.',
+                infoCash: 'Gotówka',
+                infoBankCard: 'Karta płatnicza',
+                infoSzepCard: 'Karta SZÉP'
             },
             sk: {
                 navRooms: 'Izby', navServices: 'Služby', navBooking: 'Rezervácia',
@@ -2953,7 +3156,25 @@
                 footerNtak: 'Registračné číslo NTAK:', footerCredit: 'Vytvorené:',
                 seoSuffix: 'Ubytovanie v Hajdúszoboszló',
                 mapFallback: 'Mapa čoskoro', mapTitle: 'Mapa',
-                reviewCta: 'Ohodnoťte nás na Google!'
+                reviewCta: 'Ohodnoťte nás na Google!',
+                infoProcess: 'Ako prebieha rezervácia?',
+                infoProcessStep1: 'Odošlite žiadosť o rezerváciu',
+                infoProcessStep2: 'Potvrdíme e-mailom <strong>do 24 hodín</strong> a pošleme údaje na úhradu zálohy',
+                infoProcessStep3: 'Po prijatí zálohy je rezervácia potvrdená — pošleme potvrdzovací e-mail',
+                infoProcessStep4: 'Zvyšnú sumu zaplatíte pri check-ine',
+                infoPayment: 'Platobné metódy',
+                infoPaymentDeposit: 'Záloha: <strong>bankový prevod</strong> (do 48 hodín od rezervácie)',
+                infoPaymentOnsite: 'Na mieste:',
+                infoCancellation: 'Podmienky zrušenia',
+                infoComm: 'Komunikácia',
+                infoCommHelp: 'Radi pomôžeme v jazyku',
+                infoCommTranslate: 'V iných jazykoch radi pomôžeme cez Google Translate',
+                infoCommContact: 'Dostupní telefonicky aj e-mailom',
+                infoQuestion: 'Máte otázky k rezervácii?',
+                infoQuestionText: 'Zavolajte nám! Radi pomôžeme pred odoslaním žiadosti.',
+                infoCash: 'Hotovosť',
+                infoBankCard: 'Platobná karta',
+                infoSzepCard: 'Karta SZÉP'
             },
             ro: {
                 navRooms: 'Camere', navServices: 'Servicii', navBooking: 'Rezervare',
@@ -3005,7 +3226,25 @@
                 footerNtak: 'Nr. înregistrare NTAK:', footerCredit: 'Creat de:',
                 seoSuffix: 'Cazare în Hajdúszoboszló',
                 mapFallback: 'Hartă în curând', mapTitle: 'Hartă',
-                reviewCta: 'Evaluați-ne pe Google!'
+                reviewCta: 'Evaluați-ne pe Google!',
+                infoProcess: 'Cum funcționează rezervarea?',
+                infoProcessStep1: 'Trimiteți cererea de rezervare',
+                infoProcessStep2: 'Confirmăm prin e-mail <strong>în 24 de ore</strong> și trimitem datele pentru plata avansului',
+                infoProcessStep3: 'După primirea avansului, rezervarea este confirmată — trimitem un e-mail de confirmare',
+                infoProcessStep4: 'Suma rămasă se plătește la check-in',
+                infoPayment: 'Metode de plată',
+                infoPaymentDeposit: 'Avans: <strong>transfer bancar</strong> (în 48 de ore de la rezervare)',
+                infoPaymentOnsite: 'La fața locului:',
+                infoCancellation: 'Politica de anulare',
+                infoComm: 'Comunicare',
+                infoCommHelp: 'Vă ajutăm cu plăcere în',
+                infoCommTranslate: 'Pentru alte limbi vă ajutăm cu plăcere prin Google Translate',
+                infoCommContact: 'Disponibili telefonic și prin e-mail',
+                infoQuestion: 'Întrebări despre rezervare?',
+                infoQuestionText: 'Sunați-ne direct! Vă ajutăm cu plăcere înainte de a trimite cererea.',
+                infoCash: 'Numerar',
+                infoBankCard: 'Card bancar',
+                infoSzepCard: 'Card SZÉP'
             }
         };
 
@@ -3631,6 +3870,104 @@
             whyList.innerHTML = reasons.map(function(r) {
                 return '<li><span class="why-direct-check">✓</span> ' + escHtml(ct(r)) + '</li>';
             }).join('');
+
+            // Build info panel
+            buildInfoPanel();
+        }
+
+        function buildInfoPanel() {
+            var panel = document.getElementById('booking-info-panel');
+            var b = CONFIG.booking;
+            var html = '';
+
+            // Language name map
+            var langNames = { hu: 'Magyar', en: 'English', de: 'Deutsch', pl: 'Polski', sk: 'Slovenčina', ro: 'Română' };
+            var langFlags = { hu: '🇭🇺', en: '🇬🇧', de: '🇩🇪', pl: '🇵🇱', sk: '🇸🇰', ro: '🇷🇴' };
+
+            // 1. Booking process
+            html += '<div class="info-card">' +
+                '<div class="info-card-header"><div class="info-card-icon icon-blue">📋</div><span class="info-card-title">' + t('infoProcess') + '</span></div>' +
+                '<div class="info-card-body">' +
+                '<div class="info-row"><span class="info-dot dot-blue"></span><span>' + t('infoProcessStep1') + '</span></div>' +
+                '<div class="info-row"><span class="info-dot dot-blue"></span><span>' + t('infoProcessStep2') + '</span></div>' +
+                '<div class="info-row"><span class="info-dot dot-blue"></span><span>' + t('infoProcessStep3') + '</span></div>' +
+                '<div class="info-row"><span class="info-dot dot-blue"></span><span>' + t('infoProcessStep4') + '</span></div>' +
+                '</div></div>';
+
+            // 2. Payment methods
+            var depositPct = b.depositPercent || 30;
+            var onsiteMethods = [];
+            if (b.acceptsCash) onsiteMethods.push('<strong>' + t('infoCash').toLowerCase() + '</strong>');
+            if (b.acceptsSzepCard) onsiteMethods.push('<strong>' + t('infoSzepCard') + '</strong>');
+            if (b.acceptsBankCard) onsiteMethods.push('<strong>' + t('infoBankCard').toLowerCase() + '</strong>');
+
+            html += '<div class="info-card">' +
+                '<div class="info-card-header"><div class="info-card-icon icon-amber">💳</div><span class="info-card-title">' + t('infoPayment') + '</span></div>' +
+                '<div class="info-card-body">' +
+                '<div class="info-row"><span class="info-dot dot-amber"></span><span>' + t('infoPaymentDeposit').replace('{pct}', depositPct) + '</span></div>';
+            if (onsiteMethods.length) {
+                html += '<div class="info-row"><span class="info-dot dot-amber"></span><span>' + t('infoPaymentOnsite') + ' ' + onsiteMethods.join(', ') + '</span></div>';
+            }
+            html += '</div>';
+
+            // Payment chips
+            var chips = '';
+            if (b.acceptsSzepCard && b.szepCardProviders && b.szepCardProviders.length) {
+                b.szepCardProviders.forEach(function(p) {
+                    chips += '<span class="info-chip chip-amber">' + escHtml(p) + ' ' + t('infoSzepCard') + '</span>';
+                });
+            }
+            if (b.acceptsCash) chips += '<span class="info-chip chip-gray">' + t('infoCash') + '</span>';
+            if (b.acceptsBankCard) chips += '<span class="info-chip chip-gray">' + t('infoBankCard') + '</span>';
+            if (chips) html += '<div class="info-chip-row">' + chips + '</div>';
+            html += '</div>';
+
+            // 3. Cancellation policy
+            if (b.cancellationPolicy && b.cancellationPolicy.length) {
+                html += '<div class="info-card">' +
+                    '<div class="info-card-header"><div class="info-card-icon icon-green">↩️</div><span class="info-card-title">' + t('infoCancellation') + '</span></div>' +
+                    '<div class="info-card-body">';
+                b.cancellationPolicy.forEach(function(tier) {
+                    html += '<div class="info-row"><span class="info-dot dot-green"></span><span>' + ct(tier.label) + '</span></div>';
+                });
+                if (b.cancellationNote) {
+                    html += '<div class="info-row"><span class="info-dot dot-green"></span><span>' + escHtml(ct(b.cancellationNote)) + '</span></div>';
+                }
+                html += '</div></div>';
+            }
+
+            // 4. Communication
+            var commLangs = b.communicationLanguages || ['hu'];
+            html += '<div class="info-card">' +
+                '<div class="info-card-header"><div class="info-card-icon icon-purple">💬</div><span class="info-card-title">' + t('infoComm') + '</span></div>' +
+                '<div class="info-card-body">' +
+                '<div class="info-row"><span class="info-dot dot-purple"></span><span>' + t('infoCommHelp') + ' <strong>' + commLangs.map(function(l) { return langNames[l] || l; }).join(', ').toLowerCase() + '</strong></span></div>';
+            if (b.useGoogleTranslate) {
+                html += '<div class="info-row"><span class="info-dot dot-purple"></span><span>' + t('infoCommTranslate') + '</span></div>';
+            }
+            html += '<div class="info-row"><span class="info-dot dot-purple"></span><span>' + t('infoCommContact') + '</span></div>' +
+                '</div>';
+
+            // Language chips
+            var langChips = '';
+            commLangs.forEach(function(l) {
+                langChips += '<span class="info-chip chip-blue">' + (langFlags[l] || '') + ' ' + (langNames[l] || l) + '</span>';
+            });
+            if (b.useGoogleTranslate) {
+                langChips += '<span class="info-chip chip-gray">🌐 Google Translate</span>';
+            }
+            if (langChips) html += '<div class="info-chip-row">' + langChips + '</div>';
+            html += '</div>';
+
+            // 5. Question highlight
+            html += '<div class="booking-info-highlight">' +
+                '<span class="booking-info-highlight-icon">☎</span>' +
+                '<div class="booking-info-highlight-text">' +
+                '<strong>' + t('infoQuestion') + '</strong>' +
+                t('infoQuestionText') +
+                '</div></div>';
+
+            panel.innerHTML = html;
         }
 
         function initBookingForm() {

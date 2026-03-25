@@ -310,6 +310,59 @@
       { "hu": "Személyes egyeztetés a szállásadóval", "en": "Personal communication with the host", "de": "Persönliche Kommunikation mit dem Gastgeber", "pl": "Bezpośredni kontakt z gospodarzem", "sk": "Osobná komunikácia s hostiteľom", "ro": "Comunicare directă cu gazda" },
       { "hu": "Rugalmas fizetési feltételek", "en": "Flexible payment terms", "de": "Flexible Zahlungsbedingungen", "pl": "Elastyczne warunki płatności", "sk": "Flexibilné platobné podmienky", "ro": "Condiții flexibile de plată" }
     ],
+    "depositPercent": 30,
+    "acceptsSzepCard": true,
+    "szepCardProviders": ["OTP", "MKB", "K&H"],
+    "acceptsBankCard": false,
+    "acceptsCash": true,
+    "cancellationPolicy": [
+      {
+        "days": 14,
+        "refund": 100,
+        "label": {
+          "hu": "14+ nappal előre: teljes előleg visszajár",
+          "en": "14+ days in advance: full deposit refund",
+          "de": "14+ Tage im Voraus: volle Rückerstattung der Anzahlung",
+          "pl": "14+ dni wcześniej: pełny zwrot zaliczki",
+          "sk": "14+ dní vopred: plná návratnosť zálohy",
+          "ro": "14+ zile în avans: rambursare integrală a avansului"
+        }
+      },
+      {
+        "days": 7,
+        "refund": 50,
+        "label": {
+          "hu": "7–13 nappal előre: előleg 50%-a visszajár",
+          "en": "7–13 days in advance: 50% deposit refund",
+          "de": "7–13 Tage im Voraus: 50% Rückerstattung",
+          "pl": "7–13 dni wcześniej: 50% zwrotu zaliczki",
+          "sk": "7–13 dní vopred: 50% návratnosť zálohy",
+          "ro": "7–13 zile în avans: 50% rambursare"
+        }
+      },
+      {
+        "days": 1,
+        "refund": 0,
+        "label": {
+          "hu": "1–6 napon belül: az előleg nem visszatéríthető",
+          "en": "1–6 days: deposit is non-refundable",
+          "de": "1–6 Tage: Anzahlung nicht erstattbar",
+          "pl": "1–6 dni: zaliczka bezzwrotna",
+          "sk": "1–6 dní: záloha je nevratná",
+          "ro": "1–6 zile: avansul nu este rambursabil"
+        }
+      }
+    ],
+    "cancellationNote": {
+      "hu": "Betegség, vis maior esetén egyedi elbírálás",
+      "en": "Individual consideration in case of illness or force majeure",
+      "de": "Individuelle Beurteilung bei Krankheit oder höherer Gewalt",
+      "pl": "Indywidualne rozpatrzenie w przypadku choroby lub siły wyższej",
+      "sk": "Individuálne posúdenie v prípade choroby alebo vyššej moci",
+      "ro": "Evaluare individuală în caz de boală sau forță majoră"
+    },
+    "communicationLanguages": ["hu", "en"],
+    "useGoogleTranslate": true,
     "thankYouTitle": {
       "hu": "Köszönjük foglalási kérelmét!",
       "en": "Thank you for your booking request!",
