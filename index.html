@@ -1634,10 +1634,51 @@
         }
 
         .form-submit-btn {
-            padding: 16px 48px;
-            font-size: 1rem;
-            width: 100%;
-            max-width: 400px;
+            position: relative;
+            padding: 6px 56px 6px 28px;
+            font-size: 0.95rem;
+            height: 48px;
+            width: auto;
+            max-width: none;
+            overflow: hidden;
+            transition: padding 0.5s var(--ease-out), transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out), background-color 0.3s var(--ease-out);
+        }
+        .form-submit-btn:hover {
+            padding-left: 56px;
+            padding-right: 28px;
+        }
+        .form-submit-btn .btn-text {
+            position: relative;
+            z-index: 1;
+            transition: transform 0.5s var(--ease-out);
+        }
+        .form-submit-btn .btn-icon {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--white);
+            color: var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: right 0.5s var(--ease-out), transform 0.5s var(--ease-out);
+        }
+        .form-submit-btn:hover .btn-icon {
+            right: calc(100% - 43px);
+            transform: translateY(-50%) rotate(45deg);
+        }
+        .form-submit-btn .btn-icon svg {
+            width: 16px;
+            height: 16px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
         }
 
         /* Why direct box */
@@ -2102,6 +2143,93 @@
 
         .footer-col a:hover { color: var(--gold); }
 
+        /* LEGAL MODAL */
+        .legal-modal-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 10001;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.35s var(--ease-out), visibility 0.35s var(--ease-out);
+        }
+        .legal-modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .legal-modal {
+            position: relative;
+            background: var(--dark);
+            border: 1px solid rgba(196, 151, 92, 0.18);
+            border-radius: 16px;
+            width: 90vw;
+            max-width: 640px;
+            max-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(196, 151, 92, 0.06);
+            transform: translateY(20px) scale(0.97);
+            transition: transform 0.35s var(--ease-out);
+        }
+        .legal-modal-overlay.active .legal-modal {
+            transform: translateY(0) scale(1);
+        }
+        .legal-modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 28px;
+            border-bottom: 1px solid rgba(250, 246, 241, 0.08);
+            flex-shrink: 0;
+        }
+        .legal-modal-header h3 {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            color: var(--cream);
+            margin: 0;
+        }
+        .legal-modal-close {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            border: 1px solid rgba(250, 246, 241, 0.12);
+            background: transparent;
+            color: rgba(250, 246, 241, 0.5);
+            font-size: 1.4rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: border-color 0.3s var(--ease-out), color 0.3s var(--ease-out);
+        }
+        .legal-modal-close:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        .legal-modal-body {
+            padding: 28px;
+            overflow-y: auto;
+            flex: 1;
+            color: rgba(250, 246, 241, 0.7);
+            font-size: 0.92rem;
+            line-height: 1.75;
+            white-space: pre-line;
+        }
+        .legal-modal-body::-webkit-scrollbar {
+            width: 6px;
+        }
+        .legal-modal-body::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .legal-modal-body::-webkit-scrollbar-thumb {
+            background: rgba(196, 151, 92, 0.25);
+            border-radius: 3px;
+        }
+
         .footer-bottom {
             padding-top: 32px;
             border-top: 1px solid rgba(250, 246, 241, 0.08);
@@ -2432,7 +2560,7 @@
                             </div>
                         </div>
                         <div class="form-actions">
-                            <button type="submit" class="btn btn-primary form-submit-btn" id="form-submit-btn" data-i18n="submitBtn">Foglalás küldése →</button>
+                            <button type="submit" class="btn btn-primary form-submit-btn" id="form-submit-btn"><span class="btn-text" data-i18n="submitBtn">Foglalás küldése</span><span class="btn-icon"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span></button>
                         </div>
                     </form>
 
@@ -2517,6 +2645,17 @@
         </div>
     </footer>
 
+    <!-- LEGAL MODAL -->
+    <div class="legal-modal-overlay" id="legal-modal-overlay">
+        <div class="legal-modal">
+            <div class="legal-modal-header">
+                <h3 id="legal-modal-title"></h3>
+                <button class="legal-modal-close" id="legal-modal-close" aria-label="Bezárás">&times;</button>
+            </div>
+            <div class="legal-modal-body" id="legal-modal-body"></div>
+        </div>
+    </div>
+
     <!-- LIGHTBOX -->
     <div class="lightbox-overlay" id="lightbox-overlay">
         <div class="lightbox-content">
@@ -2591,7 +2730,7 @@
                 errName: 'Kérjük, adja meg a nevét!',
                 errEmail: 'Kérjük, adjon meg egy érvényes email címet!',
                 errPhone: 'Kérjük, adjon meg egy érvényes telefonszámot!',
-                submitBtn: 'Foglalás küldése →', submitting: 'Küldés...',
+                submitBtn: 'Foglalás küldése', submitting: 'Küldés...',
                 whyDirectTitle: '🏷️ Miért foglaljon közvetlenül?',
                 thankYouTitle: 'Köszönjük foglalási kérelmét!',
                 thankYouText: 'Foglalási kérelmét megkaptuk és feldolgozzuk. 24 órán belül visszaigazoljuk emailben vagy telefonon.',
@@ -2644,7 +2783,7 @@
                 errName: 'Please enter your name!',
                 errEmail: 'Please enter a valid email address!',
                 errPhone: 'Please enter a valid phone number!',
-                submitBtn: 'Send booking request →', submitting: 'Sending...',
+                submitBtn: 'Send booking request', submitting: 'Sending...',
                 whyDirectTitle: '🏷️ Why book directly?',
                 thankYouTitle: 'Thank you for your booking request!',
                 thankYouText: 'We have received your booking request. We will confirm within 24 hours by email or phone.',
@@ -2697,7 +2836,7 @@
                 errName: 'Bitte geben Sie Ihren Namen ein!',
                 errEmail: 'Bitte geben Sie eine gültige E-Mail-Adresse ein!',
                 errPhone: 'Bitte geben Sie eine gültige Telefonnummer ein!',
-                submitBtn: 'Buchungsanfrage senden →', submitting: 'Wird gesendet...',
+                submitBtn: 'Buchungsanfrage senden', submitting: 'Wird gesendet...',
                 whyDirectTitle: '🏷️ Warum direkt buchen?',
                 thankYouTitle: 'Vielen Dank für Ihre Buchungsanfrage!',
                 thankYouText: 'Wir haben Ihre Anfrage erhalten. Wir bestätigen innerhalb von 24 Stunden per E-Mail oder Telefon.',
@@ -2749,7 +2888,7 @@
                 errName: 'Proszę podać imię i nazwisko!',
                 errEmail: 'Proszę podać prawidłowy adres e-mail!',
                 errPhone: 'Proszę podać prawidłowy numer telefonu!',
-                submitBtn: 'Wyślij rezerwację →', submitting: 'Wysyłanie...',
+                submitBtn: 'Wyślij rezerwację', submitting: 'Wysyłanie...',
                 whyDirectTitle: '🏷️ Dlaczego rezerwować bezpośrednio?',
                 thankYouTitle: 'Dziękujemy za rezerwację!',
                 thankYouText: 'Otrzymaliśmy Twoją prośbę o rezerwację. Potwierdzimy w ciągu 24 godzin e-mailem lub telefonicznie.',
@@ -2801,7 +2940,7 @@
                 errName: 'Prosím zadajte svoje meno!',
                 errEmail: 'Prosím zadajte platnú e-mailovú adresu!',
                 errPhone: 'Prosím zadajte platné telefónne číslo!',
-                submitBtn: 'Odoslať rezerváciu →', submitting: 'Odosielanie...',
+                submitBtn: 'Odoslať rezerváciu', submitting: 'Odosielanie...',
                 whyDirectTitle: '🏷️ Prečo rezervovať priamo?',
                 thankYouTitle: 'Ďakujeme za vašu rezerváciu!',
                 thankYouText: 'Vašu žiadosť o rezerváciu sme prijali. Potvrdíme do 24 hodín e-mailom alebo telefonicky.',
@@ -2853,7 +2992,7 @@
                 errName: 'Vă rugăm introduceți numele!',
                 errEmail: 'Vă rugăm introduceți o adresă de e-mail validă!',
                 errPhone: 'Vă rugăm introduceți un număr de telefon valid!',
-                submitBtn: 'Trimite rezervarea →', submitting: 'Se trimite...',
+                submitBtn: 'Trimite rezervarea', submitting: 'Se trimite...',
                 whyDirectTitle: '🏷️ De ce să rezervi direct?',
                 thankYouTitle: 'Vă mulțumim pentru rezervare!',
                 thankYouText: 'Am primit cererea dvs. de rezervare. Vom confirma în 24 de ore prin e-mail sau telefon.',
@@ -3633,7 +3772,8 @@
         function submitFormspree(data) {
             var btn = document.getElementById('form-submit-btn');
             btn.disabled = true;
-            btn.textContent = t('submitting');
+            btn.querySelector('.btn-text').textContent = t('submitting');
+            btn.querySelector('.btn-icon').style.display = 'none';
 
             var body = {
                 'Szálláshely': data.propertyName,
@@ -3671,7 +3811,8 @@
             })
             .finally(function() {
                 btn.disabled = false;
-                btn.textContent = t('submitBtn');
+                btn.querySelector('.btn-text').textContent = t('submitBtn');
+                btn.querySelector('.btn-icon').style.display = '';
             });
         }
 
@@ -3793,6 +3934,42 @@
         });
 
         /* ========================================
+           LEGAL MODAL
+           ======================================== */
+        function openLegalModal(index) {
+            var link = CONFIG.footer.links[index];
+            if (!link || !link.content) return;
+            document.getElementById('legal-modal-title').textContent = ct(link.text);
+            document.getElementById('legal-modal-body').textContent = ct(link.content);
+            document.getElementById('legal-modal-body').scrollTop = 0;
+            document.getElementById('legal-modal-overlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLegalModal() {
+            document.getElementById('legal-modal-overlay').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('legal-modal-close').addEventListener('click', closeLegalModal);
+        document.getElementById('legal-modal-overlay').addEventListener('click', function(e) {
+            if (e.target === this) closeLegalModal();
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && document.getElementById('legal-modal-overlay').classList.contains('active')) {
+                closeLegalModal();
+            }
+        });
+
+        document.addEventListener('click', function(e) {
+            var el = e.target.closest('[data-legal]');
+            if (el) {
+                e.preventDefault();
+                openLegalModal(parseInt(el.getAttribute('data-legal'), 10));
+            }
+        });
+
+        /* ========================================
            FOOTER
            ======================================== */
         var SOCIAL_ICONS = {
@@ -3835,7 +4012,10 @@
             }).join('');
 
             // Info links
-            var infoLinks = CONFIG.footer.links.map(function(l) {
+            var infoLinks = CONFIG.footer.links.map(function(l, i) {
+                if (l.content) {
+                    return '<li><a href="#" data-legal="' + i + '">' + escHtml(ct(l.text)) + '</a></li>';
+                }
                 return '<li><a href="' + escAttr(l.url) + '">' + escHtml(ct(l.text)) + '</a></li>';
             }).join('') + '<li><a href="#">NTAK: ' + escHtml(CONFIG.property.ntak) + '</a></li>';
 
