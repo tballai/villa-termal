@@ -3850,6 +3850,12 @@
         function showThankYou() {
             var formSection = document.getElementById('booking-form-section');
             var thankYou = document.getElementById('booking-thank-you');
+            if (CONFIG.booking.thankYouTitle) {
+                thankYou.querySelector('h3').textContent = ct(CONFIG.booking.thankYouTitle);
+            }
+            if (CONFIG.booking.thankYouText) {
+                thankYou.querySelector('p').textContent = ct(CONFIG.booking.thankYouText);
+            }
             formSection.style.display = 'none';
             thankYou.classList.add('visible');
             thankYou.scrollIntoView({ behavior: 'smooth', block: 'center' });

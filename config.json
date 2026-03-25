@@ -309,7 +309,23 @@
       { "hu": "Nincs közvetítői díj", "en": "No intermediary fees", "de": "Keine Vermittlungsgebühren", "pl": "Bez prowizji pośrednika", "sk": "Žiadne sprostredkovateľské poplatky", "ro": "Fără taxe de intermediere" },
       { "hu": "Személyes egyeztetés a szállásadóval", "en": "Personal communication with the host", "de": "Persönliche Kommunikation mit dem Gastgeber", "pl": "Bezpośredni kontakt z gospodarzem", "sk": "Osobná komunikácia s hostiteľom", "ro": "Comunicare directă cu gazda" },
       { "hu": "Rugalmas fizetési feltételek", "en": "Flexible payment terms", "de": "Flexible Zahlungsbedingungen", "pl": "Elastyczne warunki płatności", "sk": "Flexibilné platobné podmienky", "ro": "Condiții flexibile de plată" }
-    ]
+    ],
+    "thankYouTitle": {
+      "hu": "Köszönjük foglalási kérelmét!",
+      "en": "Thank you for your booking request!",
+      "de": "Vielen Dank für Ihre Buchungsanfrage!",
+      "pl": "Dziękujemy za rezerwację!",
+      "sk": "Ďakujeme za vašu rezerváciu!",
+      "ro": "Vă mulțumim pentru rezervare!"
+    },
+    "thankYouText": {
+      "hu": "Kérelmét megkaptuk és 24 órán belül e-mailben visszaigazoljuk. Addig is kérdés esetén hívjon minket a +36 30 123 4567 számon.",
+      "en": "We have received your request and will confirm by email within 24 hours. In the meantime, feel free to call us at +36 30 123 4567.",
+      "de": "Wir haben Ihre Anfrage erhalten und bestätigen innerhalb von 24 Stunden per E-Mail. Bei Fragen erreichen Sie uns unter +36 30 123 4567.",
+      "pl": "Otrzymaliśmy Twoją prośbę i potwierdzimy e-mailem w ciągu 24 godzin. W razie pytań zadzwoń pod numer +36 30 123 4567.",
+      "sk": "Vašu žiadosť sme prijali a potvrdíme e-mailom do 24 hodín. V prípade otázok nás kontaktujte na +36 30 123 4567.",
+      "ro": "Am primit solicitarea dumneavoastră și o vom confirma prin e-mail în 24 de ore. Pentru întrebări, sunați-ne la +36 30 123 4567."
+    }
   },
   "ical": {
     "enabled": true,
