@@ -7,7 +7,8 @@
       "de": "Familienunterkunft im Herzen von Hajdúszoboszló",
       "pl": "Rodzinne zakwaterowanie w sercu Hajdúszoboszló",
       "sk": "Rodinné ubytovanie v srdci Hajdúszoboszló",
-      "ro": "Cazare familială în inima orașului Hajdúszoboszló"
+      "ro": "Cazare familială în inima orașului Hajdúszoboszló",
+      "ua": "Сімейне житло в серці Гайдусобосло"
     },
     "description": {
       "hu": "Családias hangulatú, felújított szállás a Hungarospa Gyógyfürdőtől mindössze 3 percre gyalog. Klimatizált szobák, ingyenes WiFi, privát parkoló.",
@@ -15,7 +16,8 @@
       "de": "Renovierte Familienunterkunft nur 3 Gehminuten von der Hungarospa-Therme entfernt. Klimatisierte Zimmer, kostenloses WLAN, Privatparkplatz.",
       "pl": "Odnowiony obiekt rodzinny zaledwie 3 minuty spacerem od Term Hungarospa. Klimatyzowane pokoje, bezpłatne WiFi, prywatny parking.",
       "sk": "Zrekonštruované rodinné ubytovanie len 3 minúty pešo od kúpeľov Hungarospa. Klimatizované izby, bezplatné WiFi, súkromné parkovisko.",
-      "ro": "Cazare familială renovată la doar 3 minute de mers pe jos de Termele Hungarospa. Camere climatizate, WiFi gratuit, parcare privată."
+      "ro": "Cazare familială renovată la doar 3 minute de mers pe jos de Termele Hungarospa. Camere climatizate, WiFi gratuit, parcare privată.",
+      "ua": "Оновлене сімейне житло всього за 3 хвилини ходьби від термальних купалень Хунгароспа. Кімнати з кондиціонером, безкоштовний WiFi, приватна парковка."
     },
     "heroTitle": {
       "hu": "Pihenjen a gyógyvíz közelében",
@@ -23,7 +25,8 @@
       "de": "Entspannen Sie nahe der Thermalquellen",
       "pl": "Odpocznij przy wodach termalnych",
       "sk": "Oddýchnite si pri termálnych vodách",
-      "ro": "Relaxați-vă lângă apele termale"
+      "ro": "Relaxați-vă lângă apele termale",
+      "ua": "Відпочиньте біля термальних вод"
     },
     "heroSubtitle": {
       "hu": "Fedezze fel Hajdúszoboszló legkedveltebb családias szállását — közvetlenül a fürdő mellett, a belváros szívében. Foglaljon nálunk közvetlenül és élvezze a kedvezményes árakat!",
@@ -31,7 +34,8 @@
       "de": "Entdecken Sie die beliebteste Familienunterkunft in Hajdúszoboszló — direkt neben der Therme, im Herzen der Stadt. Buchen Sie direkt bei uns und genießen Sie ermäßigte Preise!",
       "pl": "Odkryj najpopularniejsze rodzinne zakwaterowanie w Hajdúszoboszló — tuż obok term, w sercu miasta. Zarezerwuj bezpośrednio i ciesz się zniżkowymi cenami!",
       "sk": "Objavte najobľúbenejšie rodinné ubytovanie v Hajdúszoboszló — priamo vedľa kúpeľov, v srdci mesta. Rezervujte priamo u nás a užívajte si zľavnené ceny!",
-      "ro": "Descoperiți cea mai populară cazare familială din Hajdúszoboszló — chiar lângă terme, în inima orașului. Rezervați direct la noi și bucurați-vă de prețuri reduse!"
+      "ro": "Descoperiți cea mai populară cazare familială din Hajdúszoboszló — chiar lângă terme, în inima orașului. Rezervați direct la noi și bucurați-vă de prețuri reduse!",
+      "ua": "Відкрийте найпопулярніше сімейне житло в Гайдусобосло — прямо біля терм, у серці міста. Бронюйте напряму та насолоджуйтесь зниженими цінами!"
     },
     "heroBadge": {
       "hu": "✦ Hajdúszoboszló szívében",
@@ -39,7 +43,8 @@
       "de": "✦ Im Herzen von Hajdúszoboszló",
       "pl": "✦ W sercu Hajdúszoboszló",
       "sk": "✦ V srdci Hajdúszoboszló",
-      "ro": "✦ În inima orașului Hajdúszoboszló"
+      "ro": "✦ În inima orașului Hajdúszoboszló",
+      "ua": "✦ У серці Гайдусобосло"
     },
     "heroImage": "images/pexels-stephen-leonardi-587681991-18353562.jpg",
     "address": "4200 Hajdúszoboszló, Fürdő sor 12.",
@@ -68,183 +73,564 @@
     "creditUrl": "https://ballaidigital.hu"
   },
   "stats": [
-    { "value": "4.9", "label": { "hu": "Google értékelés", "en": "Google rating", "de": "Google-Bewertung", "pl": "Ocena Google", "sk": "Hodnotenie Google", "ro": "Evaluare Google" }, "icon": "⭐" },
-    { "value": "500+", "label": { "hu": "Elégedett vendég", "en": "Happy guests", "de": "Zufriedene Gäste", "pl": "Zadowolonych gości", "sk": "Spokojných hostí", "ro": "Oaspeți mulțumiți" }, "icon": "👥" },
-    { "value": { "hu": "3 perc", "en": "3 min", "de": "3 Min.", "pl": "3 min", "sk": "3 min", "ro": "3 min" }, "label": { "hu": "Gyógyfürdőtől", "en": "From thermal bath", "de": "Von der Therme", "pl": "Od term", "sk": "Od kúpeľov", "ro": "De la terme" }, "icon": "🏊" },
-    { "value": "2015", "label": { "hu": "Óta várjuk vendégeinket", "en": "Welcoming guests since", "de": "Begrüßen Gäste seit", "pl": "Witamy gości od", "sk": "Vítame hostí od", "ro": "Primim oaspeți din" }, "icon": "🏠" }
+    {
+      "value": "4.9",
+      "label": {
+        "hu": "Google értékelés",
+        "en": "Google rating",
+        "de": "Google-Bewertung",
+        "pl": "Ocena Google",
+        "sk": "Hodnotenie Google",
+        "ro": "Evaluare Google",
+        "ua": "Рейтинг Google"
+      },
+      "icon": "⭐"
+    },
+    {
+      "value": "500+",
+      "label": {
+        "hu": "Elégedett vendég",
+        "en": "Happy guests",
+        "de": "Zufriedene Gäste",
+        "pl": "Zadowolonych gości",
+        "sk": "Spokojných hostí",
+        "ro": "Oaspeți mulțumiți",
+        "ua": "Задоволених гостей"
+      },
+      "icon": "👥"
+    },
+    {
+      "value": {
+        "hu": "3 perc",
+        "en": "3 min",
+        "de": "3 Min.",
+        "pl": "3 min",
+        "sk": "3 min",
+        "ro": "3 min",
+        "ua": "3 хв"
+      },
+      "label": {
+        "hu": "Gyógyfürdőtől",
+        "en": "From thermal bath",
+        "de": "Von der Therme",
+        "pl": "Od term",
+        "sk": "Od kúpeľov",
+        "ro": "De la terme",
+        "ua": "Від термальних купалень"
+      },
+      "icon": "🏊"
+    },
+    {
+      "value": "2015",
+      "label": {
+        "hu": "Óta várjuk vendégeinket",
+        "en": "Welcoming guests since",
+        "de": "Begrüßen Gäste seit",
+        "pl": "Witamy gości od",
+        "sk": "Vítame hostí od",
+        "ro": "Primim oaspeți din",
+        "ua": "Приймаємо гостей з"
+      },
+      "icon": "🏠"
+    }
   ],
   "rooms": [
     {
       "id": "ketagyas",
-      "name": { "hu": "Kétágyas szoba", "en": "Double Room", "de": "Doppelzimmer", "pl": "Pokój dwuosobowy", "sk": "Dvojlôžková izba", "ro": "Cameră dublă" },
+      "name": {
+        "hu": "Kétágyas szoba",
+        "en": "Double Room",
+        "de": "Doppelzimmer",
+        "pl": "Pokój dwuosobowy",
+        "sk": "Dvojlôžková izba",
+        "ro": "Cameră dublă",
+        "ua": "Двомісний номер"
+      },
       "description": {
         "hu": "Kényelmes, klimatizált szoba franciaággyal és erkéllyel a belső kertre néző kilátással. Tökéletes pároknak.",
         "en": "Comfortable, air-conditioned room with a double bed and balcony overlooking the inner garden. Perfect for couples.",
         "de": "Komfortables, klimatisiertes Zimmer mit Doppelbett und Balkon mit Blick auf den Innengarten. Perfekt für Paare.",
         "pl": "Komfortowy, klimatyzowany pokój z łóżkiem podwójnym i balkonem z widokiem na wewnętrzny ogród. Idealny dla par.",
         "sk": "Komfortná, klimatizovaná izba s manželskou posteľou a balkónom s výhľadom na vnútornú záhradu. Ideálna pre páry.",
-        "ro": "Cameră confortabilă, climatizată, cu pat dublu și balcon cu vedere la grădina interioară. Perfectă pentru cupluri."
+        "ro": "Cameră confortabilă, climatizată, cu pat dublu și balcon cu vedere la grădina interioară. Perfectă pentru cupluri.",
+        "ua": "Комфортна кімната з кондиціонером, двоспальним ліжком та балконом з видом на внутрішній сад. Ідеально для пар."
       },
       "guests": 2,
       "size": "22 m²",
       "amenities": [
-        { "hu": "Klíma", "en": "A/C", "de": "Klimaanlage", "pl": "Klimatyzacja", "sk": "Klimatizácia", "ro": "Aer condiționat" },
-        { "hu": "WiFi", "en": "WiFi", "de": "WLAN", "pl": "WiFi", "sk": "WiFi", "ro": "WiFi" },
-        { "hu": "Smart TV", "en": "Smart TV", "de": "Smart TV", "pl": "Smart TV", "sk": "Smart TV", "ro": "Smart TV" },
-        { "hu": "Mini hűtő", "en": "Mini fridge", "de": "Minibar", "pl": "Lodówka", "sk": "Minichladnička", "ro": "Mini frigider" },
-        { "hu": "Erkély", "en": "Balcony", "de": "Balkon", "pl": "Balkon", "sk": "Balkón", "ro": "Balcon" },
-        { "hu": "Hajszárító", "en": "Hairdryer", "de": "Haartrockner", "pl": "Suszarka", "sk": "Sušič vlasov", "ro": "Uscător de păr" }
+        {
+          "hu": "Klíma",
+          "en": "A/C",
+          "de": "Klimaanlage",
+          "pl": "Klimatyzacja",
+          "sk": "Klimatizácia",
+          "ro": "Aer condiționat",
+          "ua": "Кондиціонер"
+        },
+        {
+          "hu": "WiFi",
+          "en": "WiFi",
+          "de": "WLAN",
+          "pl": "WiFi",
+          "sk": "WiFi",
+          "ro": "WiFi",
+          "ua": "WiFi"
+        },
+        {
+          "hu": "Smart TV",
+          "en": "Smart TV",
+          "de": "Smart TV",
+          "pl": "Smart TV",
+          "sk": "Smart TV",
+          "ro": "Smart TV",
+          "ua": "Smart TV"
+        },
+        {
+          "hu": "Mini hűtő",
+          "en": "Mini fridge",
+          "de": "Minibar",
+          "pl": "Lodówka",
+          "sk": "Minichladnička",
+          "ro": "Mini frigider",
+          "ua": "Міні-холодильник"
+        },
+        {
+          "hu": "Erkély",
+          "en": "Balcony",
+          "de": "Balkon",
+          "pl": "Balkon",
+          "sk": "Balkón",
+          "ro": "Balcon",
+          "ua": "Балкон"
+        },
+        {
+          "hu": "Hajszárító",
+          "en": "Hairdryer",
+          "de": "Haartrockner",
+          "pl": "Suszarka",
+          "sk": "Sušič vlasov",
+          "ro": "Uscător de păr",
+          "ua": "Фен"
+        }
       ],
       "pricePerNight": 18000,
       "bookingPrice": 20000,
-      "badge": { "hu": "Népszerű", "en": "Popular", "de": "Beliebt", "pl": "Popularny", "sk": "Obľúbená", "ro": "Popular" },
+      "badge": {
+        "hu": "Népszerű",
+        "en": "Popular",
+        "de": "Beliebt",
+        "pl": "Popularny",
+        "sk": "Obľúbená",
+        "ro": "Popular",
+        "ua": "Популярний"
+      },
       "image": "images/room1.jpg",
-      "gallery": ["images/room1.jpg", "images/room2.webp"],
+      "gallery": [
+        "images/room1.jpg",
+        "images/room2.webp"
+      ],
       "icalFeeds": [
-        { "name": "Booking.com", "url": "https://admin.booking.com/hotel/hoteladmin/ical.html?t=PLACEHOLDER_KETAGYAS_TOKEN" },
-        { "name": "Airbnb", "url": "https://www.airbnb.com/calendar/ical/PLACEHOLDER_KETAGYAS_ID.ics" }
+        {
+          "name": "Booking.com",
+          "url": "https://admin.booking.com/hotel/hoteladmin/ical.html?t=PLACEHOLDER_KETAGYAS_TOKEN"
+        },
+        {
+          "name": "Airbnb",
+          "url": "https://www.airbnb.com/calendar/ical/PLACEHOLDER_KETAGYAS_ID.ics"
+        }
       ]
     },
     {
       "id": "csaladi",
-      "name": { "hu": "Családi apartman", "en": "Family Apartment", "de": "Familienapartment", "pl": "Apartament rodzinny", "sk": "Rodinný apartmán", "ro": "Apartament familial" },
+      "name": {
+        "hu": "Családi apartman",
+        "en": "Family Apartment",
+        "de": "Familienapartment",
+        "pl": "Apartament rodzinny",
+        "sk": "Rodinný apartmán",
+        "ro": "Apartament familial",
+        "ua": "Сімейний апартамент"
+      },
       "description": {
         "hu": "Tágas, két szobás apartman nappalival, teljes konyhával és két fürdőszobával. Ideális családoknak vagy baráti társaságoknak.",
         "en": "Spacious two-bedroom apartment with living room, full kitchen and two bathrooms. Ideal for families or groups of friends.",
         "de": "Geräumiges Zwei-Schlafzimmer-Apartment mit Wohnzimmer, voll ausgestatteter Küche und zwei Badezimmern. Ideal für Familien oder Freundesgruppen.",
         "pl": "Przestronny apartament z dwoma sypialniami, salonem, pełną kuchnią i dwoma łazienkami. Idealny dla rodzin i grup przyjaciół.",
         "sk": "Priestranný dvojizbový apartmán s obývačkou, plne vybavenou kuchyňou a dvoma kúpeľňami. Ideálny pre rodiny alebo skupiny priateľov.",
-        "ro": "Apartament spațios cu două dormitoare, living, bucătărie complet utilată și două băi. Ideal pentru familii sau grupuri de prieteni."
+        "ro": "Apartament spațios cu două dormitoare, living, bucătărie complet utilată și două băi. Ideal pentru familii sau grupuri de prieteni.",
+        "ua": "Просторий апартамент з двома спальнями, вітальнею, повністю обладнаною кухнею та двома ванними кімнатами. Ідеально для сімей або компаній друзів."
       },
       "guests": 4,
       "size": "45 m²",
       "amenities": [
-        { "hu": "Klíma", "en": "A/C", "de": "Klimaanlage", "pl": "Klimatyzacja", "sk": "Klimatizácia", "ro": "Aer condiționat" },
-        { "hu": "WiFi", "en": "WiFi", "de": "WLAN", "pl": "WiFi", "sk": "WiFi", "ro": "WiFi" },
-        { "hu": "Smart TV", "en": "Smart TV", "de": "Smart TV", "pl": "Smart TV", "sk": "Smart TV", "ro": "Smart TV" },
-        { "hu": "Teljes konyha", "en": "Full kitchen", "de": "Voll ausgestattete Küche", "pl": "Pełna kuchnia", "sk": "Plne vybavená kuchyňa", "ro": "Bucătărie completă" },
-        { "hu": "Mosógép", "en": "Washing machine", "de": "Waschmaschine", "pl": "Pralka", "sk": "Práčka", "ro": "Mașină de spălat" },
-        { "hu": "Erkély", "en": "Balcony", "de": "Balkon", "pl": "Balkon", "sk": "Balkón", "ro": "Balcon" },
-        { "hu": "Hajszárító", "en": "Hairdryer", "de": "Haartrockner", "pl": "Suszarka", "sk": "Sušič vlasov", "ro": "Uscător de păr" },
-        { "hu": "Vasaló", "en": "Iron", "de": "Bügeleisen", "pl": "Żelazko", "sk": "Žehlička", "ro": "Fier de călcat" }
+        {
+          "hu": "Klíma",
+          "en": "A/C",
+          "de": "Klimaanlage",
+          "pl": "Klimatyzacja",
+          "sk": "Klimatizácia",
+          "ro": "Aer condiționat",
+          "ua": "Кондиціонер"
+        },
+        {
+          "hu": "WiFi",
+          "en": "WiFi",
+          "de": "WLAN",
+          "pl": "WiFi",
+          "sk": "WiFi",
+          "ro": "WiFi",
+          "ua": "WiFi"
+        },
+        {
+          "hu": "Smart TV",
+          "en": "Smart TV",
+          "de": "Smart TV",
+          "pl": "Smart TV",
+          "sk": "Smart TV",
+          "ro": "Smart TV",
+          "ua": "Smart TV"
+        },
+        {
+          "hu": "Teljes konyha",
+          "en": "Full kitchen",
+          "de": "Voll ausgestattete Küche",
+          "pl": "Pełna kuchnia",
+          "sk": "Plne vybavená kuchyňa",
+          "ro": "Bucătărie completă",
+          "ua": "Повністю обладнана кухня"
+        },
+        {
+          "hu": "Mosógép",
+          "en": "Washing machine",
+          "de": "Waschmaschine",
+          "pl": "Pralka",
+          "sk": "Práčka",
+          "ro": "Mașină de spălat",
+          "ua": "Пральна машина"
+        },
+        {
+          "hu": "Erkély",
+          "en": "Balcony",
+          "de": "Balkon",
+          "pl": "Balkon",
+          "sk": "Balkón",
+          "ro": "Balcon",
+          "ua": "Балкон"
+        },
+        {
+          "hu": "Hajszárító",
+          "en": "Hairdryer",
+          "de": "Haartrockner",
+          "pl": "Suszarka",
+          "sk": "Sušič vlasov",
+          "ro": "Uscător de păr",
+          "ua": "Фен"
+        },
+        {
+          "hu": "Vasaló",
+          "en": "Iron",
+          "de": "Bügeleisen",
+          "pl": "Żelazko",
+          "sk": "Žehlička",
+          "ro": "Fier de călcat",
+          "ua": "Праска"
+        }
       ],
       "pricePerNight": 28000,
       "bookingPrice": 32000,
-      "badge": { "hu": "Családoknak", "en": "For families", "de": "Für Familien", "pl": "Dla rodzin", "sk": "Pre rodiny", "ro": "Pentru familii" },
+      "badge": {
+        "hu": "Családoknak",
+        "en": "For families",
+        "de": "Für Familien",
+        "pl": "Dla rodzin",
+        "sk": "Pre rodiny",
+        "ro": "Pentru familii",
+        "ua": "Для сімей"
+      },
       "image": "images/csaladi1.jpg",
-      "gallery": ["images/csaladi1.jpg", "images/csaladi2.jpg", "images/csaladi3.jpeg"],
+      "gallery": [
+        "images/csaladi1.jpg",
+        "images/csaladi2.jpg",
+        "images/csaladi3.jpeg"
+      ],
       "icalFeeds": [
-        { "name": "Booking.com", "url": "https://admin.booking.com/hotel/hoteladmin/ical.html?t=PLACEHOLDER_CSALADI_TOKEN" },
-        { "name": "Airbnb", "url": "https://www.airbnb.com/calendar/ical/PLACEHOLDER_CSALADI_ID.ics" }
+        {
+          "name": "Booking.com",
+          "url": "https://admin.booking.com/hotel/hoteladmin/ical.html?t=PLACEHOLDER_CSALADI_TOKEN"
+        },
+        {
+          "name": "Airbnb",
+          "url": "https://www.airbnb.com/calendar/ical/PLACEHOLDER_CSALADI_ID.ics"
+        }
       ]
     },
     {
       "id": "premium",
-      "name": { "hu": "Prémium apartman", "en": "Premium Apartment", "de": "Premium-Apartment", "pl": "Apartament premium", "sk": "Prémiový apartmán", "ro": "Apartament premium" },
+      "name": {
+        "hu": "Prémium apartman",
+        "en": "Premium Apartment",
+        "de": "Premium-Apartment",
+        "pl": "Apartament premium",
+        "sk": "Prémiový apartmán",
+        "ro": "Apartament premium",
+        "ua": "Преміум апартамент"
+      },
       "description": {
         "hu": "Luxus apartman jakuzzival, panorámás kilátással a parkra. Két hálószoba, nappali, teljes konyha és privát terasz.",
         "en": "Luxury apartment with jacuzzi and panoramic park views. Two bedrooms, living room, full kitchen and private terrace.",
         "de": "Luxusapartment mit Whirlpool und Panoramablick auf den Park. Zwei Schlafzimmer, Wohnzimmer, voll ausgestattete Küche und private Terrasse.",
         "pl": "Luksusowy apartament z jacuzzi i panoramicznym widokiem na park. Dwie sypialnie, salon, pełna kuchnia i prywatny taras.",
         "sk": "Luxusný apartmán s vírivkou a panoramatickým výhľadom na park. Dve spálne, obývačka, plne vybavená kuchyňa a súkromná terasa.",
-        "ro": "Apartament de lux cu jacuzzi și vedere panoramică la parc. Două dormitoare, living, bucătărie completă și terasă privată."
+        "ro": "Apartament de lux cu jacuzzi și vedere panoramică la parc. Două dormitoare, living, bucătărie completă și terasă privată.",
+        "ua": "Розкішний апартамент з джакузі та панорамним видом на парк. Дві спальні, вітальня, повністю обладнана кухня та приватна тераса."
       },
       "guests": 5,
       "size": "60 m²",
       "amenities": [
-        { "hu": "Klíma", "en": "A/C", "de": "Klimaanlage", "pl": "Klimatyzacja", "sk": "Klimatizácia", "ro": "Aer condiționat" },
-        { "hu": "WiFi", "en": "WiFi", "de": "WLAN", "pl": "WiFi", "sk": "WiFi", "ro": "WiFi" },
-        { "hu": "Smart TV", "en": "Smart TV", "de": "Smart TV", "pl": "Smart TV", "sk": "Smart TV", "ro": "Smart TV" },
-        { "hu": "Jakuzzi", "en": "Jacuzzi", "de": "Whirlpool", "pl": "Jacuzzi", "sk": "Vírivka", "ro": "Jacuzzi" },
-        { "hu": "Teljes konyha", "en": "Full kitchen", "de": "Voll ausgestattete Küche", "pl": "Pełna kuchnia", "sk": "Plne vybavená kuchyňa", "ro": "Bucătărie completă" },
-        { "hu": "Mosógép", "en": "Washing machine", "de": "Waschmaschine", "pl": "Pralka", "sk": "Práčka", "ro": "Mașină de spălat" },
-        { "hu": "Privát terasz", "en": "Private terrace", "de": "Private Terrasse", "pl": "Prywatny taras", "sk": "Súkromná terasa", "ro": "Terasă privată" },
-        { "hu": "Hajszárító", "en": "Hairdryer", "de": "Haartrockner", "pl": "Suszarka", "sk": "Sušič vlasov", "ro": "Uscător de păr" },
-        { "hu": "Vasaló", "en": "Iron", "de": "Bügeleisen", "pl": "Żelazko", "sk": "Žehlička", "ro": "Fier de călcat" },
-        { "hu": "Nespresso gép", "en": "Nespresso machine", "de": "Nespresso-Maschine", "pl": "Ekspres Nespresso", "sk": "Nespresso kávovar", "ro": "Aparat Nespresso" }
+        {
+          "hu": "Klíma",
+          "en": "A/C",
+          "de": "Klimaanlage",
+          "pl": "Klimatyzacja",
+          "sk": "Klimatizácia",
+          "ro": "Aer condiționat",
+          "ua": "Кондиціонер"
+        },
+        {
+          "hu": "WiFi",
+          "en": "WiFi",
+          "de": "WLAN",
+          "pl": "WiFi",
+          "sk": "WiFi",
+          "ro": "WiFi",
+          "ua": "WiFi"
+        },
+        {
+          "hu": "Smart TV",
+          "en": "Smart TV",
+          "de": "Smart TV",
+          "pl": "Smart TV",
+          "sk": "Smart TV",
+          "ro": "Smart TV",
+          "ua": "Smart TV"
+        },
+        {
+          "hu": "Jakuzzi",
+          "en": "Jacuzzi",
+          "de": "Whirlpool",
+          "pl": "Jacuzzi",
+          "sk": "Vírivka",
+          "ro": "Jacuzzi",
+          "ua": "Джакузі"
+        },
+        {
+          "hu": "Teljes konyha",
+          "en": "Full kitchen",
+          "de": "Voll ausgestattete Küche",
+          "pl": "Pełna kuchnia",
+          "sk": "Plne vybavená kuchyňa",
+          "ro": "Bucătărie completă",
+          "ua": "Повністю обладнана кухня"
+        },
+        {
+          "hu": "Mosógép",
+          "en": "Washing machine",
+          "de": "Waschmaschine",
+          "pl": "Pralka",
+          "sk": "Práčka",
+          "ro": "Mașină de spălat",
+          "ua": "Пральна машина"
+        },
+        {
+          "hu": "Privát terasz",
+          "en": "Private terrace",
+          "de": "Private Terrasse",
+          "pl": "Prywatny taras",
+          "sk": "Súkromná terasa",
+          "ro": "Terasă privată",
+          "ua": "Приватна тераса"
+        },
+        {
+          "hu": "Hajszárító",
+          "en": "Hairdryer",
+          "de": "Haartrockner",
+          "pl": "Suszarka",
+          "sk": "Sušič vlasov",
+          "ro": "Uscător de păr",
+          "ua": "Фен"
+        },
+        {
+          "hu": "Vasaló",
+          "en": "Iron",
+          "de": "Bügeleisen",
+          "pl": "Żelazko",
+          "sk": "Žehlička",
+          "ro": "Fier de călcat",
+          "ua": "Праска"
+        },
+        {
+          "hu": "Nespresso gép",
+          "en": "Nespresso machine",
+          "de": "Nespresso-Maschine",
+          "pl": "Ekspres Nespresso",
+          "sk": "Nespresso kávovar",
+          "ro": "Aparat Nespresso",
+          "ua": "Кавомашина Nespresso"
+        }
       ],
       "pricePerNight": 38000,
       "bookingPrice": 44000,
-      "badge": { "hu": "Prémium", "en": "Premium", "de": "Premium", "pl": "Premium", "sk": "Prémiový", "ro": "Premium" },
+      "badge": {
+        "hu": "Prémium",
+        "en": "Premium",
+        "de": "Premium",
+        "pl": "Premium",
+        "sk": "Prémiový",
+        "ro": "Premium",
+        "ua": "Преміум"
+      },
       "image": "images/premiumr.jpg",
-      "gallery": ["images/premiumr.jpg", "images/premium2.jpg"],
+      "gallery": [
+        "images/premiumr.jpg",
+        "images/premium2.jpg"
+      ],
       "icalFeeds": [
-        { "name": "Booking.com", "url": "https://admin.booking.com/hotel/hoteladmin/ical.html?t=PLACEHOLDER_PREMIUM_TOKEN" },
-        { "name": "Airbnb", "url": "https://www.airbnb.com/calendar/ical/PLACEHOLDER_PREMIUM_ID.ics" }
+        {
+          "name": "Booking.com",
+          "url": "https://admin.booking.com/hotel/hoteladmin/ical.html?t=PLACEHOLDER_PREMIUM_TOKEN"
+        },
+        {
+          "name": "Airbnb",
+          "url": "https://www.airbnb.com/calendar/ical/PLACEHOLDER_PREMIUM_ID.ics"
+        }
       ]
     }
   ],
   "services": [
     {
       "icon": "🅿️",
-      "title": { "hu": "Ingyenes parkoló", "en": "Free parking", "de": "Kostenloser Parkplatz", "pl": "Darmowy parking", "sk": "Bezplatné parkovanie", "ro": "Parcare gratuită" },
+      "title": {
+        "hu": "Ingyenes parkoló",
+        "en": "Free parking",
+        "de": "Kostenloser Parkplatz",
+        "pl": "Darmowy parking",
+        "sk": "Bezplatné parkovanie",
+        "ro": "Parcare gratuită",
+        "ua": "Безкоштовна парковка"
+      },
       "description": {
         "hu": "Zárt, kamerával felügyelt privát parkoló közvetlenül a szállás mellett.",
         "en": "Enclosed, camera-monitored private parking right next to the accommodation.",
         "de": "Geschlossener, kameraüberwachter Privatparkplatz direkt neben der Unterkunft.",
         "pl": "Zamknięty, monitorowany parking prywatny tuż obok obiektu.",
         "sk": "Uzavreté, kamerami monitorované súkromné parkovisko priamo vedľa ubytovania.",
-        "ro": "Parcare privată închisă, monitorizată video, chiar lângă cazare."
+        "ro": "Parcare privată închisă, monitorizată video, chiar lângă cazare.",
+        "ua": "Закрита приватна парковка з відеоспостереженням прямо біля житла."
       }
     },
     {
       "icon": "📶",
-      "title": { "hu": "Gyors WiFi", "en": "Fast WiFi", "de": "Schnelles WLAN", "pl": "Szybkie WiFi", "sk": "Rýchle WiFi", "ro": "WiFi rapid" },
+      "title": {
+        "hu": "Gyors WiFi",
+        "en": "Fast WiFi",
+        "de": "Schnelles WLAN",
+        "pl": "Szybkie WiFi",
+        "sk": "Rýchle WiFi",
+        "ro": "WiFi rapid",
+        "ua": "Швидкий WiFi"
+      },
       "description": {
         "hu": "100 Mbps optikai internet az egész épületben, korlátlanul.",
         "en": "100 Mbps fibre-optic internet throughout the building, unlimited.",
         "de": "100 Mbit/s Glasfaser-Internet im gesamten Gebäude, unbegrenzt.",
         "pl": "100 Mbps internet światłowodowy w całym budynku, bez limitu.",
         "sk": "100 Mbps optický internet v celej budove, bez obmedzení.",
-        "ro": "Internet fibră optică 100 Mbps în toată clădirea, nelimitat."
+        "ro": "Internet fibră optică 100 Mbps în toată clădirea, nelimitat.",
+        "ua": "Оптоволоконний інтернет 100 Мбіт/с у всій будівлі, без обмежень."
       }
     },
     {
       "icon": "🏊",
-      "title": { "hu": "Fürdőbelépő kedvezmény", "en": "Thermal bath discount", "de": "Therme-Rabatt", "pl": "Zniżka na termy", "sk": "Zľava na kúpele", "ro": "Reducere la terme" },
+      "title": {
+        "hu": "Fürdőbelépő kedvezmény",
+        "en": "Thermal bath discount",
+        "de": "Therme-Rabatt",
+        "pl": "Zniżka na termy",
+        "sk": "Zľava na kúpele",
+        "ro": "Reducere la terme",
+        "ua": "Знижка на терми"
+      },
       "description": {
         "hu": "10% kedvezmény a Hungarospa összes szolgáltatására vendégeinknek.",
         "en": "10% discount on all Hungarospa services for our guests.",
         "de": "10% Rabatt auf alle Hungarospa-Leistungen für unsere Gäste.",
         "pl": "10% zniżki na wszystkie usługi Hungarospa dla naszych gości.",
         "sk": "10% zľava na všetky služby Hungarospa pre našich hostí.",
-        "ro": "10% reducere la toate serviciile Hungarospa pentru oaspeții noștri."
+        "ro": "10% reducere la toate serviciile Hungarospa pentru oaspeții noștri.",
+        "ua": "10% знижка на всі послуги Хунгароспа для гостей нашого закладу."
       }
     },
     {
       "icon": "🥐",
-      "title": { "hu": "Reggeli csomag", "en": "Breakfast package", "de": "Frühstückspaket", "pl": "Pakiet śniadaniowy", "sk": "Raňajkový balíček", "ro": "Pachet de mic dejun" },
+      "title": {
+        "hu": "Reggeli csomag",
+        "en": "Breakfast package",
+        "de": "Frühstückspaket",
+        "pl": "Pakiet śniadaniowy",
+        "sk": "Raňajkový balíček",
+        "ro": "Pachet de mic dejun",
+        "ua": "Набір для сніданку"
+      },
       "description": {
         "hu": "Friss pékáru, felvágott, sajt, gyümölcs — kérésre a szobába szállítva.",
         "en": "Fresh pastries, cold cuts, cheese, fruit — delivered to your room on request.",
         "de": "Frische Backwaren, Aufschnitt, Käse, Obst — auf Wunsch aufs Zimmer geliefert.",
         "pl": "Świeże pieczywo, wędliny, ser, owoce — na życzenie dostarczane do pokoju.",
         "sk": "Čerstvé pečivo, údeniny, syr, ovocie — na požiadanie doručené na izbu.",
-        "ro": "Produse proaspete de patiserie, mezeluri, brânză, fructe — livrate la cameră la cerere."
+        "ro": "Produse proaspete de patiserie, mezeluri, brânză, fructe — livrate la cameră la cerere.",
+        "ua": "Свіжа випічка, ковбаси, сир, фрукти — доставка щоранку до дверей."
       }
     },
     {
       "icon": "🔑",
-      "title": { "hu": "Önálló bejelentkezés", "en": "Self check-in", "de": "Selbst-Check-in", "pl": "Samodzielne zameldowanie", "sk": "Samoobslužný check-in", "ro": "Check-in automat" },
+      "title": {
+        "hu": "Önálló bejelentkezés",
+        "en": "Self check-in",
+        "de": "Selbst-Check-in",
+        "pl": "Samodzielne zameldowanie",
+        "sk": "Samoobslužný check-in",
+        "ro": "Check-in automat",
+        "ua": "Самостійний заїзд"
+      },
       "description": {
         "hu": "Kódos kulcsszéf a bejáratnál — érkezzen bármikor, mi készenlétben vagyunk.",
         "en": "Key safe with code at the entrance — arrive anytime, we are always ready.",
         "de": "Schlüsseltresor mit Code am Eingang — kommen Sie jederzeit, wir sind bereit.",
         "pl": "Sejf na klucze z kodem przy wejściu — przyjedź o dowolnej porze, jesteśmy gotowi.",
         "sk": "Kľúčový trezor s kódom pri vchode — príďte kedykoľvek, sme pripravení.",
-        "ro": "Seif cu cod la intrare — sosiți oricând, suntem mereu pregătiți."
+        "ro": "Seif cu cod la intrare — sosiți oricând, suntem mereu pregătiți.",
+        "ua": "Кодовий замок на вході — приїжджайте будь-коли, ми завжди готові."
       }
     },
     {
       "icon": "👶",
-      "title": { "hu": "Családbarát felszerelés", "en": "Family-friendly equipment", "de": "Familienfreundliche Ausstattung", "pl": "Wyposażenie dla rodzin", "sk": "Rodinné vybavenie", "ro": "Echipamente pentru familii" },
+      "title": {
+        "hu": "Családbarát felszerelés",
+        "en": "Family-friendly equipment",
+        "de": "Familienfreundliche Ausstattung",
+        "pl": "Wyposażenie dla rodzin",
+        "sk": "Rodinné vybavenie",
+        "ro": "Echipamente pentru familii",
+        "ua": "Обладнання для сімей"
+      },
       "description": {
         "hu": "Babaágy, etetőszék és gyerekjátékok díjmentesen igényelhetők.",
         "en": "Baby cot, high chair and toys available free of charge.",
         "de": "Babybett, Hochstuhl und Spielzeug kostenlos verfügbar.",
         "pl": "Łóżeczko dziecięce, krzesełko do karmienia i zabawki dostępne bezpłatnie.",
         "sk": "Detská postieľka, vysoká stolička a hračky k dispozícii zadarmo.",
-        "ro": "Pătuț, scaun înalt și jucării disponibile gratuit."
+        "ro": "Pătuț, scaun înalt și jucării disponibile gratuit.",
+        "ua": "Дитяче ліжечко, стілець для годування та іграшки — безкоштовно."
       }
     }
   ],
@@ -257,10 +643,19 @@
         "de": "Fantastischer Ort! Das Zimmer war sauber und modern, die Therme ist wirklich nur 3 Minuten entfernt. Der Gastgeber war sehr freundlich und hilfsbereit. Wir buchen nächstes Jahr wieder!",
         "pl": "Fantastyczne miejsce! Pokój był czysty i nowoczesny, termy naprawdę 3 minuty stąd. Gospodarz bardzo miły i pomocny. W przyszłym roku znów tu zarezerwujemy!",
         "sk": "Fantastické miesto! Izba bola čistá a moderná, kúpele sú naozaj len 3 minúty odtiaľ. Hostiteľ bol veľmi milý a nápomocný. Budúci rok tu opäť rezervujeme!",
-        "ro": "Loc fantastic! Camera era curată și modernă, termele sunt chiar la 3 minute distanță. Gazda a fost foarte amabilă și de ajutor. Vom rezerva din nou anul viitor!"
+        "ro": "Loc fantastic! Camera era curată și modernă, termele sunt chiar la 3 minute distanță. Gazda a fost foarte amabilă și de ajutor. Vom rezerva din nou anul viitor!",
+        "ua": "Фантастичне місце! Кімната була чистою та сучасною, терми зовсім поруч. Ми обов'язково повернемося!"
       },
       "author": "Kovács Anna",
-      "date": { "hu": "2025. augusztus", "en": "August 2025", "de": "August 2025", "pl": "Sierpień 2025", "sk": "August 2025", "ro": "August 2025" },
+      "date": {
+        "hu": "2025. augusztus",
+        "en": "August 2025",
+        "de": "August 2025",
+        "pl": "Sierpień 2025",
+        "sk": "August 2025",
+        "ro": "August 2025",
+        "ua": "Серпень 2025"
+      },
       "source": "Google"
     },
     {
@@ -271,10 +666,19 @@
         "de": "Das war unser dritter Besuch und es ist immer perfekt. Das Familienapartment ist geräumig, die Küche gut ausgestattet, die Kinder lieben den Garten. Wir haben es auf Booking gefunden, buchen aber jetzt direkt — ist auch günstiger!",
         "pl": "To była nasza trzecia wizyta i zawsze jest perfekcyjnie. Apartament rodzinny jest przestronny, kuchnia dobrze wyposażona, dzieci uwielbiają ogród. Znaleźliśmy na Booking, ale teraz rezerwujemy bezpośrednio — taniej!",
         "sk": "Toto bola naša tretia návšteva a je to vždy perfektné. Rodinný apartmán je priestranný, kuchyňa dobre vybavená, deti milujú záhradu. Našli sme to na Bookingu, ale teraz rezervujeme priamo — je to aj lacnejšie!",
-        "ro": "A fost a treia noastră vizită și este mereu perfect. Apartamentul familial este spațios, bucătăria bine echipată, copiii adoră grădina. Am găsit pe Booking, dar acum rezervăm direct — e și mai ieftin!"
+        "ro": "A fost a treia noastră vizită și este mereu perfect. Apartamentul familial este spațios, bucătăria bine echipată, copiii adoră grădina. Am găsit pe Booking, dar acum rezervăm direct — e și mai ieftin!",
+        "ua": "Це був наш третій візит і завжди все ідеально. Апартамент просторий, господарі дуже гостинні та уважні."
       },
       "author": "Nagy Péter",
-      "date": { "hu": "2025. július", "en": "July 2025", "de": "Juli 2025", "pl": "Lipiec 2025", "sk": "Júl 2025", "ro": "Iulie 2025" },
+      "date": {
+        "hu": "2025. július",
+        "en": "July 2025",
+        "de": "Juli 2025",
+        "pl": "Lipiec 2025",
+        "sk": "Júl 2025",
+        "ro": "Iulie 2025",
+        "ua": "Липень 2025"
+      },
       "source": "Booking.com"
     },
     {
@@ -285,20 +689,149 @@
         "de": "Der Whirlpool im Premium-Apartment war einfach traumhaft. Der Blick auf den Park ist wunderschön, die Terrasse abends romantisch. Perfekte Wahl für einen romantischen Kurzurlaub!",
         "pl": "Jacuzzi w apartamencie premium było po prostu bajeczne. Widok na park jest piękny, taras wieczorem romantyczny. Idealny wybór na romantyczny wypad!",
         "sk": "Vírivka v prémiovom apartmáne bola jednoducho snová. Výhľad na park je nádherný, terasa je večer romantická. Perfektná voľba na romantický pobyt!",
-        "ro": "Jacuzzi-ul din apartamentul premium a fost pur și simplu de vis. Vederea la parc este frumoasă, terasa e romantică seara. Alegerea perfectă pentru o escapadă romantică!"
+        "ro": "Jacuzzi-ul din apartamentul premium a fost pur și simplu de vis. Vederea la parc este frumoasă, terasa e romantică seara. Alegerea perfectă pentru o escapadă romantică!",
+        "ua": "Джакузі у преміум-апартаменті було просто чудовим. Тераса з видом на парк — незабутнє враження!"
       },
       "author": "Szabó Éva",
-      "date": { "hu": "2025. szeptember", "en": "September 2025", "de": "September 2025", "pl": "Wrzesień 2025", "sk": "September 2025", "ro": "Septembrie 2025" },
+      "date": {
+        "hu": "2025. szeptember",
+        "en": "September 2025",
+        "de": "September 2025",
+        "pl": "Wrzesień 2025",
+        "sk": "September 2025",
+        "ro": "Septembrie 2025",
+        "ua": "Вересень 2025"
+      },
       "source": "Szállás.hu"
     }
   ],
   "distances": [
-    { "place": { "hu": "Hungarospa Gyógyfürdő", "en": "Hungarospa Thermal Bath", "de": "Hungarospa Therme", "pl": "Termy Hungarospa", "sk": "Kúpele Hungarospa", "ro": "Termele Hungarospa" }, "distance": { "hu": "3 perc gyalog", "en": "3 min walk", "de": "3 Min. zu Fuß", "pl": "3 min pieszo", "sk": "3 min pešo", "ro": "3 min pe jos" }, "icon": "🏊" },
-    { "place": { "hu": "SPAR szupermarket", "en": "SPAR supermarket", "de": "SPAR Supermarkt", "pl": "Supermarket SPAR", "sk": "Supermarket SPAR", "ro": "Supermarket SPAR" }, "distance": { "hu": "5 perc gyalog", "en": "5 min walk", "de": "5 Min. zu Fuß", "pl": "5 min pieszo", "sk": "5 min pešo", "ro": "5 min pe jos" }, "icon": "🛒" },
-    { "place": { "hu": "Étteremsor (Szilfás sétány)", "en": "Restaurant row (Szilfás promenade)", "de": "Restaurantzeile (Szilfás Promenade)", "pl": "Ulica restauracyjna (Szilfás promenada)", "sk": "Reštauračná ulica (Szilfás promenáda)", "ro": "Zona de restaurante (Promenada Szilfás)" }, "distance": { "hu": "4 perc gyalog", "en": "4 min walk", "de": "4 Min. zu Fuß", "pl": "4 min pieszo", "sk": "4 min pešo", "ro": "4 min pe jos" }, "icon": "🍽️" },
-    { "place": { "hu": "Aquapark", "en": "Aquapark", "de": "Aquapark", "pl": "Aquapark", "sk": "Aquapark", "ro": "Aquapark" }, "distance": { "hu": "8 perc gyalog", "en": "8 min walk", "de": "8 Min. zu Fuß", "pl": "8 min pieszo", "sk": "8 min pešo", "ro": "8 min pe jos" }, "icon": "🎢" },
-    { "place": { "hu": "Vasútállomás", "en": "Train station", "de": "Bahnhof", "pl": "Dworzec kolejowy", "sk": "Železničná stanica", "ro": "Gara" }, "distance": { "hu": "12 perc gyalog", "en": "12 min walk", "de": "12 Min. zu Fuß", "pl": "12 min pieszo", "sk": "12 min pešo", "ro": "12 min pe jos" }, "icon": "🚂" },
-    { "place": { "hu": "Debrecen reptér", "en": "Debrecen airport", "de": "Flughafen Debrecen", "pl": "Lotnisko Debreczyn", "sk": "Letisko Debrecín", "ro": "Aeroportul Debrecen" }, "distance": { "hu": "25 perc autóval", "en": "25 min by car", "de": "25 Min. mit dem Auto", "pl": "25 min samochodem", "sk": "25 min autom", "ro": "25 min cu mașina" }, "icon": "✈️" }
+    {
+      "place": {
+        "hu": "Hungarospa Gyógyfürdő",
+        "en": "Hungarospa Thermal Bath",
+        "de": "Hungarospa Therme",
+        "pl": "Termy Hungarospa",
+        "sk": "Kúpele Hungarospa",
+        "ro": "Termele Hungarospa",
+        "ua": "Термальні купальні Хунгароспа"
+      },
+      "distance": {
+        "hu": "3 perc gyalog",
+        "en": "3 min walk",
+        "de": "3 Min. zu Fuß",
+        "pl": "3 min pieszo",
+        "sk": "3 min pešo",
+        "ro": "3 min pe jos",
+        "ua": "3 хв пішки"
+      },
+      "icon": "🏊"
+    },
+    {
+      "place": {
+        "hu": "SPAR szupermarket",
+        "en": "SPAR supermarket",
+        "de": "SPAR Supermarkt",
+        "pl": "Supermarket SPAR",
+        "sk": "Supermarket SPAR",
+        "ro": "Supermarket SPAR",
+        "ua": "Супермаркет SPAR"
+      },
+      "distance": {
+        "hu": "5 perc gyalog",
+        "en": "5 min walk",
+        "de": "5 Min. zu Fuß",
+        "pl": "5 min pieszo",
+        "sk": "5 min pešo",
+        "ro": "5 min pe jos",
+        "ua": "5 хв пішки"
+      },
+      "icon": "🛒"
+    },
+    {
+      "place": {
+        "hu": "Étteremsor (Szilfás sétány)",
+        "en": "Restaurant row (Szilfás promenade)",
+        "de": "Restaurantzeile (Szilfás Promenade)",
+        "pl": "Ulica restauracyjna (Szilfás promenada)",
+        "sk": "Reštauračná ulica (Szilfás promenáda)",
+        "ro": "Zona de restaurante (Promenada Szilfás)",
+        "ua": "Ресторанна зона (Променад Сілфаш)"
+      },
+      "distance": {
+        "hu": "4 perc gyalog",
+        "en": "4 min walk",
+        "de": "4 Min. zu Fuß",
+        "pl": "4 min pieszo",
+        "sk": "4 min pešo",
+        "ro": "4 min pe jos",
+        "ua": "4 хв пішки"
+      },
+      "icon": "🍽️"
+    },
+    {
+      "place": {
+        "hu": "Aquapark",
+        "en": "Aquapark",
+        "de": "Aquapark",
+        "pl": "Aquapark",
+        "sk": "Aquapark",
+        "ro": "Aquapark",
+        "ua": "Аквапарк"
+      },
+      "distance": {
+        "hu": "8 perc gyalog",
+        "en": "8 min walk",
+        "de": "8 Min. zu Fuß",
+        "pl": "8 min pieszo",
+        "sk": "8 min pešo",
+        "ro": "8 min pe jos",
+        "ua": "8 хв пішки"
+      },
+      "icon": "🎢"
+    },
+    {
+      "place": {
+        "hu": "Vasútállomás",
+        "en": "Train station",
+        "de": "Bahnhof",
+        "pl": "Dworzec kolejowy",
+        "sk": "Železničná stanica",
+        "ro": "Gara",
+        "ua": "Залізничний вокзал"
+      },
+      "distance": {
+        "hu": "12 perc gyalog",
+        "en": "12 min walk",
+        "de": "12 Min. zu Fuß",
+        "pl": "12 min pieszo",
+        "sk": "12 min pešo",
+        "ro": "12 min pe jos",
+        "ua": "12 хв пішки"
+      },
+      "icon": "🚂"
+    },
+    {
+      "place": {
+        "hu": "Debrecen reptér",
+        "en": "Debrecen airport",
+        "de": "Flughafen Debrecen",
+        "pl": "Lotnisko Debreczyn",
+        "sk": "Letisko Debrecín",
+        "ro": "Aeroportul Debrecen",
+        "ua": "Аеропорт Дебрецен"
+      },
+      "distance": {
+        "hu": "25 perc autóval",
+        "en": "25 min by car",
+        "de": "25 Min. mit dem Auto",
+        "pl": "25 min samochodem",
+        "sk": "25 min autom",
+        "ro": "25 min cu mașina",
+        "ua": "25 хв на авто"
+      },
+      "icon": "✈️"
+    }
   ],
   "booking": {
     "directDiscount": 10,
@@ -314,17 +847,54 @@
       "de": "Direkt buchen — 10% Rabatt!",
       "pl": "Zarezerwuj bezpośrednio — 10% zniżki!",
       "sk": "Rezervujte priamo — 10% zľava!",
-      "ro": "Rezervați direct — 10% reducere!"
+      "ro": "Rezervați direct — 10% reducere!",
+      "ua": "Бронюйте напряму — знижка 10%!"
     },
     "whyDirect": [
-      { "hu": "10% kedvezmény a Booking.com árhoz képest", "en": "10% discount compared to Booking.com", "de": "10% Rabatt gegenüber Booking.com", "pl": "10% zniżki w porównaniu z Booking.com", "sk": "10% zľava oproti Booking.com", "ro": "10% reducere față de Booking.com" },
-      { "hu": "Nincs közvetítői díj", "en": "No intermediary fees", "de": "Keine Vermittlungsgebühren", "pl": "Bez prowizji pośrednika", "sk": "Žiadne sprostredkovateľské poplatky", "ro": "Fără taxe de intermediere" },
-      { "hu": "Személyes egyeztetés a szállásadóval", "en": "Personal communication with the host", "de": "Persönliche Kommunikation mit dem Gastgeber", "pl": "Bezpośredni kontakt z gospodarzem", "sk": "Osobná komunikácia s hostiteľom", "ro": "Comunicare directă cu gazda" },
-      { "hu": "Rugalmas fizetési feltételek", "en": "Flexible payment terms", "de": "Flexible Zahlungsbedingungen", "pl": "Elastyczne warunki płatności", "sk": "Flexibilné platobné podmienky", "ro": "Condiții flexibile de plată" }
+      {
+        "hu": "10% kedvezmény a Booking.com árhoz képest",
+        "en": "10% discount compared to Booking.com",
+        "de": "10% Rabatt gegenüber Booking.com",
+        "pl": "10% zniżki w porównaniu z Booking.com",
+        "sk": "10% zľava oproti Booking.com",
+        "ro": "10% reducere față de Booking.com",
+        "ua": "Знижка 10% порівняно з Booking.com"
+      },
+      {
+        "hu": "Nincs közvetítői díj",
+        "en": "No intermediary fees",
+        "de": "Keine Vermittlungsgebühren",
+        "pl": "Bez prowizji pośrednika",
+        "sk": "Žiadne sprostredkovateľské poplatky",
+        "ro": "Fără taxe de intermediere",
+        "ua": "Без комісії посередника"
+      },
+      {
+        "hu": "Személyes egyeztetés a szállásadóval",
+        "en": "Personal communication with the host",
+        "de": "Persönliche Kommunikation mit dem Gastgeber",
+        "pl": "Bezpośredni kontakt z gospodarzem",
+        "sk": "Osobná komunikácia s hostiteľom",
+        "ro": "Comunicare directă cu gazda",
+        "ua": "Пряме спілкування з господарем"
+      },
+      {
+        "hu": "Rugalmas fizetési feltételek",
+        "en": "Flexible payment terms",
+        "de": "Flexible Zahlungsbedingungen",
+        "pl": "Elastyczne warunki płatności",
+        "sk": "Flexibilné platobné podmienky",
+        "ro": "Condiții flexibile de plată",
+        "ua": "Гнучкі умови оплати"
+      }
     ],
     "depositPercent": 30,
     "acceptsSzepCard": true,
-    "szepCardProviders": ["OTP", "MKB", "K&H"],
+    "szepCardProviders": [
+      "OTP",
+      "MKB",
+      "K&H"
+    ],
     "acceptsBankCard": true,
     "acceptsCash": true,
     "cancellationPolicy": [
@@ -337,7 +907,8 @@
           "de": "14+ Tage im Voraus: volle Rückerstattung der Anzahlung",
           "pl": "14+ dni wcześniej: pełny zwrot zaliczki",
           "sk": "14+ dní vopred: plná návratnosť zálohy",
-          "ro": "14+ zile în avans: rambursare integrală a avansului"
+          "ro": "14+ zile în avans: rambursare integrală a avansului",
+          "ua": "14+ днів заздалегідь: повне повернення завдатку"
         }
       },
       {
@@ -349,7 +920,8 @@
           "de": "7–13 Tage im Voraus: 50% Rückerstattung",
           "pl": "7–13 dni wcześniej: 50% zwrotu zaliczki",
           "sk": "7–13 dní vopred: 50% návratnosť zálohy",
-          "ro": "7–13 zile în avans: 50% rambursare"
+          "ro": "7–13 zile în avans: 50% rambursare",
+          "ua": "7–13 днів заздалегідь: повернення 50%"
         }
       },
       {
@@ -361,7 +933,8 @@
           "de": "1–6 Tage: Anzahlung nicht erstattbar",
           "pl": "1–6 dni: zaliczka bezzwrotna",
           "sk": "1–6 dní: záloha je nevratná",
-          "ro": "1–6 zile: avansul nu este rambursabil"
+          "ro": "1–6 zile: avansul nu este rambursabil",
+          "ua": "1–6 днів: завдаток не повертається"
         }
       }
     ],
@@ -371,9 +944,13 @@
       "de": "Individuelle Beurteilung bei Krankheit oder höherer Gewalt",
       "pl": "Indywidualne rozpatrzenie w przypadku choroby lub siły wyższej",
       "sk": "Individuálne posúdenie v prípade choroby alebo vyššej moci",
-      "ro": "Evaluare individuală în caz de boală sau forță majoră"
+      "ro": "Evaluare individuală în caz de boală sau forță majoră",
+      "ua": "Індивідуальний розгляд у випадку хвороби чи форс-мажору"
     },
-    "communicationLanguages": ["hu", "en"],
+    "communicationLanguages": [
+      "hu",
+      "en"
+    ],
     "useGoogleTranslate": true,
     "thankYouTitle": {
       "hu": "Köszönjük foglalási kérelmét!",
@@ -381,7 +958,8 @@
       "de": "Vielen Dank für Ihre Buchungsanfrage!",
       "pl": "Dziękujemy za rezerwację!",
       "sk": "Ďakujeme za vašu rezerváciu!",
-      "ro": "Vă mulțumim pentru rezervare!"
+      "ro": "Vă mulțumim pentru rezervare!",
+      "ua": "Дякуємо за бронювання!"
     },
     "thankYouText": {
       "hu": "Kérelmét megkaptuk és 24 órán belül e-mailben visszaigazoljuk. Addig is kérdés esetén hívjon minket a +36 30 123 4567 számon.",
@@ -389,7 +967,8 @@
       "de": "Wir haben Ihre Anfrage erhalten und bestätigen innerhalb von 24 Stunden per E-Mail. Bei Fragen erreichen Sie uns unter +36 30 123 4567.",
       "pl": "Otrzymaliśmy Twoją prośbę i potwierdzimy e-mailem w ciągu 24 godzin. W razie pytań zadzwoń pod numer +36 30 123 4567.",
       "sk": "Vašu žiadosť sme prijali a potvrdíme e-mailom do 24 hodín. V prípade otázok nás kontaktujte na +36 30 123 4567.",
-      "ro": "Am primit solicitarea dumneavoastră și o vom confirma prin e-mail în 24 de ore. Pentru întrebări, sunați-ne la +36 30 123 4567."
+      "ro": "Am primit solicitarea dumneavoastră și o vom confirma prin e-mail în 24 de ore. Pentru întrebări, sunați-ne la +36 30 123 4567.",
+      "ua": "Ми отримали ваш запит і підтвердимо його протягом 24 годин електронною поштою або телефоном. Якщо у вас є питання, зателефонуйте нам за номером +36 30 123 4567."
     }
   },
   "ical": {
@@ -406,18 +985,58 @@
     ],
     "proxyUrl": "https://your-worker.your-subdomain.workers.dev/ical",
     "fallbackBookedDates": [
-      "2026-03-20", "2026-03-21", "2026-03-22",
-      "2026-04-01", "2026-04-02", "2026-04-03", "2026-04-04",
-      "2026-04-10", "2026-04-11", "2026-04-12",
-      "2026-04-25", "2026-04-26", "2026-04-27", "2026-04-28", "2026-04-29",
-      "2026-05-05", "2026-05-06", "2026-05-07",
-      "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-18",
-      "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05",
-      "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23",
-      "2026-07-01", "2026-07-02", "2026-07-03", "2026-07-04", "2026-07-05", "2026-07-06", "2026-07-07",
-      "2026-07-15", "2026-07-16", "2026-07-17", "2026-07-18", "2026-07-19",
-      "2026-08-01", "2026-08-02", "2026-08-03", "2026-08-04",
-      "2026-08-10", "2026-08-11", "2026-08-12", "2026-08-13", "2026-08-14"
+      "2026-03-20",
+      "2026-03-21",
+      "2026-03-22",
+      "2026-04-01",
+      "2026-04-02",
+      "2026-04-03",
+      "2026-04-04",
+      "2026-04-10",
+      "2026-04-11",
+      "2026-04-12",
+      "2026-04-25",
+      "2026-04-26",
+      "2026-04-27",
+      "2026-04-28",
+      "2026-04-29",
+      "2026-05-05",
+      "2026-05-06",
+      "2026-05-07",
+      "2026-05-15",
+      "2026-05-16",
+      "2026-05-17",
+      "2026-05-18",
+      "2026-06-01",
+      "2026-06-02",
+      "2026-06-03",
+      "2026-06-04",
+      "2026-06-05",
+      "2026-06-20",
+      "2026-06-21",
+      "2026-06-22",
+      "2026-06-23",
+      "2026-07-01",
+      "2026-07-02",
+      "2026-07-03",
+      "2026-07-04",
+      "2026-07-05",
+      "2026-07-06",
+      "2026-07-07",
+      "2026-07-15",
+      "2026-07-16",
+      "2026-07-17",
+      "2026-07-18",
+      "2026-07-19",
+      "2026-08-01",
+      "2026-08-02",
+      "2026-08-03",
+      "2026-08-04",
+      "2026-08-10",
+      "2026-08-11",
+      "2026-08-12",
+      "2026-08-13",
+      "2026-08-14"
     ]
   },
   "footer": {
@@ -427,40 +1046,68 @@
       "de": "Familienunterkunft im Herzen von Hajdúszoboszló, nur 3 Gehminuten von der Hungarospa-Therme entfernt.",
       "pl": "Rodzinne zakwaterowanie w sercu Hajdúszoboszló, zaledwie 3 minuty spacerem od Term Hungarospa.",
       "sk": "Rodinné ubytovanie v srdci Hajdúszoboszló, len 3 minúty pešo od kúpeľov Hungarospa.",
-      "ro": "Cazare familială în inima orașului Hajdúszoboszló, la doar 3 minute de mers pe jos de Termele Hungarospa."
+      "ro": "Cazare familială în inima orașului Hajdúszoboszló, la doar 3 minute de mers pe jos de Termele Hungarospa.",
+      "ua": "Сімейне житло в серці Гайдусобосло, всього за 3 хвилини від термальних купалень Хунгароспа."
     },
     "links": [
       {
-        "text": { "hu": "Házirendünk", "en": "House rules", "de": "Hausordnung", "pl": "Regulamin", "sk": "Domový poriadok", "ro": "Regulament" },
+        "text": {
+          "hu": "Házirendünk",
+          "en": "House rules",
+          "de": "Hausordnung",
+          "pl": "Regulamin",
+          "sk": "Domový poriadok",
+          "ro": "Regulament",
+          "ua": "Правила проживання"
+        },
         "content": {
           "hu": "1. Bejelentkezés / Kijelentkezés\nBejelentkezés: 14:00 órától. Kijelentkezés: 10:00 óráig.\nKorai érkezés vagy késői távozás egyeztetés alapján lehetséges.\n\n2. Dohányzás\nAz épületen belül szigorúan tilos a dohányzás. A kijelölt kültéri területeken engedélyezett.\n\n3. Háziállatok\nHáziállatot nem áll módunkban fogadni.\n\n4. Zajszint\n22:00 és 7:00 között kérjük a csendes pihenő betartását.\n\n5. Parkolás\nIngyenes zárt parkolás áll rendelkezésre az udvarban.\n\n6. Konyhahasználat\nA közös konyha használata minden vendég számára biztosított. Kérjük, használat után hagyják rendben a konyhát.\n\n7. Felelősség\nAz apartmanban okozott károkért anyagi felelősséget vállalunk. Értéktárgyaikra kérjük, vigyázzanak.\n\n8. Gyerekek\nGyermekeket szívesen látjuk! Gyermekágy és etetőszék igény szerint elérhető.",
           "en": "1. Check-in / Check-out\nCheck-in: from 2:00 PM. Check-out: by 10:00 AM.\nEarly arrival or late departure is possible by arrangement.\n\n2. Smoking\nSmoking is strictly prohibited inside the building. It is permitted in designated outdoor areas.\n\n3. Pets\nUnfortunately, we are unable to accommodate pets.\n\n4. Noise levels\nPlease observe quiet hours between 10:00 PM and 7:00 AM.\n\n5. Parking\nFree enclosed parking is available in the courtyard.\n\n6. Kitchen use\nThe shared kitchen is available for all guests. Please leave the kitchen tidy after use.\n\n7. Liability\nGuests are financially responsible for any damage caused in the apartment. Please take care of your valuables.\n\n8. Children\nChildren are welcome! A cot and high chair are available on request.",
           "de": "1. Check-in / Check-out\nCheck-in: ab 14:00 Uhr. Check-out: bis 10:00 Uhr.\nFrühe Anreise oder späte Abreise ist nach Absprache möglich.\n\n2. Rauchen\nDas Rauchen im Gebäude ist streng verboten. In ausgewiesenen Außenbereichen ist es erlaubt.\n\n3. Haustiere\nLeider können wir keine Haustiere aufnehmen.\n\n4. Lautstärke\nBitte halten Sie die Ruhezeiten zwischen 22:00 und 7:00 Uhr ein.\n\n5. Parken\nKostenlose geschlossene Parkplätze stehen im Innenhof zur Verfügung.\n\n6. Küchennutzung\nDie Gemeinschaftsküche steht allen Gästen zur Verfügung. Bitte hinterlassen Sie die Küche sauber.\n\n7. Haftung\nFür Schäden in der Unterkunft haften die Gäste finanziell. Bitte achten Sie auf Ihre Wertsachen.\n\n8. Kinder\nKinder sind herzlich willkommen! Kinderbett und Hochstuhl sind auf Anfrage verfügbar.",
           "pl": "1. Zameldowanie / Wymeldowanie\nZameldowanie: od godz. 14:00. Wymeldowanie: do godz. 10:00.\nWcześniejszy przyjazd lub późniejszy wyjazd możliwy po uzgodnieniu.\n\n2. Palenie\nPalenie wewnątrz budynku jest surowo zabronione. Dozwolone jest w wyznaczonych strefach na zewnątrz.\n\n3. Zwierzęta\nNiestety nie przyjmujemy zwierząt domowych.\n\n4. Poziom hałasu\nProsimy o zachowanie ciszy nocnej w godzinach 22:00–7:00.\n\n5. Parking\nBezpłatny zamknięty parking dostępny jest na podwórzu.\n\n6. Korzystanie z kuchni\nWspólna kuchnia jest dostępna dla wszystkich gości. Prosimy o pozostawienie kuchni w czystości.\n\n7. Odpowiedzialność\nGoście ponoszą odpowiedzialność finansową za szkody wyrządzone w apartamencie. Prosimy o dbanie o swoje kosztowności.\n\n8. Dzieci\nDzieci są mile widziane! Łóżeczko i krzesełko do karmienia dostępne na życzenie.",
           "sk": "1. Check-in / Check-out\nCheck-in: od 14:00. Check-out: do 10:00.\nSkorší príchod alebo neskorší odchod je možný po dohode.\n\n2. Fajčenie\nFajčenie vo vnútri budovy je prísne zakázané. Na vyhradených vonkajších priestoroch je povolené.\n\n3. Domáce zvieratá\nBohužiaľ, domáce zvieratá nemôžeme ubytovať.\n\n4. Hlučnosť\nProsíme o dodržiavanie nočného kľudu medzi 22:00 a 7:00.\n\n5. Parkovanie\nBezplatné uzavreté parkovanie je k dispozícii na dvore.\n\n6. Používanie kuchyne\nSpoločná kuchyňa je k dispozícii pre všetkých hostí. Prosíme, nechajte kuchyňu čistú.\n\n7. Zodpovednosť\nHostia nesú finančnú zodpovednosť za škody spôsobené v apartmáne. Prosíme, dávajte pozor na cennosti.\n\n8. Deti\nDeti sú vítané! Detská postieľka a stolička sú k dispozícii na požiadanie.",
-          "ro": "1. Check-in / Check-out\nCheck-in: de la ora 14:00. Check-out: până la ora 10:00.\nSosirea devreme sau plecarea târzie este posibilă prin aranjament.\n\n2. Fumatul\nFumatul este strict interzis în interiorul clădirii. Este permis în zonele exterioare desemnate.\n\n3. Animale de companie\nDin păcate, nu putem găzdui animale de companie.\n\n4. Nivel de zgomot\nVă rugăm să respectați liniștea între orele 22:00 și 7:00.\n\n5. Parcare\nParcare gratuită închisă disponibilă în curte.\n\n6. Utilizarea bucătăriei\nBucătăria comună este disponibilă pentru toți oaspeții. Vă rugăm să lăsați bucătăria curată.\n\n7. Răspundere\nOaspeții sunt responsabili financiar pentru orice daune cauzate. Vă rugăm să aveți grijă de obiectele de valoare.\n\n8. Copii\nCopiii sunt bineveniți! Pătuț și scaun de masă disponibile la cerere."
+          "ro": "1. Check-in / Check-out\nCheck-in: de la ora 14:00. Check-out: până la ora 10:00.\nSosirea devreme sau plecarea târzie este posibilă prin aranjament.\n\n2. Fumatul\nFumatul este strict interzis în interiorul clădirii. Este permis în zonele exterioare desemnate.\n\n3. Animale de companie\nDin păcate, nu putem găzdui animale de companie.\n\n4. Nivel de zgomot\nVă rugăm să respectați liniștea între orele 22:00 și 7:00.\n\n5. Parcare\nParcare gratuită închisă disponibilă în curte.\n\n6. Utilizarea bucătăriei\nBucătăria comună este disponibilă pentru toți oaspeții. Vă rugăm să lăsați bucătăria curată.\n\n7. Răspundere\nOaspeții sunt responsabili financiar pentru orice daune cauzate. Vă rugăm să aveți grijă de obiectele de valoare.\n\n8. Copii\nCopiii sunt bineveniți! Pătuț și scaun de masă disponibile la cerere.",
+          "ua": "1. Заїзд / Виїзд\nЗаїзд: з 14:00. Виїзд: до 10:00. Пізній виїзд за попереднім узгодженням та за додаткову плату.\n\n2. Тиша\nПросимо дотримуватися тиші з 22:00 до 07:00.\n\n3. Паління\nПаління дозволено лише у спеціально відведених місцях на свіжому повітрі. Паління в кімнатах та на балконах заборонено.\n\n4. Домашні тварини\nДомашні тварини не допускаються.\n\n5. Парковка\nПриватна парковка доступна для гостей. Просимо паркуватися лише у відведених місцях.\n\n6. Відповідальність\nГості несуть відповідальність за будь-які пошкодження, спричинені під час перебування. Цінні речі зберігайте в безпечному місці — адміністрація не несе відповідальності за втрачені речі.\n\n7. Ключі\nПросимо бережно поводитися з ключами від кімнати. Вартість заміни загубленого ключа: 5000 Ft.\n\n8. Кухня\nПросимо залишати кухню в чистоті після використання. Посуд слід мити одразу після вживання."
         }
       },
       {
-        "text": { "hu": "ÁSZF", "en": "Terms & Conditions", "de": "AGB", "pl": "Regulamin", "sk": "Obchodné podmienky", "ro": "Termeni și condiții" },
+        "text": {
+          "hu": "ÁSZF",
+          "en": "Terms & Conditions",
+          "de": "AGB",
+          "pl": "Regulamin",
+          "sk": "Obchodné podmienky",
+          "ro": "Termeni și condiții",
+          "ua": "Умови та положення"
+        },
         "content": {
           "hu": "Általános Szerződési Feltételek\n\n1. Általános rendelkezések\nJelen ÁSZF a Villa Termál szálláshely (továbbiakban: Szolgáltató) és a vendég (továbbiakban: Megrendelő) közötti jogviszonyt szabályozza.\n\n2. Foglalás és fizetés\nA foglalás a visszaigazolás elküldésével válik érvényessé. A foglalás véglegesítéséhez előleg fizetése szükséges, amelynek mértéke a teljes összeg 30%-a. A fennmaradó összeg érkezéskor fizetendő.\n\n3. Lemondási feltételek\nAz érkezés előtt 14 nappal történő lemondás esetén az előleg teljes mértékben visszatérítésre kerül. 14 napon belüli lemondás esetén az előleg nem jár vissza. Meg nem jelenés (no-show) esetén a teljes összeg felszámításra kerül.\n\n4. Árak\nAz árak forintban értendők és tartalmazzák az ÁFA-t, valamint az idegenforgalmi adót. Az árak szezonálisan változhatnak.\n\n5. Vendég jogai és kötelezettségei\nA vendég jogosult a foglalt szálláshely használatára a megadott időszakban. A vendég köteles a házirendet betartani és az okozott kárt megtéríteni.\n\n6. Szolgáltató jogai és kötelezettségei\nA Szolgáltató köteles a foglalt szálláshelyet a megadott időpontban rendelkezésre bocsátani. Vis maior esetén a Szolgáltató felelőssége kizárt.\n\n7. Adatkezelés\nAz adatkezelés az Adatvédelmi tájékoztató szerint történik.\n\n8. Panaszkezelés\nPanasz esetén kérjük, forduljon hozzánk e-mailben vagy telefonon. Válaszadási határidő: 30 nap.",
           "en": "General Terms and Conditions\n\n1. General provisions\nThese Terms and Conditions govern the legal relationship between Villa Termál accommodation (hereinafter: Provider) and the guest (hereinafter: Client).\n\n2. Booking and payment\nThe booking becomes valid upon sending the confirmation. A deposit of 30% of the total amount is required to finalize the booking. The remaining amount is payable upon arrival.\n\n3. Cancellation policy\nCancellations made 14 days before arrival will receive a full refund of the deposit. Cancellations within 14 days will forfeit the deposit. In case of no-show, the full amount will be charged.\n\n4. Prices\nPrices are in Hungarian Forints and include VAT and tourism tax. Prices may vary seasonally.\n\n5. Guest rights and obligations\nThe guest is entitled to use the booked accommodation during the specified period. The guest is obliged to comply with the house rules and compensate for any damage caused.\n\n6. Provider rights and obligations\nThe Provider is obliged to make the booked accommodation available at the specified time. The Provider's liability is excluded in cases of force majeure.\n\n7. Data management\nData is managed in accordance with the Privacy Policy.\n\n8. Complaints\nIn case of complaints, please contact us by email or phone. Response deadline: 30 days.",
           "de": "Allgemeine Geschäftsbedingungen\n\n1. Allgemeine Bestimmungen\nDiese AGB regeln das Rechtsverhältnis zwischen der Unterkunft Villa Termál (nachfolgend: Anbieter) und dem Gast (nachfolgend: Auftraggeber).\n\n2. Buchung und Zahlung\nDie Buchung wird mit dem Versand der Bestätigung gültig. Zur Finalisierung der Buchung ist eine Anzahlung von 30% des Gesamtbetrags erforderlich. Der Restbetrag ist bei Ankunft zu zahlen.\n\n3. Stornierungsbedingungen\nBei Stornierung 14 Tage vor Anreise wird die Anzahlung vollständig erstattet. Bei Stornierung innerhalb von 14 Tagen verfällt die Anzahlung. Bei Nichterscheinen wird der Gesamtbetrag berechnet.\n\n4. Preise\nDie Preise verstehen sich in ungarischen Forint und beinhalten MwSt. und Kurtaxe. Die Preise können saisonal variieren.\n\n5. Rechte und Pflichten des Gastes\nDer Gast ist berechtigt, die gebuchte Unterkunft im angegebenen Zeitraum zu nutzen. Der Gast ist verpflichtet, die Hausordnung einzuhalten und für entstandene Schäden aufzukommen.\n\n6. Rechte und Pflichten des Anbieters\nDer Anbieter ist verpflichtet, die gebuchte Unterkunft zum angegebenen Zeitpunkt bereitzustellen. Bei höherer Gewalt ist die Haftung des Anbieters ausgeschlossen.\n\n7. Datenverarbeitung\nDie Datenverarbeitung erfolgt gemäß der Datenschutzerklärung.\n\n8. Beschwerden\nBei Beschwerden kontaktieren Sie uns bitte per E-Mail oder Telefon. Antwortfrist: 30 Tage.",
           "pl": "Ogólne Warunki Handlowe\n\n1. Postanowienia ogólne\nNiniejsze OWH regulują stosunki prawne pomiędzy obiektem noclegowym Villa Termál (dalej: Usługodawca) a gościem (dalej: Zamawiający).\n\n2. Rezerwacja i płatność\nRezerwacja staje się ważna po wysłaniu potwierdzenia. Wymagana jest zaliczka w wysokości 30% całkowitej kwoty. Pozostała kwota jest płatna przy przyjeździe.\n\n3. Warunki anulowania\nW przypadku anulowania 14 dni przed przyjazdem zaliczka zostanie w pełni zwrócona. W przypadku anulowania w ciągu 14 dni zaliczka nie podlega zwrotowi. W przypadku niestawienia się naliczana jest pełna kwota.\n\n4. Ceny\nCeny podane są w forintach węgierskich i zawierają VAT oraz podatek turystyczny. Ceny mogą się różnić w zależności od sezonu.\n\n5. Prawa i obowiązki gościa\nGość ma prawo do korzystania z zarezerwowanego zakwaterowania w określonym terminie. Gość jest zobowiązany do przestrzegania regulaminu i pokrycia ewentualnych szkód.\n\n6. Prawa i obowiązki usługodawcy\nUsługodawca jest zobowiązany udostępnić zarezerwowane zakwaterowanie w określonym terminie. W przypadku siły wyższej odpowiedzialność Usługodawcy jest wyłączona.\n\n7. Zarządzanie danymi\nDane są zarządzane zgodnie z Polityką Prywatności.\n\n8. Reklamacje\nW przypadku reklamacji prosimy o kontakt e-mailowy lub telefoniczny. Termin odpowiedzi: 30 dni.",
           "sk": "Všeobecné obchodné podmienky\n\n1. Všeobecné ustanovenia\nTieto VOP upravujú právny vzťah medzi ubytovacím zariadením Villa Termál (ďalej: Poskytovateľ) a hosťom (ďalej: Objednávateľ).\n\n2. Rezervácia a platba\nRezrvácia sa stáva platnou odoslaním potvrdenia. Na finalizáciu rezervácie je potrebná záloha vo výške 30% z celkovej sumy. Zostávajúca suma je splatná pri príchode.\n\n3. Podmienky zrušenia\nPri zrušení 14 dní pred príchodom bude záloha v plnej výške vrátená. Pri zrušení do 14 dní záloha prepadá. V prípade nedostavenia sa bude účtovaná celková suma.\n\n4. Ceny\nCeny sú v maďarských forintoch a zahŕňajú DPH a turistický poplatok. Ceny sa môžu sezónne líšiť.\n\n5. Práva a povinnosti hosťa\nHosteľ má právo využívať rezervované ubytovanie v uvedenom období. Hosť je povinný dodržiavať domový poriadok a uhradiť spôsobené škody.\n\n6. Práva a povinnosti poskytovateľa\nPoskytovateľ je povinný poskytnúť rezervované ubytovanie v uvedenom čase. V prípade vyššej moci je zodpovednosť Poskytovateľa vylúčená.\n\n7. Správa údajov\nÚdaje sa spravujú v súlade so Zásadami ochrany osobných údajov.\n\n8. Reklamácie\nV prípade reklamácie nás kontaktujte e-mailom alebo telefonicky. Lehota na odpoveď: 30 dní.",
-          "ro": "Termeni și Condiții Generale\n\n1. Dispoziții generale\nAcești Termeni și Condiții reglementează relația juridică dintre cazarea Villa Termál (denumit în continuare: Furnizor) și oaspete (denumit în continuare: Client).\n\n2. Rezervare și plată\nRezervarea devine validă la trimiterea confirmării. Este necesară o plată în avans de 30% din suma totală. Suma rămasă se plătește la sosire.\n\n3. Politica de anulare\nAnulările efectuate cu 14 zile înainte de sosire vor primi o rambursare integrală a avansului. Anulările în termen de 14 zile vor pierde avansul. În caz de neprezentare, se va percepe suma integrală.\n\n4. Prețuri\nPrețurile sunt în forinți maghiari și includ TVA și taxa turistică. Prețurile pot varia sezonier.\n\n5. Drepturile și obligațiile oaspetelui\nOaspetele are dreptul de a utiliza cazarea rezervată în perioada specificată. Oaspetele este obligat să respecte regulamentul casei și să compenseze daunele cauzate.\n\n6. Drepturile și obligațiile furnizorului\nFurnizorul este obligat să pună la dispoziție cazarea rezervată la momentul specificat. Răspunderea Furnizorului este exclusă în caz de forță majoră.\n\n7. Gestionarea datelor\nDatele sunt gestionate în conformitate cu Politica de Confidențialitate.\n\n8. Reclamații\nÎn caz de reclamații, vă rugăm să ne contactați prin e-mail sau telefon. Termen de răspuns: 30 de zile."
+          "ro": "Termeni și Condiții Generale\n\n1. Dispoziții generale\nAcești Termeni și Condiții reglementează relația juridică dintre cazarea Villa Termál (denumit în continuare: Furnizor) și oaspete (denumit în continuare: Client).\n\n2. Rezervare și plată\nRezervarea devine validă la trimiterea confirmării. Este necesară o plată în avans de 30% din suma totală. Suma rămasă se plătește la sosire.\n\n3. Politica de anulare\nAnulările efectuate cu 14 zile înainte de sosire vor primi o rambursare integrală a avansului. Anulările în termen de 14 zile vor pierde avansul. În caz de neprezentare, se va percepe suma integrală.\n\n4. Prețuri\nPrețurile sunt în forinți maghiari și includ TVA și taxa turistică. Prețurile pot varia sezonier.\n\n5. Drepturile și obligațiile oaspetelui\nOaspetele are dreptul de a utiliza cazarea rezervată în perioada specificată. Oaspetele este obligat să respecte regulamentul casei și să compenseze daunele cauzate.\n\n6. Drepturile și obligațiile furnizorului\nFurnizorul este obligat să pună la dispoziție cazarea rezervată la momentul specificat. Răspunderea Furnizorului este exclusă în caz de forță majoră.\n\n7. Gestionarea datelor\nDatele sunt gestionate în conformitate cu Politica de Confidențialitate.\n\n8. Reclamații\nÎn caz de reclamații, vă rugăm să ne contactați prin e-mail sau telefon. Termen de răspuns: 30 de zile.",
+          "ua": "Загальні умови та положення\n\n1. Загальні положення\nЦі Умови регулюють правовідносини між Villa Termál (далі: Постачальник) та гостем (далі: Клієнт).\n\n2. Бронювання та оплата\nБронювання стає дійсним після надсилання підтвердження. Для завершення бронювання потрібен завдаток у розмірі 30% від загальної суми. Решта суми сплачується при заїзді.\n\n3. Політика скасування\nСкасування за 14 днів до заїзду — повне повернення завдатку. Скасування менш ніж за 14 днів — завдаток не повертається. У разі неявки стягується повна сума.\n\n4. Ціни\nЦіни вказані у угорських форинтах та включають ПДВ і туристичний збір. Ціни можуть змінюватися залежно від сезону.\n\n5. Права та обов'язки гостя\nГість має право користуватися заброньованим житлом протягом зазначеного періоду. Гість зобов'язаний дотримуватися правил проживання та відшкодовувати завдані збитки.\n\n6. Права та обов'язки постачальника\nПостачальник зобов'язаний надати заброньоване житло у визначений час. Відповідальність постачальника виключається у випадках форс-мажору.\n\n7. Управління даними\nДані обробляються відповідно до Політики конфіденційності.\n\n8. Скарги\nУ разі скарг зв'яжіться з нами електронною поштою або телефоном. Термін відповіді: 30 днів."
         }
       },
       {
-        "text": { "hu": "Adatvédelem", "en": "Privacy policy", "de": "Datenschutz", "pl": "Polityka prywatności", "sk": "Ochrana osobných údajov", "ro": "Politica de confidențialitate" },
+        "text": {
+          "hu": "Adatvédelem",
+          "en": "Privacy policy",
+          "de": "Datenschutz",
+          "pl": "Polityka prywatności",
+          "sk": "Ochrana osobných údajov",
+          "ro": "Politica de confidențialitate",
+          "ua": "Політика конфіденційності"
+        },
         "content": {
           "hu": "Adatvédelmi Tájékoztató\n\n1. Adatkezelő\nNév: Villa Termál\nCím: Hajdúszoboszló, Példa utca 1.\nE-mail: info@villatermal.hu\n\n2. Gyűjtött adatok\nFoglalás során az alábbi személyes adatokat kezeljük: név, e-mail cím, telefonszám, érkezés és távozás dátuma, vendégek száma.\n\n3. Az adatkezelés célja\nAz adatkezelés célja a szállásfoglalás teljesítése, kapcsolattartás a vendéggel, valamint a jogszabályi kötelezettségek teljesítése (pl. vendégnyilvántartás).\n\n4. Az adatkezelés jogalapja\nAz adatkezelés a vendég hozzájárulásán, valamint a szerződés teljesítésén alapul.\n\n5. Adatok megőrzése\nA személyes adatokat a foglalás teljesítésétől számított 5 évig őrizzük meg a számviteli és adójogi előírásoknak megfelelően.\n\n6. Adatok továbbítása\nSzemélyes adatokat harmadik félnek nem adunk ki, kivéve jogszabályi kötelezettség esetén.\n\n7. Az érintett jogai\nÖn jogosult személyes adatainak hozzáféréséhez, helyesbítéséhez, törléséhez, valamint az adatkezelés korlátozásához. Kérését az info@villatermal.hu címre küldheti.\n\n8. Sütik (cookie-k)\nWeboldalunk technikai sütiket használ a működéshez. Analitikai célú sütit nem alkalmazunk.\n\n9. Kapcsolat\nAdatvédelmi kérdéseivel forduljon hozzánk: info@villatermal.hu",
           "en": "Privacy Policy\n\n1. Data Controller\nName: Villa Termál\nAddress: Hajdúszoboszló, Példa utca 1.\nEmail: info@villatermal.hu\n\n2. Data collected\nDuring booking, we process the following personal data: name, email address, phone number, arrival and departure dates, number of guests.\n\n3. Purpose of data processing\nThe purpose of data processing is to fulfill accommodation bookings, maintain contact with guests, and comply with legal obligations (e.g., guest registration).\n\n4. Legal basis\nData processing is based on the guest's consent and the performance of the contract.\n\n5. Data retention\nPersonal data is retained for 5 years from the completion of the booking in accordance with accounting and tax regulations.\n\n6. Data sharing\nPersonal data is not shared with third parties except when required by law.\n\n7. Your rights\nYou have the right to access, rectify, delete your personal data, and to restrict data processing. Please send your request to info@villatermal.hu.\n\n8. Cookies\nOur website uses technical cookies for functionality. We do not use analytics cookies.\n\n9. Contact\nFor privacy-related questions, please contact us at: info@villatermal.hu",
           "de": "Datenschutzerklärung\n\n1. Verantwortlicher\nName: Villa Termál\nAdresse: Hajdúszoboszló, Példa utca 1.\nE-Mail: info@villatermal.hu\n\n2. Erhobene Daten\nBei der Buchung verarbeiten wir folgende personenbezogene Daten: Name, E-Mail-Adresse, Telefonnummer, An- und Abreisedatum, Anzahl der Gäste.\n\n3. Zweck der Datenverarbeitung\nZweck der Datenverarbeitung ist die Abwicklung der Buchung, die Kontaktpflege mit Gästen und die Erfüllung gesetzlicher Pflichten (z.B. Gästeregistrierung).\n\n4. Rechtsgrundlage\nDie Datenverarbeitung basiert auf der Einwilligung des Gastes und der Vertragserfüllung.\n\n5. Datenspeicherung\nPersonenbezogene Daten werden 5 Jahre ab Abschluss der Buchung gemäß den Buchhaltungs- und Steuervorschriften aufbewahrt.\n\n6. Datenweitergabe\nPersonenbezogene Daten werden nicht an Dritte weitergegeben, außer wenn gesetzlich vorgeschrieben.\n\n7. Ihre Rechte\nSie haben das Recht auf Zugang, Berichtigung, Löschung Ihrer personenbezogenen Daten und auf Einschränkung der Verarbeitung. Bitte senden Sie Ihre Anfrage an info@villatermal.hu.\n\n8. Cookies\nUnsere Website verwendet technische Cookies für die Funktionalität. Wir verwenden keine Analyse-Cookies.\n\n9. Kontakt\nBei datenschutzrechtlichen Fragen kontaktieren Sie uns unter: info@villatermal.hu",
           "pl": "Polityka Prywatności\n\n1. Administrator danych\nNazwa: Villa Termál\nAdres: Hajdúszoboszló, Példa utca 1.\nE-mail: info@villatermal.hu\n\n2. Zbierane dane\nPodczas rezerwacji przetwarzamy następujące dane osobowe: imię i nazwisko, adres e-mail, numer telefonu, daty przyjazdu i wyjazdu, liczba gości.\n\n3. Cel przetwarzania danych\nCelem przetwarzania danych jest realizacja rezerwacji, utrzymywanie kontaktu z gośćmi oraz wypełnianie obowiązków prawnych (np. rejestracja gości).\n\n4. Podstawa prawna\nPrzetwarzanie danych opiera się na zgodzie gościa oraz realizacji umowy.\n\n5. Przechowywanie danych\nDane osobowe są przechowywane przez 5 lat od realizacji rezerwacji zgodnie z przepisami rachunkowymi i podatkowymi.\n\n6. Udostępnianie danych\nDane osobowe nie są udostępniane stronom trzecim, chyba że wymaga tego prawo.\n\n7. Twoje prawa\nMasz prawo dostępu do swoich danych osobowych, ich sprostowania, usunięcia oraz ograniczenia przetwarzania. Prosimy o przesłanie żądania na adres info@villatermal.hu.\n\n8. Pliki cookie\nNasza strona wykorzystuje techniczne pliki cookie do działania. Nie stosujemy analitycznych plików cookie.\n\n9. Kontakt\nW sprawach dotyczących prywatności prosimy o kontakt: info@villatermal.hu",
           "sk": "Zásady ochrany osobných údajov\n\n1. Prevádzkovateľ\nNázov: Villa Termál\nAdresa: Hajdúszoboszló, Példa utca 1.\nE-mail: info@villatermal.hu\n\n2. Zhromažďované údaje\nPri rezervácii spracúvame nasledovné osobné údaje: meno, e-mailová adresa, telefónne číslo, dátum príchodu a odchodu, počet hostí.\n\n3. Účel spracovania údajov\nÚčelom spracovania údajov je plnenie rezervácie ubytovania, udržiavanie kontaktu s hosťami a plnenie zákonných povinností (napr. registrácia hostí).\n\n4. Právny základ\nSpracovanie údajov je založené na súhlase hosťa a plnení zmluvy.\n\n5. Uchovávanie údajov\nOsobné údaje sa uchovávajú 5 rokov od dokončenia rezervácie v súlade s účtovnými a daňovými predpismi.\n\n6. Zdieľanie údajov\nOsobné údaje sa neposkytujú tretím stranám, okrem prípadov vyžadovaných zákonom.\n\n7. Vaše práva\nMáte právo na prístup, opravu, vymazanie vašich osobných údajov a na obmedzenie spracovania. Svoju žiadosť pošlite na info@villatermal.hu.\n\n8. Súbory cookie\nNaša webová stránka používa technické cookies pre funkčnosť. Analytické cookies nepoužívame.\n\n9. Kontakt\nV prípade otázok týkajúcich sa ochrany osobných údajov nás kontaktujte: info@villatermal.hu",
-          "ro": "Politica de Confidențialitate\n\n1. Operator de date\nNume: Villa Termál\nAdresă: Hajdúszoboszló, Példa utca 1.\nE-mail: info@villatermal.hu\n\n2. Date colectate\nÎn timpul rezervării, procesăm următoarele date personale: nume, adresă de e-mail, număr de telefon, date de sosire și plecare, număr de oaspeți.\n\n3. Scopul procesării datelor\nScopul procesării datelor este îndeplinirea rezervărilor de cazare, menținerea contactului cu oaspeții și respectarea obligațiilor legale (de ex. înregistrarea oaspeților).\n\n4. Baza legală\nProcesarea datelor se bazează pe consimțământul oaspetelui și pe executarea contractului.\n\n5. Păstrarea datelor\nDatele personale sunt păstrate 5 ani de la finalizarea rezervării, în conformitate cu reglementările contabile și fiscale.\n\n6. Partajarea datelor\nDatele personale nu sunt partajate cu terți, cu excepția cazurilor prevăzute de lege.\n\n7. Drepturile dumneavoastră\nAveți dreptul de acces, rectificare, ștergere a datelor personale și de restricționare a procesării. Vă rugăm să trimiteți solicitarea la info@villatermal.hu.\n\n8. Cookie-uri\nSite-ul nostru folosește cookie-uri tehnice pentru funcționalitate. Nu folosim cookie-uri analitice.\n\n9. Contact\nPentru întrebări legate de confidențialitate, contactați-ne la: info@villatermal.hu"
+          "ro": "Politica de Confidențialitate\n\n1. Operator de date\nNume: Villa Termál\nAdresă: Hajdúszoboszló, Példa utca 1.\nE-mail: info@villatermal.hu\n\n2. Date colectate\nÎn timpul rezervării, procesăm următoarele date personale: nume, adresă de e-mail, număr de telefon, date de sosire și plecare, număr de oaspeți.\n\n3. Scopul procesării datelor\nScopul procesării datelor este îndeplinirea rezervărilor de cazare, menținerea contactului cu oaspeții și respectarea obligațiilor legale (de ex. înregistrarea oaspeților).\n\n4. Baza legală\nProcesarea datelor se bazează pe consimțământul oaspetelui și pe executarea contractului.\n\n5. Păstrarea datelor\nDatele personale sunt păstrate 5 ani de la finalizarea rezervării, în conformitate cu reglementările contabile și fiscale.\n\n6. Partajarea datelor\nDatele personale nu sunt partajate cu terți, cu excepția cazurilor prevăzute de lege.\n\n7. Drepturile dumneavoastră\nAveți dreptul de acces, rectificare, ștergere a datelor personale și de restricționare a procesării. Vă rugăm să trimiteți solicitarea la info@villatermal.hu.\n\n8. Cookie-uri\nSite-ul nostru folosește cookie-uri tehnice pentru funcționalitate. Nu folosim cookie-uri analitice.\n\n9. Contact\nPentru întrebări legate de confidențialitate, contactați-ne la: info@villatermal.hu",
+          "ua": "Політика конфіденційності\n\n1. Оператор даних\nНазва: Villa Termál\nАдреса: Гайдусобосло, Пелда утца 1.\nEmail: info@villatermal.hu\n\n2. Зібрані дані\nПід час бронювання ми обробляємо наступні персональні дані: ім'я, електронна адреса, номер телефону, дати заїзду та виїзду, кількість гостей.\n\n3. Мета обробки даних\nМета обробки даних — виконання бронювань, підтримка зв'язку з гостями та виконання правових зобов'язань.\n\n4. Правова основа\nОбробка даних здійснюється на основі згоди гостя та виконання договору.\n\n5. Зберігання даних\nПерсональні дані зберігаються протягом 5 років з моменту завершення бронювання відповідно до бухгалтерських та податкових норм.\n\n6. Передача даних\nПерсональні дані не передаються третім особам, крім випадків, передбачених законом.\n\n7. Ваші права\nВи маєте право на доступ, виправлення, видалення персональних даних та обмеження їх обробки. Надішліть запит на info@villatermal.hu.\n\n8. Файли cookie\nНаш сайт використовує технічні cookie для функціональності. Ми не використовуємо аналітичні cookie.\n\n9. Контакт\nЗ питань конфіденційності звертайтеся за адресою: info@villatermal.hu"
         }
       }
     ]
