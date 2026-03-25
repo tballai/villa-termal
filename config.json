@@ -313,7 +313,7 @@
     "depositPercent": 30,
     "acceptsSzepCard": true,
     "szepCardProviders": ["OTP", "MKB", "K&H"],
-    "acceptsBankCard": false,
+    "acceptsBankCard": true,
     "acceptsCash": true,
     "cancellationPolicy": [
       {
