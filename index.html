@@ -1107,14 +1107,15 @@
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-            gap: 24px;
+            gap: 32px;
         }
 
         .service-card {
-            padding: 32px;
+            padding: 28px;
             border-radius: var(--radius-md);
             background: var(--cream);
-            border: 1px solid transparent;
+            border: 1px solid var(--cream-dark);
+            box-shadow: var(--shadow-sm);
             transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
         }
 
@@ -1633,27 +1634,14 @@
             margin-top: 8px;
         }
 
-        /* Shiny submit button */
-        @property --shiny-angle {
-            syntax: '<angle>';
-            initial-value: 0deg;
-            inherits: false;
+        /* Submit button with soft glow */
+        @keyframes softPulse {
+            0%, 100% { box-shadow: 0 4px 20px rgba(196, 151, 92, 0.25), 0 0 0 0 rgba(196, 151, 92, 0); }
+            50% { box-shadow: 0 4px 28px rgba(196, 151, 92, 0.4), 0 0 20px rgba(196, 151, 92, 0.15); }
         }
-        @property --shiny-angle-offset {
-            syntax: '<angle>';
-            initial-value: 0deg;
-            inherits: false;
-        }
-        @property --shiny-percent {
-            syntax: '<percentage>';
-            initial-value: 5%;
-            inherits: false;
-        }
-        @keyframes shinyRotate {
-            to { --shiny-angle: 360deg; }
-        }
-        @keyframes shinyShimmer {
-            to { rotate: 360deg; }
+        @keyframes shimmerSlide {
+            0% { transform: translateX(-100%) skewX(-20deg); }
+            100% { transform: translateX(200%) skewX(-20deg); }
         }
         .form-submit-btn {
             position: relative;
@@ -1663,47 +1651,35 @@
             width: auto;
             max-width: none;
             overflow: hidden;
-            isolation: isolate;
-            border: 1px solid transparent;
-            background:
-                linear-gradient(var(--gold), var(--gold)) padding-box,
-                conic-gradient(
-                    from calc(var(--shiny-angle) - var(--shiny-angle-offset)),
-                    transparent,
-                    var(--gold) var(--shiny-percent),
-                    #fff calc(var(--shiny-percent) * 2),
-                    var(--gold) calc(var(--shiny-percent) * 3),
-                    transparent calc(var(--shiny-percent) * 4)
-                ) border-box;
-            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
-            animation: shinyRotate 3s linear infinite;
-            transition: --shiny-angle-offset 0.8s cubic-bezier(0.25, 1, 0.5, 1),
-                        --shiny-percent 0.8s cubic-bezier(0.25, 1, 0.5, 1),
-                        padding 0.5s var(--ease-out);
+            background: var(--gold);
+            border: none;
+            animation: softPulse 3s ease-in-out infinite;
+            transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out), background 0.3s var(--ease-out);
         }
         .form-submit-btn::before {
             content: '';
             position: absolute;
-            inset: 50% auto auto 50%;
-            translate: -50% -50%;
-            width: 100%;
-            aspect-ratio: 1;
-            background: linear-gradient(-50deg, transparent, rgba(255, 255, 255, 0.35), transparent);
-            mask-image: radial-gradient(circle at bottom, transparent 40%, black);
-            opacity: 0;
-            z-index: -1;
-            animation: shinyShimmer 3s linear infinite paused;
-            transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(105deg, transparent 20%, rgba(255, 255, 255, 0.25) 50%, transparent 80%);
+            transform: translateX(-100%) skewX(-20deg);
+            pointer-events: none;
         }
         .form-submit-btn:hover {
-            --shiny-percent: 20%;
-            --shiny-angle-offset: 95deg;
+            background: #b8894f;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(196, 151, 92, 0.45), 0 0 24px rgba(196, 151, 92, 0.2);
+            animation: none;
             padding-left: 56px;
             padding-right: 28px;
         }
         .form-submit-btn:hover::before {
-            opacity: 0.6;
-            animation-play-state: running;
+            animation: shimmerSlide 0.8s ease-out forwards;
+        }
+        .form-submit-btn:active {
+            transform: translateY(0);
         }
         .form-submit-btn .btn-text {
             position: relative;
@@ -1801,15 +1777,15 @@
         .info-card {
             background: var(--white);
             border: 1px solid var(--cream-dark);
-            border-radius: var(--radius-md);
+            border-radius: var(--radius-lg);
             overflow: hidden;
         }
         .info-card-header {
             display: flex;
             align-items: center;
             gap: 10px;
-            padding: 13px 16px;
-            background: var(--cream);
+            padding: 14px 16px;
+            background: linear-gradient(135deg, var(--cream) 0%, rgba(196, 151, 92, 0.04) 100%);
             border-bottom: 1px solid var(--cream-dark);
         }
         .info-card-icon {
@@ -1822,10 +1798,10 @@
             font-size: 14px;
             flex-shrink: 0;
         }
-        .info-card-icon.icon-blue { background: #E6F1FB; }
-        .info-card-icon.icon-amber { background: #FAEEDA; }
-        .info-card-icon.icon-green { background: #EAF3DE; }
-        .info-card-icon.icon-purple { background: #EEEDFE; }
+        .info-card-icon.icon-blue { background: rgba(196, 151, 92, 0.10); }
+        .info-card-icon.icon-amber { background: rgba(196, 151, 92, 0.15); }
+        .info-card-icon.icon-green { background: rgba(39, 174, 96, 0.10); }
+        .info-card-icon.icon-purple { background: rgba(196, 151, 92, 0.08); }
         .info-card-title {
             font-family: var(--font-body);
             font-size: 0.85rem;
@@ -1853,10 +1829,10 @@
             flex-shrink: 0;
             margin-top: 6px;
         }
-        .info-dot.dot-blue { background: #378ADD; }
-        .info-dot.dot-amber { background: #BA7517; }
-        .info-dot.dot-green { background: #639922; }
-        .info-dot.dot-purple { background: #7F77DD; }
+        .info-dot.dot-blue { background: var(--gold); }
+        .info-dot.dot-amber { background: #B8894F; }
+        .info-dot.dot-green { background: var(--success); }
+        .info-dot.dot-purple { background: var(--text-light); }
         .info-row strong {
             color: var(--warm-dark);
             font-weight: 600;
@@ -1874,13 +1850,13 @@
             padding: 3px 10px;
             border-radius: 100px;
         }
-        .info-chip.chip-amber { background: #FAEEDA; color: #633806; }
-        .info-chip.chip-blue { background: #E6F1FB; color: #0C447C; }
+        .info-chip.chip-amber { background: var(--cream-dark); color: var(--warm-dark); }
+        .info-chip.chip-blue { background: rgba(196, 151, 92, 0.12); color: var(--warm-dark); }
         .info-chip.chip-gray { background: var(--cream); color: var(--text-light); }
         .booking-info-highlight {
             background: linear-gradient(135deg, rgba(196, 151, 92, 0.06) 0%, rgba(196, 151, 92, 0.02) 100%);
             border: 1px solid var(--cream-dark);
-            border-radius: var(--radius-md);
+            border-radius: var(--radius-lg);
             padding: 14px 16px;
             display: flex;
             align-items: center;
@@ -1916,9 +1892,9 @@
             align-items: center;
             gap: 6px;
             padding: 6px 10px;
-            background: var(--white);
+            background: var(--cream);
             border: 1px solid var(--cream-dark);
-            border-radius: 8px;
+            border-radius: 100px;
             font-size: 0.7rem;
             font-weight: 600;
             color: var(--warm-dark);
@@ -1997,15 +1973,15 @@
         .reviews-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
-            gap: 28px;
+            gap: 32px;
             position: relative;
         }
 
         .review-card {
             background: rgba(250, 246, 241, 0.05);
             border: 1px solid rgba(196, 151, 92, 0.15);
-            border-radius: var(--radius-md);
-            padding: 32px;
+            border-radius: var(--radius-lg);
+            padding: 28px;
             transition: transform 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
         }
 
@@ -2131,7 +2107,8 @@
             gap: 16px;
             padding: 16px 20px;
             background: var(--white);
-            border-radius: var(--radius-sm);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--cream-dark);
             box-shadow: var(--shadow-sm);
             transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
         }
@@ -2169,7 +2146,7 @@
            ======================================== */
         .cta-section {
             background: linear-gradient(160deg, var(--warm-dark) 0%, #3D3530 100%);
-            padding: 80px 0;
+            padding: 100px 0;
             text-align: center;
             position: relative;
         }
