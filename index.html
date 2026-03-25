@@ -3650,17 +3650,24 @@
 
         // HU_MONTHS and HU_DAYS replaced by t('months') and t('days')
 
-        function loadBookedDates() {
+        function loadBookedDates(roomIdx) {
+            if (roomIdx === undefined) roomIdx = calState.selectedRoom;
             // Fallback dátumok betöltése alapértelmezettként
             calState.bookedDates = new Set(CONFIG.ical.fallbackBookedDates || []);
+
+            // Determine feeds: per-room first, then global fallback
+            var room = CONFIG.rooms[roomIdx];
+            var feeds = (room && room.icalFeeds && room.icalFeeds.length > 0)
+                ? room.icalFeeds
+                : (CONFIG.ical.feeds || []);
 
             // Ha az iCal proxy engedélyezve van, próbáljuk meg lekérni
             if (CONFIG.ical && CONFIG.ical.enabled && CONFIG.ical.proxyUrl &&
                 !CONFIG.ical.proxyUrl.includes('your-worker') &&
                 !CONFIG.ical.proxyUrl.includes('your-subdomain') &&
-                CONFIG.ical.feeds && CONFIG.ical.feeds.length > 0) {
+                feeds.length > 0) {
 
-                var validFeeds = CONFIG.ical.feeds.filter(function(f) {
+                var validFeeds = feeds.filter(function(f) {
                     return f.url && !f.url.includes('PLACEHOLDER') && !f.url.includes('xxxxx');
                 });
 
@@ -3674,11 +3681,12 @@
                             return res.json();
                         })
                         .then(function(data) {
-                            if (data.bookedDates && Array.isArray(data.bookedDates)) {
+                            // Only apply if room hasn't changed while fetching
+                            if (calState.selectedRoom === roomIdx && data.bookedDates && Array.isArray(data.bookedDates)) {
                                 calState.bookedDates = new Set(data.bookedDates);
                                 calState.icalSource = 'ical';
                                 updateCalendarDisplay();
-                                console.log('[iCal] Foglalt napok betöltve: ' + data.bookedDates.length + ' nap, forrás: iCal proxy');
+                                console.log('[iCal] Foglalt napok betöltve (szoba ' + roomIdx + '): ' + data.bookedDates.length + ' nap');
                             }
                         })
                         .catch(function(err) {
@@ -3735,6 +3743,15 @@
             if (roomSelect) {
                 roomSelect.addEventListener('change', function() {
                     calState.selectedRoom = parseInt(this.value);
+                    // Clear date selection — it belonged to the previous room
+                    calState.checkin = null;
+                    calState.checkout = null;
+                    document.getElementById('f-checkin').value = '';
+                    document.getElementById('f-checkout').value = '';
+                    showCalMessage('', '');
+                    // Reload booked dates for the new room
+                    loadBookedDates(calState.selectedRoom);
+                    updateCalendarDisplay();
                     updatePriceCalc();
                 });
             }

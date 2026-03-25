@@ -99,7 +99,11 @@
       "bookingPrice": 20000,
       "badge": { "hu": "Népszerű", "en": "Popular", "de": "Beliebt", "pl": "Popularny", "sk": "Obľúbená", "ro": "Popular" },
       "image": "images/room1.jpg",
-      "gallery": ["images/room1.jpg", "images/room2.webp"]
+      "gallery": ["images/room1.jpg", "images/room2.webp"],
+      "icalFeeds": [
+        { "name": "Booking.com", "url": "https://admin.booking.com/hotel/hoteladmin/ical.html?t=PLACEHOLDER_KETAGYAS_TOKEN" },
+        { "name": "Airbnb", "url": "https://www.airbnb.com/calendar/ical/PLACEHOLDER_KETAGYAS_ID.ics" }
+      ]
     },
     {
       "id": "csaladi",
@@ -128,7 +132,11 @@
       "bookingPrice": 32000,
       "badge": { "hu": "Családoknak", "en": "For families", "de": "Für Familien", "pl": "Dla rodzin", "sk": "Pre rodiny", "ro": "Pentru familii" },
       "image": "images/csaladi1.jpg",
-      "gallery": ["images/csaladi1.jpg", "images/csaladi2.jpg", "images/csaladi3.jpeg"]
+      "gallery": ["images/csaladi1.jpg", "images/csaladi2.jpg", "images/csaladi3.jpeg"],
+      "icalFeeds": [
+        { "name": "Booking.com", "url": "https://admin.booking.com/hotel/hoteladmin/ical.html?t=PLACEHOLDER_CSALADI_TOKEN" },
+        { "name": "Airbnb", "url": "https://www.airbnb.com/calendar/ical/PLACEHOLDER_CSALADI_ID.ics" }
+      ]
     },
     {
       "id": "premium",
@@ -159,7 +167,11 @@
       "bookingPrice": 44000,
       "badge": { "hu": "Prémium", "en": "Premium", "de": "Premium", "pl": "Premium", "sk": "Prémiový", "ro": "Premium" },
       "image": "images/premiumr.jpg",
-      "gallery": ["images/premiumr.jpg", "images/premium2.jpg"]
+      "gallery": ["images/premiumr.jpg", "images/premium2.jpg"],
+      "icalFeeds": [
+        { "name": "Booking.com", "url": "https://admin.booking.com/hotel/hoteladmin/ical.html?t=PLACEHOLDER_PREMIUM_TOKEN" },
+        { "name": "Airbnb", "url": "https://www.airbnb.com/calendar/ical/PLACEHOLDER_PREMIUM_ID.ics" }
+      ]
     }
   ],
   "services": [
