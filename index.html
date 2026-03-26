@@ -13,7 +13,7 @@
     <meta property="og:locale" content="hu_HU">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link id="google-fonts-link" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 
     <script type="application/ld+json" id="jsonld-data">
     {
@@ -2896,6 +2896,40 @@
         'use strict';
 
         /* ========================================
+           FONT PAIR SYSTEM
+           ======================================== */
+        var FONT_PAIRS = {
+            classic: {
+                heading: "'Playfair Display', Georgia, 'Times New Roman', serif",
+                body: "'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+                url: "https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+            },
+            modern: {
+                heading: "'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+                body: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+                url: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+            },
+            friendly: {
+                heading: "'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+                body: "'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+                url: "https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+            },
+            bold: {
+                heading: "'Oswald', Impact, 'Arial Narrow', sans-serif",
+                body: "'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+                url: "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Oswald:wght@400;500;600;700&display=swap"
+            }
+        };
+
+        function applyFontPair(pair) {
+            var fp = FONT_PAIRS[pair] || FONT_PAIRS.classic;
+            var link = document.getElementById('google-fonts-link');
+            if (link) link.href = fp.url;
+            document.documentElement.style.setProperty('--font-heading', fp.heading);
+            document.documentElement.style.setProperty('--font-body', fp.body);
+        }
+
+        /* ========================================
            CONFIG LOADING
            ======================================== */
         let CONFIG = null;
@@ -3413,6 +3447,7 @@
                 const response = await fetch('config.json');
                 if (!response.ok) throw new Error('Config not found');
                 CONFIG = await response.json();
+                applyFontPair(CONFIG.branding.fontPair || 'classic');
                 renderAll(false);
                 initLangToggle();
             } catch (err) {

@@ -70,7 +70,8 @@
     "textLightColor": "#7A7068",
     "logoText": "Villa Termál",
     "creditText": "Ballai Digital",
-    "creditUrl": "https://ballaidigital.hu"
+    "creditUrl": "https://ballaidigital.hu",
+    "fontPair": "classic"
   },
   "stats": [
     {
